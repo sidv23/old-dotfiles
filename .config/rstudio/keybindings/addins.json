@@ -1,0 +1,8 @@
+{
+    "colourpicker::plotHelperAddin": "",
+    "bookdown::mathquill": "",
+    "lintr::addin_lint_package": "",
+    "addinexamplesWV::insertZeallotArrow": "Alt+-",
+    "addinexamplesWV::insertUsr1Addin": "Shift+Cmd+Enter",
+    "addinexamplesWV::insertUsr2Addin": "Shift+Cmd+Space"
+}

@@ -1,0 +1,4 @@
+options(radian.color_scheme = "native")
+options(radian.editing_mode = "vi")
+options(radian.indent_lines = TRUE)
+options(radian.auto_match = TRUE)

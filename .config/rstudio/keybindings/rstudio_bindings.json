@@ -1,0 +1,12 @@
+{
+    "commentUncomment": "Cmd+/",
+    "consoleClear": "Cmd+L",
+    "debugBreakpoint": "Cmd+D",
+    "insertAssignmentOperator": "Cmd+-",
+    "insertPipeOperator": "Cmd+.",
+    "moveTabLeft": "",
+    "moveTabRight": "",
+    "nextTab": "Cmd+Right",
+    "previousTab": "Cmd+Left",
+    "compileNotebook": "Alt+Cmd+Enter"
+}

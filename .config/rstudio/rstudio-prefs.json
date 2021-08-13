@@ -1,0 +1,48 @@
+{
+    "highlight_selected_line": true,
+    "show_margin": false,
+    "show_indent_guides": true,
+    "syntax_color_console": true,
+    "highlight_r_function_calls": true,
+    "editor_theme": "Nord",
+    "default_project_location": "~",
+    "source_with_echo": true,
+    "document_author": "Siddharth Vishwanath",
+    "wrap_tab_navigation": false,
+    "reuse_sessions_for_project_links": true,
+    "panes": {
+        "quadrants": [
+            "Source",
+            "Console",
+            "TabSet1",
+            "TabSet2"
+        ],
+        "tabSet1": [
+            "Environment",
+            "History",
+            "Connections",
+            "Build",
+            "VCS",
+            "Tutorial",
+            "Presentation"
+        ],
+        "tabSet2": [
+            "Files",
+            "Plots",
+            "Packages",
+            "Help",
+            "Viewer"
+        ],
+        "console_left_on_top": false,
+        "console_right_on_top": true
+    },
+    "posix_terminal_shell": "bash",
+    "jobs_tab_visibility": "shown",
+    "scroll_past_end_of_document": true,
+    "toolbar_visible": false,
+    "rmd_viewer_type": "pane",
+    "rmd_preferred_template_path": "/Library/Frameworks/R.framework/Versions/3.6/Resources/library/drposter/rmarkdown/templates/drposter",
+    "initial_working_directory": "~",
+    "auto_run_setup_chunk": false,
+    "default_sweave_engine": "knitr"
+}
