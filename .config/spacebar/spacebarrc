@@ -10,15 +10,16 @@ spacebar -m config padding_left         50
 # spacebar -m config padding_right        20
 # spacebar -m config spacing_left         25
 # spacebar -m config spacing_right        15
-spacebar -m config text_font            "Fira Sans Condensed:Bold:16.0"
+spacebar -m config text_font            "Fira Sans Condensed:Light:16.0"
 
-spacebar -m config icon_font            "Font Awesome 5 Free:Solid:15.0"
+# spacebar -m config icon_font            "Font Awesome 5 Free:Solid:15.0"
 
 spacebar -m config background_color     0xff00ffffff
 # spacebar -m config background_color     'rgba(37, 46, 50, 0.5)'
-spacebar -m config foreground_color     0xff000000
+# spacebar -m config foreground_color     0xff000000
+spacebar -m config foreground_color     0xFFFFFFFFFF
 # spacebar -m config space_icon_color     0xff458588
-spacebar -m config space_icon_color     0xffffffff
+spacebar -m config space_icon_color     0xFFC51162 
 spacebar -m config power_icon_color     0xffcd950c
 # spacebar -m config battery_icon_color   0xffd75f5f
 # spacebar -m config dnd_icon_color       0xffa8a8a8
@@ -45,7 +46,7 @@ spacebar -m config right_shell_icon     ︁
 #!/usr/bin/env sh
 
 # spacebar -m config text_font "Helvetica Neue:Bold:12.0"
-# spacebar -m config icon_font "MesloLGS Nerd Font Mono:Bold:16.0"
+spacebar -m config icon_font "UbuntuCondensed Nerd Font:Regular:16.0"
 # spacebar -m config background_color 0xff2e3440
 # spacebar -m config foreground_color 0xffd8dee9
 # spacebar -m config space_icon_strip      

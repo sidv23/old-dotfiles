@@ -1,41 +1,60 @@
+## SKHD Config
 ## HYPER == rcmd + rshift + ralt + rctrl 
 
+
+########################################################################################
+## 1. Launch Services
+
+# Open Applications using Hyper key
 rcmd + rshift + ralt + rctrl - t: open -b net.kovidgoyal.kitty
 rcmd + rshift + ralt + rctrl - f: open -b com.apple.finder
 rcmd + rshift + ralt + rctrl - c: open -b com.microsoft.VSCode
 rcmd + rshift + ralt + rctrl - b: open -b org.mozilla.firefox
 rcmd + rshift + ralt + rctrl - e: open -b com.readdle.smartemail-Mac
+rcmd + rshift + ralt + rctrl - m: open -b Whatsapp
+rcmd + rshift + ralt + rctrl - v: open -b com.apple.iCal
 
+# Shortcut to restart Yabai and Skhd
+lctrl + lcmd + lalt - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" && launchctl kickstart -k "gui/${UID}/homebrew.mxcl.spacebar"
+lctrl + lcmd + lalt - s : brew services restart skhd 
+
+
+########################################################################################
+## 2. WINDOW MANAGEMENT
+
+## 2A: Resize Window
 hyper - return : yabai -m window --toggle zoom-parent
 hyper - 0 : yabai -m space --balance
 hyper - f : yabai -m window --toggle zoom-fullscreen
+
+## 2B: Push current window to layer
+hyper - j : yabai -m window --layer below
+hyper - k : yabai -m window --layer normal
+hyper - l : yabai -m window --layer above
+
+## 2C: Activate PIP or Sticky mode for window
+rcmd + rshift + ralt + rctrl + lcmd - space : yabai -m window --toggle sticky; yabai -m window --toggle topmost;
+rcmd + rshift + ralt + rctrl - space : yabai -m window --toggle float;
+hyper - 0x2A : yabai -m window --toggle sticky; yabai -m window --toggle topmost; yabai -m window --toggle pip
+
+
+# 2C: Stack window in current layer, and navigate through stacks
 hyper - i : yabai -m window --stack prev
 hyper - o : yabai -m window --stack next
+rcmd + rshift + ralt + rctrl - up : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
+rcmd + rshift + ralt + rctrl - down : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
 
+########################################################################################
+#### 3: Create and Destroy Spaces
 
-lctrl + lcmd + lalt - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" && launchctl kickstart -k "gui/${UID}/homebrew.mxcl.spacebar"
-# lctrl + lcmd + lalt - y : yabai-resource && spacebar-resource
-lctrl + lcmd + lalt - s : brew services restart skhd 
-
+rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m space --focus "${index}"
 
 rcmd + rshift + ralt + rctrl - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m window --space "${index}" && yabai -m space --focus "${index}"
 
 
+rcmd + rshift + ralt + rctrl + lcmd - backspace : yabai -m space --destroy
 rcmd + rshift + ralt + rctrl - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
-
-rcmd + rshift + ralt + rctrl - up : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
-rcmd + rshift + ralt + rctrl - down : yabai -m window --focus stack.next || yabai -m window --focus stack.first
-
-rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m space --focus "${index}"
-
-rcmd + rshift + ralt + rctrl + lcmd - backspace : yabai -m signal --add event=space_changed action="sh ~/.config/yabai/scripts/cleanEmptySpaces.sh"
-
-rcmd + rshift + ralt + rctrl - w : yabai -m space --destroy
-
-rcmd + rshift + ralt + rctrl + lcmd - space : yabai -m window --toggle sticky; yabai -m window --toggle topmost;
-rcmd + rshift + ralt + rctrl - space : yabai -m window --toggle float;
-hyper - 0x2A : yabai -m window --toggle sticky; yabai -m window --toggle topmost; yabai -m window --toggle pip
 
 
 ########################################################################################
@@ -109,87 +128,3 @@ rcmd + rshift + ralt + rctrl + lctrl - 4 : yabai -m window --space  4; yabai -m 
 rcmd + rshift + ralt + rctrl + lctrl - 5 : yabai -m window --space  5; yabai -m space --focus 5
 rcmd + rshift + ralt + rctrl + lctrl - 6 : yabai -m window --space  6; yabai -m space --focus 6
 rcmd + rshift + ralt + rctrl + lctrl - 7 : yabai -m window --space  7; yabai -m space --focus 7
-
-
-
-
-
-
-########################################################################################
-
-########################################################################################
-
-########################################################################################
-
-########################################################################################
-
-# focus window
-# alt - h : yabai -m window --focus west
-
-# swap managed window
-# shift + alt - h : yabai -m window --swap north
-
-# move managed window
-# shift + cmd - h : yabai -m window --warp east
-
-# balance size of windows
-# shift + alt - 0 : yabai -m space --balance
-
-# make floating window fill screen
-# shift + alt - up     : yabai -m window --grid 1:1:0:0:1:1
-
-# make floating window fill left-half of screen
-# shift + alt - left   : yabai -m window --grid 1:2:0:0:1:1
-
-# create desktop, move window and follow focus - uses jq for parsing json (brew install jq)
-# shift + cmd - n : yabai -m space --create && \
-#                   index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && \
-#                   yabai -m window --space "${index}" && \
-#                   yabai -m space --focus "${index}"
-
-# fast focus desktop
-# cmd + alt - x : yabai -m space --focus recent
-# cmd + alt - 1 : yabai -m space --focus 1
-
-# send window to desktop and follow focus
-# shift + cmd - z : yabai -m window --space next; yabai -m space --focus next
-# shift + cmd - 2 : yabai -m window --space  2; yabai -m space --focus 2
-
-# focus monitor
-# ctrl + alt - z  : yabai -m display --focus prev
-# ctrl + alt - 3  : yabai -m display --focus 3
-
-# send window to monitor and follow focus
-# ctrl + cmd - c  : yabai -m window --display next; yabai -m display --focus next
-# ctrl + cmd - 1  : yabai -m window --display 1; yabai -m display --focus 1
-
-# move floating window
-# shift + ctrl - a : yabai -m window --move rel:-20:0
-# shift + ctrl - s : yabai -m window --move rel:0:20
-
-# increase window size
-# shift + cmd + ctrl + alt - - : yabai -m window --resize left:-20:0
-# shift + cmd + ctrl + alt - + : yabai -m window --resize top:0:-20
-
-# decrease window size
-# shift + cmd - s : yabai -m window --resize bottom:0:-20
-# shift + cmd - w : yabai -m window --resize top:0:20
-
-# set insertion point in focused container
-# ctrl + alt - h : yabai -m window --insert west
-
-# toggle window zoom
-# alt - d : yabai -m window --toggle zoom-parent
-# alt - f : yabai -m window --toggle zoom-fullscreen
-
-# toggle window split type
-# alt - e : yabai -m window --toggle split
-
-# float / unfloat window and center on screen
-# alt - t : yabai -m window --toggle float;\
-#           yabai -m window --grid 4:4:1:1:2:2
-
-# toggle sticky(+float), topmost, picture-in-picture
-# alt - p : yabai -m window --toggle sticky;\
-#           yabai -m window --toggle topmost;\
-#           yabai -m window --toggle pip
