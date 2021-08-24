@@ -57,7 +57,7 @@ yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Karabiner-EventViewer$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
 yabai -m rule --add app="^zoom.us$" sticky=on manage=off
-yabai -m rule --add app="^Spark$" sticky=on manage=off layer=normal
+yabai -m rule --add app="^Spark$" sticky=on manage=off border=off layer=normal
 # yabai -m rule --add window="^Spark$" sticky=on manage=off
 yabai -m rule --add app="^Alfred Preferences$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off

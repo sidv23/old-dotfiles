@@ -53,7 +53,11 @@ rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(ya
 rcmd + rshift + ralt + rctrl - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m window --space "${index}" && yabai -m space --focus "${index}"
 
 
-rcmd + rshift + ralt + rctrl + lcmd - backspace : yabai -m space --destroy
+# rcmd + rshift + ralt + rctrl + lcmd - backspace : yabai -m space --destroy
+rcmd + rshift + ralt + rctrl + lcmd - backspace : (yabai -m space --focus prev || yabai -m space --focus next) && yabai -m space recent --destroy
+
+
+
 rcmd + rshift + ralt + rctrl - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 

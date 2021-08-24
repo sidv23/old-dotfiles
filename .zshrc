@@ -19,6 +19,19 @@ export RSTUDIO_PANDOC=/Applications/RStudio.app/Contents/MacOS/pandoc
 autoload -U promptinit; promptinit
 prompt spaceship
 
+# SPACESHIP_CHAR_SYMBOL="\uf0e7 "
+# SPACESHIP_CHAR_SYMBOL="\uE0B0 "
+# SPACESHIP_CHAR_SYMBOL="\u27A4 "
+# SPACESHIP_CHAR_SYMBOL="\u27FF"
+# SPACESHIP_CHAR_SYMBOL="\u27A4"
+# SPACESHIP_CHAR_SYMBOL="\u2192"
+# SPACESHIP_CHAR_SYMBOL="❯_"
+SPACESHIP_CHAR_SYMBOL="\u25B6"
+# SPACESHIP_CHAR_PREFIX="\uf296"
+SPACESHIP_CHAR_SUFFIX=" "
+SPACESHIP_CHAR_PREFIX=""
+SPACESHIP_BATTERY_SHOW=true
+
 # If you come from bash you might have to change your $PATH.
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
@@ -127,6 +140,7 @@ alias r="radian"
 
 alias ohmyzsh="nvim ~/.oh-my-zsh"
 alias spaceship-dir="/usr/local/lib/node_modules/spaceship-prompt"
+alias spaceship-char-dir="nvim /usr/local/lib/node_modules/spaceship-prompt/sections/char.zsh"
 
 
 alias kitty-config="nvim ~/.config/kitty/kitty.conf"
@@ -153,3 +167,17 @@ alias logout="sudo launchctl bootout user/$(id -u vishwanathgl)"
 source ~/z.sh
 test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
+alias icat="kitty +kitten icat"
+alias ovim="vim"
+alias vim="nvim"
+
+alias tmux-julia="tmux a -t julia_vscode"
+alias tmux-kill="tmux kill-window -t"
+
+# Show Phone
+alias show-phone="./Downloads/git-repos/Android-Display/show-phone.sh --wifi"
+
+
+
+# Neofetch
+neofetch

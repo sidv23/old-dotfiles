@@ -44,5 +44,6 @@
     "rmd_preferred_template_path": "/Library/Frameworks/R.framework/Versions/3.6/Resources/library/drposter/rmarkdown/templates/drposter",
     "initial_working_directory": "~",
     "auto_run_setup_chunk": false,
-    "default_sweave_engine": "knitr"
+    "default_sweave_engine": "knitr",
+    "font_size_points": 11
 }
