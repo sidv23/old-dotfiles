@@ -55,4 +55,5 @@ spacebar -m config icon_font "UbuntuCondensed Nerd Font:Regular:16.0"
 # spacebar -m config clock_icon 
 # spacebar -m config clock_format "%a %R"
 
+osascript -e 'display notification "SpaceBar Configuration Loaded" with title "SpaceBar"'
 echo "spacebar configuration loaded.."

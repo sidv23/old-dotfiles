@@ -1,0 +1,8 @@
+tell application "kitty"
+    activate
+    tell application "System Events" to keystroke "n" using command down
+    activate
+    delay 1
+    tell application "System Events" to keystroke "htop -s PERCENT_CPU"
+    tell application "System Events" to keystroke return
+end tell

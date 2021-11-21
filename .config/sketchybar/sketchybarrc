@@ -1,0 +1,275 @@
+# This is a demo config to bring across some of the most important commands more easily.
+#
+############## BAR ############## 
+sketchybar -m --bar height=37        \
+                    blur_radius=50   \
+                    position=bottom     \
+                    padding_left=10  \
+                    padding_right=10 \
+                    color=0x44000000
+
+############## GLOBAL DEFAULTS ############## 
+sketchybar -m --default updates=when_shown                    \
+                        drawing=on                            \
+                        cache_scripts=on                      \
+                        icon.font="Hack Nerd Font:Bold:17.0"  \
+                        icon.color=0xffffffff                 \
+                        label.font="UbuntuCondensed Nerd Font:Regular:16.0" \
+                        label.color=0xffffffff
+
+# label.font="Inconsolata UltraCondensed:Light:17.0" \
+# label.font="UbuntuCondensed Nerd Font:Regular:17.0" \
+
+############## SPACE DEFAULTS ############## 
+sketchybar -m --default label.padding_left=2  \
+                        label.padding_right=2 \
+                        icon.padding_left=8   \
+                        label.padding_right=8
+
+############## PRIMARY DISPLAY SPACES ############## 
+# SPACE 1: un ICON
+sketchybar -m --add space un left \
+    --set un label=un \
+    --set un associated_space=1 \
+    --set un click_script="yabai -m space --focus 1" \
+    --set un associated_display=1 \
+    --set un label.highlight_color=0xFFC51162 \
+    --set un script="~/.config/sketchybar/plugins/space.sh" \
+
+sketchybar -m --add space deux left \
+    --set deux label=deux \
+    --set deux associated_space=2 \
+    --set deux click_script="yabai -m space --focus 2" \
+    --set deux associated_display=1 \
+    --set deux label.highlight_color=0xFFC51162 \
+    --set deux script="~/.config/sketchybar/plugins/space.sh" \
+
+sketchybar -m --add space trois left \
+    --set trois label=trois \
+    --set trois associated_space=3 \
+    --set trois click_script="yabai -m space --focus 3" \
+    --set trois associated_display=1 \
+    --set trois label.highlight_color=0xFFC51162 \
+    --set trois icon.highlight_color=0xffbf616a \
+    --set trois icon.highlight=on \
+    --set trois script="~/.config/sketchybar/plugins/space.sh" \
+
+sketchybar -m --add space quatre left \
+    --set quatre label=quatre \
+    --set quatre associated_space=4 \
+    --set quatre click_script="yabai -m space --focus 4" \
+    --set quatre associated_display=1 \
+    --set quatre label.highlight_color=0xFFC51162 \
+    --set quatre script="~/.config/sketchybar/plugins/space.sh" \
+
+# sketchybar -m --add space cinq left \
+#     --set cinq label=cinq \
+#     --set cinq associated_space=5 \
+#     --set cinq click_script="yabai -m space --focus 5" \
+#     --set cinq associated_display=1 \
+#     --set cinq label.highlight_color=0xFFC51162 \
+#     --set cinq script="~/.config/sketchybar/plugins/space.sh" \
+
+# sketchybar -m --add space six left \
+#     --set six label=six \
+#     --set six associated_space=6 \
+#     --set six click_script="yabai -m space --focus 6" \
+#     --set six associated_display=1 \
+#     --set six label.highlight_color=0xFFC51162 \
+#     --set six script="~/.config/sketchybar/plugins/space.sh" \
+
+# sketchybar -m --add space sept left \
+#     --set sept label=sept \
+#     --set sept associated_space=7 \
+#     --set sept click_script="yabai -m space --focus 7" \
+#     --set sept associated_display=1 \
+#     --set sept label.highlight_color=0xFFC51162 \
+#     --set sept script="~/.config/sketchybar/plugins/space.sh" \
+
+# sketchybar -m --add space huit left \
+#     --set huit label=huit \
+#     --set huit associated_space=8 \
+#     --set huit click_script="yabai -m space --focus 8" \
+#     --set huit associated_display=1 \
+#     --set huit label.highlight_color=0xFFC51162 \
+#     --set huit script="~/.config/sketchybar/plugins/space.sh" \
+
+# sketchybar -m --add space neuf left \
+#     --set neuf label=neuf \
+#     --set neuf associated_space=9 \
+#     --set neuf click_script="yabai -m space --focus 9" \
+#     --set neuf associated_display=1 \
+#     --set neuf label.highlight_color=0xFFC51162 \
+#     --set neuf script="~/.config/sketchybar/plugins/space.sh" \
+
+
+# ############## SECONDARY DISPLAY SPACES ############## 
+# sketchybar -m --add space misc left                              \
+#               --set misc associated_display=2                    \
+#                          associated_space=5                      \
+#                          icon.font="Hack Nerd Font:Bold:20.0"    \
+#                          icon=                                  \
+#                          icon.highlight_color=0xff48aa2a         \
+#                          icon.padding_left=0                     \
+#                          label=misc                              \
+#                          click_script="yabai -m space --focus 5"
+
+############## ITEM DEFAULTS ###############
+sketchybar -m --default label.padding_left=2  \
+                        icon.padding_right=2  \
+                        icon.padding_left=6   \
+                        label.padding_right=6
+
+
+############## LEFT ITEMS ############## 
+sketchybar -m --add item space_separator left                                                  \
+              --set space_separator  icon=                                                    \
+                                     associated_space=1,2,3,4,5,6,7,8,9                        \
+                                     icon.padding_left=15                                      \
+                                     label.padding_right=15                                    \
+                                     icon.font="Hack Nerd Font:Bold:15.0"                      \
+                                     click_script="$HOME/.config/sketchybar/plugins/move-space.sh"  \
+
+            #                                                                                    \
+            #   --add item gitNotifications left                                                 \
+            #   --set gitNotifications associated_space=1                                        \
+            #                          update_freq=300                                           \
+            #                          icon.font="Hack Nerd Font:Bold:18.0"                      \
+            #                          icon=                                                    \
+            #                          script="~/.config/sketchybar/plugins/gitNotifications.sh" \
+            #                          click_script="open https://github.com/notifications"      \
+            #   --subscribe gitNotifications system_woke                                         \
+            #                                                                                    \
+            #   --add item githubIndicator left                                                  \
+            #   --set githubIndicator  associated_space=1                                        \
+            #                          update_freq=1000                                          \
+            #                          icon.font="Hack Nerd Font:Bold:18.0"                      \
+            #                          icon=                                                    \
+            #                          click_script="open https://github.com"                    \
+            #                          script="~/.config/sketchybar/plugins/githubIndicator.sh"  \
+            #   --subscribe githubIndicator system_woke                                          \
+
+
+############## RIGHT ITEMS ############## 
+
+# BATTERY
+sketchybar -m --add item battery right \
+    --set battery icon.padding_left=8 \
+    --set battery icon.padding_right=0 \
+    --set battery label.padding_right=8 \
+    --set battery label.padding_left=6 \
+    --set battery label.color=0xffeceff4 \
+    --set battery background.height=21 \
+    --set battery background.padding_right=7 \
+    --set battery update_freq=60 \
+    --set battery label.font="Ubuntu Condensed:Regular:15.0" \
+    --set battery script="$HOME/.config/sketchybar/plugins/battery.sh" \
+
+
+# RAM USAGE
+sketchybar -m --add item topmem right \
+    --set topmem icon= \
+    --set topmem icon.padding_left=8 \
+    --set topmem icon.padding_right=0 \
+    --set topmem label.padding_right=8 \
+    --set topmem label.padding_left=6 \
+    --set topmem label.color=0xffeceff4 \
+    --set topmem background.color=0xffb48ead  \
+    --set topmem background.height=21 \
+    --set topmem background.padding_right=7 \
+    --set topmem update_freq=30 \
+    --set topmem label.font="Ubuntu Condensed:Regular:15.0" \
+    --set topmem script="~/.config/sketchybar/plugins/topmem.sh" \
+    --set topmem click_script="osascript $HOME/.config/sketchybar/plugins/htop-mem.applescript" \
+
+
+# CPU USAGE
+sketchybar -m --add item cpu_percent right \
+    --set cpu_percent icon= \
+    --set cpu_percent icon.padding_left=8 \
+    --set cpu_percent icon.padding_right=0 \
+    --set cpu_percent label.padding_right=8 \
+    --set cpu_percent label.padding_left=6 \
+    --set cpu_percent label.color=0xffffffff \
+    --set cpu_percent icon.color=0xffffffff \
+    --set cpu_percent background.color=0xffa3be8c  \
+    --set cpu_percent background.height=21 \
+    --set cpu_percent background.padding_right=7 \
+    --set cpu_percent update_freq=30 \
+    --set cpu_percent script="~/.config/sketchybar/plugins/cpu.sh" \
+    --set cpu_percent click_script="osascript $HOME/.config/sketchybar/plugins/htop-cpu.applescript" \
+
+
+# EMAIL USAGE
+sketchybar -m --add item mailIndicator right \
+    --set mailIndicator icon= \
+    --set mailIndicator icon.font="Hack Nerd Font:Bold:20.0" \
+    --set mailIndicator icon.padding_left=8 \
+    --set mailIndicator icon.padding_right=0 \
+    --set mailIndicator label.padding_right=8 \
+    --set mailIndicator label.padding_left=6 \
+    --set mailIndicator label.color=0xffeceff4 \
+    --set mailIndicator background.color=0xff88c0d0  \
+    --set mailIndicator background.height=21 \
+    --set mailIndicator background.padding_right=7 \
+    --set mailIndicator update_freq=30 \
+    --set mailIndicator click_script="open -b com.readdle.smartemail-Mac" \
+
+            #   --add item clock right                                                                  \
+            #   --set clock         update_freq=10                                                      \
+            #                       script="~/.config/sketchybar/plugins/clock.sh"                      \
+            #                                                                                           \
+
+# MIC STATUS
+sketchybar -m --add item mic right \
+    --set mic icon.padding_left=8 \
+    --set mic icon.padding_right=8 \
+    --set mic label.padding_right=0 \
+    --set mic label.padding_left=0 \
+    --set mic label.color=0xffeceff4 \
+    --set mic background.color=0xffbf616a  \
+    --set mic background.height=21 \
+    --set mic background.padding_right=7 \
+    --set mic update_freq=3 \
+    --set mic script="~/.config/sketchybar/plugins/mic.sh" \
+    --set mic click_script="~/.config/sketchybar/plugins/mic_click.sh"            
+
+# Creating Graphs
+# sketchybar -m --add graph cpu_user left 200                                        \
+#               --set cpu_user     graph.color=0xffffffff                             \
+#                                  update_freq=2                                      \
+#                                  width=0                                            \
+#                                  label.padding_left=0                               \
+#                                  icon=                                             \
+#                                  script="~/.config/sketchybar/plugins/cpu_graph.sh" \
+#                                  lazy=on                                            \
+#                                  click_script="osascript -e 'tell application \"Activity Monitor\" to activate'"\
+
+#                                                                                     \
+#               --add graph cpu_sys right 100                                         \
+#               --set cpu_sys      label.padding_left=40                               \
+#                                  associated_space=1                                 \
+#                                  icon=                                             \
+#                                  graph.color=0xff48aa2a                             \
+#                                                                                     \
+#               --add item topproc right                                              \
+#               --set topproc      associated_space=1                                 \
+#                                  label.padding_right=10                             \
+#                                  update_freq=15                                     \
+#                                  script="~/.config/sketchybar/plugins/topproc.sh"
+
+###################### CENTER ITEMS ###################
+
+# Adding custom events which can listen on distributed notifications from other running processes
+sketchybar -m --add event spotify_change "com.spotify.client.PlaybackStateChanged"                       \
+              --add item spotifyIndicator left     \
+              --set spotifyIndicator label.padding_right=30 \
+              --set spotifyIndicator script="~/.config/sketchybar/plugins/spotifyIndicator.sh"           \
+              --set spotifyIndicator click_script="osascript -e 'tell application \"Spotify\" to pause'" \
+              --subscribe spotifyIndicator spotify_change
+
+############## FINALIZING THE SETUP ##############
+sketchybar -m --update
+
+osascript -e 'display notification "SketchyBar Configuration Loaded" with title "SketchyBarBar"'
+echo "SketchyBar configuration loaded.."

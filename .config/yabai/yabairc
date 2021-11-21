@@ -36,11 +36,11 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  25
-yabai -m config bottom_padding               25
-yabai -m config left_padding                 25
-yabai -m config right_padding                25
-yabai -m config window_gap                   25
+yabai -m config top_padding                  5 #10 #15
+yabai -m config bottom_padding               5 #10 #15
+yabai -m config left_padding                 5 #10 #15
+yabai -m config right_padding                5 #10 #15
+yabai -m config window_gap                   10
 
 # My custom space names. These names are used in some of my scripts.
 yabai -m space 1 --label one
@@ -67,8 +67,8 @@ yabai -m rule --add app="^Path Finder$" manage=off
 yabai -m rule --add app="^Spotify$" manage=off
 yabai -m rule --add app="^iTerm2$" manage=on
 # yabai -m rule --add app="^iTerm$" manage=off
-yabai -m rule --add app="^Hyper$" manage=off
-yabai -m rule --add app="^kitty$" manage=off
+# yabai -m rule --add app="^Hyper$" manage=off
+yabai -m rule --add app="^kitty$" manage=on
 yabai -m rule --add app="^Terminal$" manage=off
 yabai -m rule --add app="^Flux$" manage=off
 yabai -m rule --add app="^console$" manage=off
@@ -86,8 +86,8 @@ yabai -m rule --add app="^Cisco Webex Start$" manage=off
 # limelight &> /dev/null &
 
 # Window Border Configurations
-# yabai -m config window_border off
-yabai -m config window_border on
+yabai -m config window_border off
+# yabai -m config window_border on
 yabai -m config window_border_width 2
 # yabai -m config active_window_border_color 0xFFFFFFFF
 yabai -m config active_window_border_color 0xFFC51162
@@ -98,4 +98,7 @@ yabai -m config placement exterior
 yabai -m window --toggle border
 yabai -m rule --add app="^iTerm$" border=off
 
+
+
+"osascript -e 'display notification "Yabai Configuration Loaded" with title "Yabai"'"
 echo "yabai configuration loaded.."

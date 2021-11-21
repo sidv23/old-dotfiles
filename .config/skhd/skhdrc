@@ -1,3 +1,4 @@
+#!/usr/bin/env sh
 ## SKHD Config
 ## HYPER == rcmd + rshift + ralt + rctrl 
 
@@ -6,17 +7,21 @@
 ## 1. Launch Services
 
 # Open Applications using Hyper key
-rcmd + rshift + ralt + rctrl - t: open -b net.kovidgoyal.kitty
+# rcmd + rshift + ralt + rctrl - t: open -b net.kovidgoyal.kitty
+rcmd + rshift + ralt + rctrl - t: open -a iTerm
 rcmd + rshift + ralt + rctrl - f: open -b com.apple.finder
 rcmd + rshift + ralt + rctrl - c: open -b com.microsoft.VSCode
-rcmd + rshift + ralt + rctrl - b: open -b org.mozilla.firefox
-rcmd + rshift + ralt + rctrl - e: open -b com.readdle.smartemail-Mac
-rcmd + rshift + ralt + rctrl - m: open -b Whatsapp
+rcmd + rshift + ralt + rctrl - b: export MOZ_DISABLE_SAFE_MODE_KEY=1; open -b org.mozilla.firefox
+rcmd + rshift + ralt + rctrl - s: open -a Safari
+rcmd + rshift + ralt + rctrl - q: open -a qutebrowser
+rcmd + rshift + ralt + rctrl - m: open -b com.readdle.smartemail-Mac
+rcmd + rshift + ralt + rctrl - w: open -b Whatsapp
 rcmd + rshift + ralt + rctrl - v: open -b com.apple.iCal
 
 # Shortcut to restart Yabai and Skhd
-lctrl + lcmd + lalt - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" && launchctl kickstart -k "gui/${UID}/homebrew.mxcl.spacebar"
-lctrl + lcmd + lalt - s : brew services restart skhd 
+lctrl + lcmd + lalt - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" && launchctl kickstart -k "gui/${UID}/homebrew.mxcl.sketchybar"
+lctrl + lcmd + lalt - b : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.sketchybar"
+lctrl + lcmd + lalt - s : brew services restart skhd; osascript -e 'display notification "SKHD Configuration Loaded" with title "SKHD"'
 
 
 ########################################################################################
@@ -48,9 +53,10 @@ rcmd + rshift + ralt + rctrl - down : yabai -m window --focus stack.next || yaba
 ########################################################################################
 #### 3: Create and Destroy Spaces
 
-rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m space --focus "${index}"
+# rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m space --focus "${index}"
+rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && yabai -m space --focus "${index}"
 
-rcmd + rshift + ralt + rctrl - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m window --space "${index}" && yabai -m space --focus "${index}"
+rcmd + rshift + ralt + rctrl - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && yabai -m window --space "${index}" && yabai -m space --focus "${index}"
 
 
 # rcmd + rshift + ralt + rctrl + lcmd - backspace : yabai -m space --destroy
@@ -58,7 +64,7 @@ rcmd + rshift + ralt + rctrl + lcmd - backspace : (yabai -m space --focus prev |
 
 
 
-rcmd + rshift + ralt + rctrl - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
+# rcmd + rshift + ralt + rctrl - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
 
 
 ########################################################################################
@@ -132,3 +138,5 @@ rcmd + rshift + ralt + rctrl + lctrl - 4 : yabai -m window --space  4; yabai -m 
 rcmd + rshift + ralt + rctrl + lctrl - 5 : yabai -m window --space  5; yabai -m space --focus 5
 rcmd + rshift + ralt + rctrl + lctrl - 6 : yabai -m window --space  6; yabai -m space --focus 6
 rcmd + rshift + ralt + rctrl + lctrl - 7 : yabai -m window --space  7; yabai -m space --focus 7
+
+

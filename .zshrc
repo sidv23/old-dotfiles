@@ -1,9 +1,16 @@
 # Added by Siddharth
 export LC_ALL=en_US.UTF-8
 
+
+# export DISPLAY=127.0.01:13.0
+export DISPLAY=localhost:13.0
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
+
+
+# ALIASES
 alias cwd='printf "%s\n" "$(pwd)" | tee >(pbcopy)'
+alias ls=' exa --icons --group-directories-first'
 alias chcwd='cd "$(pbpaste)"'
 alias resource='source ${HOME}/.zshrc'
 alias julia_vscode='tmux a -t julia_vscode'
@@ -13,27 +20,28 @@ export PYTHONSTARTUP=~/.pythonrc
 export RSTUDIO_PANDOC=/Applications/RStudio.app/Contents/MacOS/pandoc
 
 # Starship
+eval "$(starship init zsh)"
 # eval "$(starship init zsh)"
 
 # Set Spaceship ZSH as a prompt
-autoload -U promptinit; promptinit
-prompt spaceship
-
-# SPACESHIP_CHAR_SYMBOL="\uf0e7 "
-# SPACESHIP_CHAR_SYMBOL="\uE0B0 "
-# SPACESHIP_CHAR_SYMBOL="\u27A4 "
-# SPACESHIP_CHAR_SYMBOL="\u27FF"
-# SPACESHIP_CHAR_SYMBOL="\u27A4"
-# SPACESHIP_CHAR_SYMBOL="\u2192"
-# SPACESHIP_CHAR_SYMBOL="❯_"
-SPACESHIP_CHAR_SYMBOL="\u25B6"
-# SPACESHIP_CHAR_PREFIX="\uf296"
-SPACESHIP_CHAR_SUFFIX=" "
-SPACESHIP_CHAR_PREFIX=""
-SPACESHIP_BATTERY_SHOW=true
+# autoload -U promptinit; promptinit
+# prompt spaceship
+# 
+# # SPACESHIP_CHAR_SYMBOL="\uf0e7 "
+# # SPACESHIP_CHAR_SYMBOL="\uE0B0 "
+# # SPACESHIP_CHAR_SYMBOL="\u27A4 "
+# # SPACESHIP_CHAR_SYMBOL="\u27FF"
+# # SPACESHIP_CHAR_SYMBOL="\u27A4"
+# # SPACESHIP_CHAR_SYMBOL="\u2192"
+# # SPACESHIP_CHAR_SYMBOL="❯_"
+# SPACESHIP_CHAR_SYMBOL="\u25B6"
+# # SPACESHIP_CHAR_PREFIX="\uf296"
+# SPACESHIP_CHAR_SUFFIX=" "
+# SPACESHIP_CHAR_PREFIX=""
+# SPACESHIP_BATTERY_SHOW=true
 
 # If you come from bash you might have to change your $PATH.
-# export PATH=$HOME/bin:/usr/local/bin:$PATH
+export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
 export ZSH="/Users/vishwanathgl/.oh-my-zsh"
@@ -139,6 +147,8 @@ alias vim-pkgconfig="nvim ~/.config/nvim/vim-plug/plugins.vim"
 alias r="radian"
 
 alias ohmyzsh="nvim ~/.oh-my-zsh"
+export STARSHIP_CONFIG=~/.config/starship.toml
+alias starship-config="vim ~/.config/starship.toml"
 alias spaceship-dir="/usr/local/lib/node_modules/spaceship-prompt"
 alias spaceship-char-dir="nvim /usr/local/lib/node_modules/spaceship-prompt/sections/char.zsh"
 
@@ -179,5 +189,29 @@ alias show-phone="./Downloads/git-repos/Android-Display/show-phone.sh --wifi"
 
 
 
-# Neofetch
-neofetch
+# VSCode Recommended addition to $PATH
+export PATH="$PATH:/Applications/Visual Studio Code.app/Contents/Resources/app/bin"
+
+# Homebrew recommended path
+export PATH="/usr/local/sbin:$PATH"
+
+# Python path managed via Homebrew
+export PATH="$(brew --prefix)/opt/python/libexec/bin:$PATH"
+
+
+#### IMPORTANT ALIASES ######
+alias ls=' exa --group-directories-first --icons'
+
+# PyEnvs
+export PYENV_ROOT="$HOME/.pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
+eval "$(pyenv init --path)"
+
+eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init -)"
+
+
+
+
+# Macchina
+macchina -X OperatingSystem Battery Memory Packages LocalIP ProcessorLoad -p -t Boron --no-box --bar --small-ascii --custom-ascii /Users/vishwanathgl/Downloads/git-repos/ascii/enso.ascii

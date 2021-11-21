@@ -1,0 +1,22 @@
+## SKHD Config
+## HYPER == rcmd + rshift + ralt + rctrl 
+
+
+########################################################################################
+## 1. Launch Services
+
+# Open Applications using Hyper key
+# rcmd + rshift + ralt + rctrl - t: open -b net.kovidgoyal.kitty
+# rcmd + rshift + ralt + rctrl - t: open -a Alacritty
+rcmd + rshift + ralt + rctrl - t: open -a Kitty
+rcmd + rshift + ralt + rctrl - f: open -b com.apple.finder
+rcmd + rshift + ralt + rctrl - c: open -b com.microsoft.VSCode
+rcmd + rshift + ralt + rctrl - b: export MOZ_DISABLE_SAFE_MODE_KEY=1; open -b org.mozilla.firefox
+rcmd + rshift + ralt + rctrl - e: open -b com.readdle.smartemail-Mac
+rcmd + rshift + ralt + rctrl - m: open -b Whatsapp
+rcmd + rshift + ralt + rctrl - v: open -b com.apple.iCal
+
+# Shortcut to restart Yabai and Skhd
+########### lctrl + lcmd + lalt - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" && launchctl kickstart -k "gui/${UID}/homebrew.mxcl.spacebar"
+
+lctrl + lcmd + lalt - s : brew services restart skhd; osascript -e 'display notification "SKHD Configuration Loaded" with title "SKHD"'
