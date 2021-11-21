@@ -1,0 +1,186 @@
+
+/* hides the native tabs */
+
+/* #TabsToolbar {
+  visibility: collapse;
+} */
+
+/* leaves space for the window buttons */
+#nav-bar {
+    margin-top: -2px;
+    margin-left: 0px;
+    margin-bottom: -2px;
+    min-height: 10pt;
+}
+
+/* #nav-bar {
+   max-height:0px !important;
+   min-height:0px !important;
+   z-index: -1 !important;
+} */
+
+#urlbar {
+  height: 10pt;
+}
+
+/* #tabbrowser-tabs {
+  visibility: collapse !important;
+  margin-top: 100px;
+} */
+
+/* #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
+  opacity: 0;
+  pointer-events: none;
+}
+#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
+    visibility: collapse !important;
+} */
+
+/* #nav-bar { */
+    /* margin-top: -5px; */
+    /* margin-left: 75px; */
+    /* margin-bottom: -4px; */
+/* } */
+
+
+@-moz-document url(chrome://browser/content/browser.xul)
+{
+
+  #main-window,
+  browser[type="content-primary"],
+  browser[type="content"],
+  tabbrowser#content,
+  #content,
+  browser[type="content"] > html
+  {
+    background: #2e3440 !important;
+  }
+
+}
+
+
+
+/* MINIMAL FOX */
+
+:root {
+
+  /* Minimal Functional Fox variables*/
+  --mff-bg: #292f36;
+  --mff-icon-color: #e0fbfc;
+  --mff-nav-toolbar-padding: 8px;
+  --mff-sidebar-bg: var(--mff-bg);
+  --mff-sidebar-color: #e0fbfc;
+  --mff-tab-border-radius: 0px;
+  --mff-tab-color: #fefefa;
+  --mff-tab-font-family: "Cantarell", sans;
+  --mff-tab-font-size: 11pt;
+  --mff-tab-font-weight: 400;
+  --mff-tab-height: 22px;
+  --mff-tab-pinned-bg: #70c1b3;
+  --mff-tab-selected-bg: #ee6c4d;
+  --mff-tab-soundplaying-bg: #ee6c4d;
+  /* --mff-tab-soundplaying-bg: #9c89b8; */
+  --mff-urlbar-color: #dbdddf;
+  --mff-urlbar-focused-color: #e0fbfc;
+  /* --mff-urlbar-font-family: "Fira Sans", sans-serif; */
+  /* --mff-urlbar-font-family: "Share Tech Mono", monospace; */
+  /* --mff-urlbar-font-family: "Letter Gothic Std", monospace; */
+  /* --mff-urlbar-font-family: "Ubuntu Mono", monospace; */
+  /* --mff-urlbar-font-family: "Monoid", monospace; */
+  /* --mff-urlbar-font-family: "Ubuntu", sans-serif; */
+  /* --mff-urlbar-font-family: "Avenir", sans-serif; */
+  /* --mff-urlbar-font-family: "SF Pro Rounded", sans-serif; */
+  --mff-urlbar-font-family: "Andika New Basic", sans-serif;
+  --mff-urlbar-font-size: 11pt;
+  --mff-urlbar-font-weight: 500;
+  --mff-urlbar-results-color: #fff;
+  /* --mff-urlbar-results-font-family: "Fira Sans", monospace; */
+  /* --mff-urlbar-results-font-family: "Avenir", sans-serif; */
+  /* --mff-urlbar-results-font-family: "SF Pro Rounded", sans-serif; */
+  --mff-urlbar-results-font-family: "Andika New Basic", sans-serif;
+  --mff-urlbar-results-font-size: 11pt;
+  --mff-urlbar-results-font-weight: 400;
+  --mff-urlbar-results-url-color: #fdfdfd;
+  /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
+  /*   --mff-urlbar-font-weight: 600; */
+
+  /* Overriden Firefox variables*/
+  /* UNCOMMENT BELOW */
+  /* --autocomplete-popup-background: var(--mff-bg) !important;
+  --default-arrowpanel-background: var(--mff-bg) !important;
+  --default-arrowpanel-color: #fefefa !important;
+  --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
+  --panel-disabled-color: #f9f9fa80;
+  --toolbar-bgcolor: var(--mff-bg) !important;
+  --urlbar-separator-color: transparent !important; */
+}
+
+.tab-label-container:not([textoverflow]) {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 50% !important;
+  max-width: 50% !important;
+  min-width: 50% !important;
+}
+
+#urlbar-input {
+  font-size: var(--mff-urlbar-font-size) !important;
+  color: var(--mff-urlbar-color) !important;
+  font-family: var(--mff-urlbar-font-family) !important;
+  font-weight: var(--mff-urlbar-font-weight)!important;
+}
+
+#urlbar:not([focused]) .urlbar-input-box{
+  font-size: var(--mff-urlbar-font-size) !important;
+  color: var(--mff-urlbar-color) !important;
+  font-family: var(--mff-urlbar-font-family) !important;
+  font-weight: var(--mff-urlbar-font-weight)!important;
+  text-align: center !important;
+}
+
+
+#urlbar-results {
+  font-family: var(--mff-urlbar-results-font-family);
+  font-weight: var(--mff-urlbar-results-font-weight);
+  font-size: var(--mff-urlbar-results-font-size) !important;
+  color: var(--mff-urlbar-results-color) !important;
+}
+
+
+/*** Proton Tabs Tweaks ***/
+
+/* Adjust tab corner shape, optionally remove space below tabs */
+
+#tabbrowser-tabs {
+    --user-tab-rounding: 2px;
+}
+
+.tab-background {
+    border-radius: var(--user-tab-rounding) !important;
+}
+
+#tabbrowser-tabs {
+    --tab-min-height: 15px !important;
+}
+#scrollbutton-up,
+#scrollbutton-down {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+}
+
+.tabbrowser-tab[soundplaying="true"] {
+  background-color: var(--mff-tab-soundplaying-bg) !important;
+  border-bottom-width: 0 !important;
+  border-radius: var(--user-tab-rounding) !important;
+  color: white !important;
+}
+
+/* 
+THIS IS THE end
+
+
+
+
+
+ */
