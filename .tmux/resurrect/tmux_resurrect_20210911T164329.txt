@@ -1,0 +1,5 @@
+pane	1	0	:tmux	1	:*	0	:/Users/vishwanathgl	1	tmux	:tmux source-file /Users/vishwanathgl/.tmux.conf
+pane	julia_vscode	0	:julia	1	:*	0	:/Users/vishwanathgl/Documents/Github/projects/rdpg	1	julia	:
+window	1	0	1	:*	ca5e,84x39,0,0,1
+window	julia_vscode	0	1	:*	b9dd,64x16,0,0,0
+state	1	

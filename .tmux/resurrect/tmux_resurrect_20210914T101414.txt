@@ -1,0 +1,5 @@
+pane	julia_vscode	0	:julia	1	:*	0	:/Users/vishwanathgl/Documents/Github/projects/hmc	1	julia	:/bin/zsh -c (tmux source-file '/Users/vishwanathgl/.tmux.conf') && true
+pane	tmux_session	0	:zsh	1	:*	0	:/Users/vishwanathgl	1	zsh	:
+window	julia_vscode	0	1	:*	c000,145x16,0,0,3
+window	tmux_session	0	1	:*	ca5d,84x39,0,0,0
+state	julia_vscode	
