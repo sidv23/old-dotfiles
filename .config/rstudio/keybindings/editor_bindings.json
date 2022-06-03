@@ -1,1 +1,4 @@
-{}
+{
+    "gotolineend": "Cmd+Right|End|Cmd+Right",
+    "gotolinestart": "Cmd+Left|Home|Cmd+Left"
+}

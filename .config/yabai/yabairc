@@ -17,7 +17,8 @@ yabai -m signal --add event=dock_did_restart action="sudo yabai --load-sa"
 # global settings
 # yabai -m config mouse_follows_focus          on
 yabai -m config mouse_follows_focus          off
-yabai -m config focus_follows_mouse          autofocus
+yabai -m config focus_follows_mouse          autoraise
+# yabai -m config focus_follows_mouse          autofocus
 yabai -m config window_placement             second_child
 yabai -m config window_topmost               off
 yabai -m config window_shadow                on
@@ -36,11 +37,11 @@ yabai -m config mouse_drop_action            swap
 
 # general space settings
 yabai -m config layout                       bsp
-yabai -m config top_padding                  5 #10 #15
-yabai -m config bottom_padding               5 #10 #15
-yabai -m config left_padding                 5 #10 #15
-yabai -m config right_padding                5 #10 #15
-yabai -m config window_gap                   10
+yabai -m config top_padding                  3 #10 #15
+yabai -m config bottom_padding               3 #10 #15
+yabai -m config left_padding                 3 #10 #15
+yabai -m config right_padding                3 #10 #15
+yabai -m config window_gap                   5
 
 # My custom space names. These names are used in some of my scripts.
 yabai -m space 1 --label one
@@ -56,7 +57,7 @@ yabai -m rule --add app="^System Preferences$" sticky=on manage=off
 yabai -m rule --add app="^Karabiner-Elements$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Karabiner-EventViewer$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Finder$" sticky=on layer=above manage=off
-yabai -m rule --add app="^zoom.us$" sticky=on manage=off
+yabai -m rule --add app="^zoom.us$" manage=off
 yabai -m rule --add app="^Spark$" sticky=on manage=off border=off layer=normal
 # yabai -m rule --add window="^Spark$" sticky=on manage=off
 yabai -m rule --add app="^Alfred Preferences$" sticky=on layer=above manage=off
@@ -64,7 +65,7 @@ yabai -m rule --add app="^Disk Utility$" sticky=on layer=above manage=off
 yabai -m rule --add app="^System Information$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Activity Monitor$" sticky=on layer=above manage=off
 yabai -m rule --add app="^Path Finder$" manage=off
-yabai -m rule --add app="^Spotify$" manage=off
+yabai -m rule --add app="^Spotify$" manage=off layer=abover
 yabai -m rule --add app="^iTerm2$" manage=on
 # yabai -m rule --add app="^iTerm$" manage=off
 # yabai -m rule --add app="^Hyper$" manage=off

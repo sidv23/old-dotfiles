@@ -12,9 +12,9 @@ sketchybar -m --bar height=37        \
 sketchybar -m --default updates=when_shown                    \
                         drawing=on                            \
                         cache_scripts=on                      \
-                        icon.font="Hack Nerd Font:Bold:17.0"  \
+                        icon.font="Hack Nerd Font:Bold:15.0"  \
                         icon.color=0xffffffff                 \
-                        label.font="UbuntuCondensed Nerd Font:Regular:16.0" \
+                        label.font="UbuntuCondensed Nerd Font:Regular:15.0" \
                         label.color=0xffffffff
 
 # label.font="Inconsolata UltraCondensed:Light:17.0" \
@@ -62,37 +62,37 @@ sketchybar -m --add space quatre left \
     --set quatre label.highlight_color=0xFFC51162 \
     --set quatre script="~/.config/sketchybar/plugins/space.sh" \
 
-# sketchybar -m --add space cinq left \
-#     --set cinq label=cinq \
-#     --set cinq associated_space=5 \
-#     --set cinq click_script="yabai -m space --focus 5" \
-#     --set cinq associated_display=1 \
-#     --set cinq label.highlight_color=0xFFC51162 \
-#     --set cinq script="~/.config/sketchybar/plugins/space.sh" \
+sketchybar -m --add space cinq left \
+    --set cinq label=cinq \
+    --set cinq associated_space=5 \
+    --set cinq click_script="yabai -m space --focus 5" \
+    --set cinq associated_display=2 \
+    --set cinq label.highlight_color=0xFFC51162 \
+    --set cinq script="~/.config/sketchybar/plugins/space.sh" \
 
-# sketchybar -m --add space six left \
-#     --set six label=six \
-#     --set six associated_space=6 \
-#     --set six click_script="yabai -m space --focus 6" \
-#     --set six associated_display=1 \
-#     --set six label.highlight_color=0xFFC51162 \
-#     --set six script="~/.config/sketchybar/plugins/space.sh" \
+sketchybar -m --add space six left \
+    --set six label=six \
+    --set six associated_space=6 \
+    --set six click_script="yabai -m space --focus 6" \
+    --set six associated_display=2 \
+    --set six label.highlight_color=0xFFC51162 \
+    --set six script="~/.config/sketchybar/plugins/space.sh" \
 
-# sketchybar -m --add space sept left \
-#     --set sept label=sept \
-#     --set sept associated_space=7 \
-#     --set sept click_script="yabai -m space --focus 7" \
-#     --set sept associated_display=1 \
-#     --set sept label.highlight_color=0xFFC51162 \
-#     --set sept script="~/.config/sketchybar/plugins/space.sh" \
+sketchybar -m --add space sept left \
+    --set sept label=sept \
+    --set sept associated_space=7 \
+    --set sept click_script="yabai -m space --focus 7" \
+    --set sept associated_display=2 \
+    --set sept label.highlight_color=0xFFC51162 \
+    --set sept script="~/.config/sketchybar/plugins/space.sh" \
 
-# sketchybar -m --add space huit left \
-#     --set huit label=huit \
-#     --set huit associated_space=8 \
-#     --set huit click_script="yabai -m space --focus 8" \
-#     --set huit associated_display=1 \
-#     --set huit label.highlight_color=0xFFC51162 \
-#     --set huit script="~/.config/sketchybar/plugins/space.sh" \
+sketchybar -m --add space huit left \
+    --set huit label=huit \
+    --set huit associated_space=8 \
+    --set huit click_script="yabai -m space --focus 8" \
+    --set huit associated_display=2 \
+    --set huit label.highlight_color=0xFFC51162 \
+    --set huit script="~/.config/sketchybar/plugins/space.sh" \
 
 # sketchybar -m --add space neuf left \
 #     --set neuf label=neuf \
@@ -128,6 +128,7 @@ sketchybar -m --add item space_separator left                                   
                                      icon.padding_left=15                                      \
                                      label.padding_right=15                                    \
                                      icon.font="Hack Nerd Font:Bold:15.0"                      \
+                                     label.font="UbuntuCondensed Nerd Font:Regular:11.0"       \
                                      click_script="$HOME/.config/sketchybar/plugins/move-space.sh"  \
 
             #                                                                                    \
@@ -162,7 +163,7 @@ sketchybar -m --add item battery right \
     --set battery background.height=21 \
     --set battery background.padding_right=7 \
     --set battery update_freq=60 \
-    --set battery label.font="Ubuntu Condensed:Regular:15.0" \
+    --set battery label.font="Ubuntu Condensed:Regular:18.0" \
     --set battery script="$HOME/.config/sketchybar/plugins/battery.sh" \
 
 
@@ -178,7 +179,7 @@ sketchybar -m --add item topmem right \
     --set topmem background.height=21 \
     --set topmem background.padding_right=7 \
     --set topmem update_freq=30 \
-    --set topmem label.font="Ubuntu Condensed:Regular:15.0" \
+    --set topmem label.font="Ubuntu Condensed:Regular:18.0" \
     --set topmem script="~/.config/sketchybar/plugins/topmem.sh" \
     --set topmem click_script="osascript $HOME/.config/sketchybar/plugins/htop-mem.applescript" \
 
@@ -196,6 +197,7 @@ sketchybar -m --add item cpu_percent right \
     --set cpu_percent background.height=21 \
     --set cpu_percent background.padding_right=7 \
     --set cpu_percent update_freq=30 \
+    --set cpu_percent label.font="Ubuntu Condensed:Regular:18.0" \
     --set cpu_percent script="~/.config/sketchybar/plugins/cpu.sh" \
     --set cpu_percent click_script="osascript $HOME/.config/sketchybar/plugins/htop-cpu.applescript" \
 

@@ -10,18 +10,29 @@
 # rcmd + rshift + ralt + rctrl - t: open -b net.kovidgoyal.kitty
 rcmd + rshift + ralt + rctrl - t: open -a iTerm
 rcmd + rshift + ralt + rctrl - f: open -b com.apple.finder
-rcmd + rshift + ralt + rctrl - c: open -b com.microsoft.VSCode
+# rcmd + rshift + ralt + rctrl - c: open -b com.microsoft.VSCode
+rcmd + rshift + ralt + rctrl - c: open -b com.microsoft.VSCodeInsiders
+# rcmd + rshift + ralt + rctrl - c: open -a /Applications/Visual\ Studio\ Code\ -\ Insiders.app
+# rcmd + rshift + ralt + rctrl - b: open -a waterfox
+# rcmd + rshift + ralt + rctrl - b: open -a firefox
 rcmd + rshift + ralt + rctrl - b: export MOZ_DISABLE_SAFE_MODE_KEY=1; open -b org.mozilla.firefox
-rcmd + rshift + ralt + rctrl - s: open -a Safari
+# rcmd + rshift + ralt + rctrl - b: open -b com.brave.Browser 
+# rcmd + rshift + ralt + rctrl - s: open -a Safari
+rcmd + rshift + ralt + rctrl - s: open -a Slack
 rcmd + rshift + ralt + rctrl - q: open -a qutebrowser
 rcmd + rshift + ralt + rctrl - m: open -b com.readdle.smartemail-Mac
 rcmd + rshift + ralt + rctrl - w: open -b Whatsapp
 rcmd + rshift + ralt + rctrl - v: open -b com.apple.iCal
+rcmd + rshift + ralt + rctrl - z: open -a zoom.us.app
 
 # Shortcut to restart Yabai and Skhd
 lctrl + lcmd + lalt - y : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai" && launchctl kickstart -k "gui/${UID}/homebrew.mxcl.sketchybar"
 lctrl + lcmd + lalt - b : launchctl kickstart -k "gui/${UID}/homebrew.mxcl.sketchybar"
 lctrl + lcmd + lalt - s : brew services restart skhd; osascript -e 'display notification "SKHD Configuration Loaded" with title "SKHD"'
+
+
+
+lcmd + rcmd + rshift + ralt + rctrl - l: osascript -e 'tell application "Finder" to sleep'
 
 
 ########################################################################################
@@ -30,7 +41,7 @@ lctrl + lcmd + lalt - s : brew services restart skhd; osascript -e 'display noti
 ## 2A: Resize Window
 hyper - return : yabai -m window --toggle zoom-parent
 hyper - 0 : yabai -m space --balance
-hyper - f : yabai -m window --toggle zoom-fullscreen
+hyper - backspace : yabai -m window --toggle zoom-fullscreen
 
 ## 2B: Push current window to layer
 hyper - j : yabai -m window --layer below
@@ -45,7 +56,7 @@ hyper - 0x2A : yabai -m window --toggle sticky; yabai -m window --toggle topmost
 
 # 2C: Stack window in current layer, and navigate through stacks
 hyper - i : yabai -m window --stack prev
-hyper - o : yabai -m window --stack next
+hyper - o : yabai -m window --warp recent
 rcmd + rshift + ralt + rctrl - up : yabai -m window --focus stack.prev || yabai -m window --focus stack.last
 rcmd + rshift + ralt + rctrl - down : yabai -m window --focus stack.next || yabai -m window --focus stack.first
 
@@ -56,16 +67,22 @@ rcmd + rshift + ralt + rctrl - down : yabai -m window --focus stack.next || yaba
 # rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."native-fullscreen" == 0))[-1].index')" && yabai -m space --focus "${index}"
 rcmd + rshift + ralt + rctrl + lcmd - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && yabai -m space --focus "${index}"
 
-rcmd + rshift + ralt + rctrl - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && yabai -m window --space "${index}" && yabai -m space --focus "${index}"
+rcmd + rshift + ralt + rctrl - n : yabai -m space --create && index="$(yabai -m query --spaces --display | jq 'map(select(."is-native-fullscreen" == false))[-1].index')" && yabai -m window --space "${index}" && yabai -m space --focus "${index}";
+
+# rcmd + rshift + ralt + rctrl + lcmd - backspace : $(yabai -m space --focus prev || yabai -m space --focus next) && yabai -m space recent --destroy
+
+rcmd + rshift + ralt + rctrl + lcmd - backspace : \
+    index="$(yabai -m query --spaces | jq '.[] | select(."has-focus").index')" && \
+    if [ $index -gt 1 ]; then newindex=$(expr $index - 1); else newindex=$(expr $index + 1); fi && \
+    yabai -m space --focus "${newindex}" && \
+    yabai -m space "${index}" --destroy
 
 
-# rcmd + rshift + ralt + rctrl + lcmd - backspace : yabai -m space --destroy
-rcmd + rshift + ralt + rctrl + lcmd - backspace : (yabai -m space --focus prev || yabai -m space --focus next) && yabai -m space recent --destroy
-
-
-
-# rcmd + rshift + ralt + rctrl - backspace : $(yabai -m window $(yabai -m query --windows --window | jq -re ".id") --close)
-
+rcmd + rshift + ralt + rctrl + lcmd - delete : \
+    index="$(yabai -m query --spaces | jq '.[] | select(."has-focus").index')" && \
+    if [ $index -gt 1 ]; then newindex=$(expr $index - 1); else newindex=$(expr $index + 1); fi && \
+    yabai -m space --focus "${newindex}" && \
+    yabai -m space "${index}" --destroy
 
 ########################################################################################
 ########## Resize Window in current workspace (moderate increments)
@@ -107,8 +124,13 @@ rcmd + rshift + ralt + rctrl + lalt - right : yabai -m window --swap east
 ########## Shift Focus to specific workspace
 ########################################################################################
 rcmd + rshift + ralt + rctrl - tab : yabai -m space --focus recent
-rcmd + rshift + ralt + rctrl - left : yabai -m space --focus prev
+
+rcmd + rshift + ralt + rctrl - left  : yabai -m space --focus prev
 rcmd + rshift + ralt + rctrl - right : yabai -m space --focus next
+
+rcmd + rshift + ralt + rctrl - 0x18: yabai -m display --focus next
+rcmd + rshift + ralt + rctrl - 0x1B: yabai -m display --focus prev
+
 
 rcmd + rshift + ralt + rctrl + lctrl - right : yabai -m window --space next && yabai -m space --focus next
 rcmd + rshift + ralt + rctrl + lctrl - left  : yabai -m window --space prev && yabai -m space --focus prev

@@ -1,0 +1,714 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<SerializableColorTheme name="Modern with Wide Scrollbars" author="Orenji">
+  <!--Form-->
+  <FormBackground description="Background color of all windows">#FFFFFF</FormBackground>
+  <FormForeground description="Color of texts in all windows">#282828</FormForeground>
+  <FormCaptionButtonColors>
+    <ButtonBackColor description="Gets the background color of a button">Transparent</ButtonBackColor>
+    <ButtonTextColor description="Gets the text color of a button">#282828</ButtonTextColor>
+    <ButtonBorderColor description="Gets the border color of a button">Transparent</ButtonBorderColor>
+    <ButtonDropDownSplitLineColor description="Gets the color of line between text and a drop-down arrow on a button">Transparent</ButtonDropDownSplitLineColor>
+    <ButtonHoverBackColor description="Gets the background color of a button if the mouse cursor is over the button">#EBEBEB</ButtonHoverBackColor>
+    <ButtonHoverTextColor description="Gets the text color of a button if the mouse cursor is over the button">#282828</ButtonHoverTextColor>
+    <ButtonBorderHoverColor description="Gets the border color of a button if the mouse cursor is over the button">Transparent</ButtonBorderHoverColor>
+    <ButtonDropDownSplitLineHoverColor description="Gets the color of line between text and a drop-down arrow on a button if the mouse cursor is over the button">#DCDCDC</ButtonDropDownSplitLineHoverColor>
+    <ButtonCheckedBackColor description="Gets the background color of a checked button">#EBEBEB</ButtonCheckedBackColor>
+    <ButtonCheckedTextColor description="Gets the text color of a checked button">#282828</ButtonCheckedTextColor>
+    <ButtonBorderCheckedColor description="Gets the border color of a checked button">Transparent</ButtonBorderCheckedColor>
+    <ButtonDropDownSplitLineCheckedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DCDCDC</ButtonDropDownSplitLineCheckedColor>
+    <ButtonPressedBackColor description="Gets the background color of a pressed button">#EBEBEB</ButtonPressedBackColor>
+    <ButtonPressedTextColor description="Gets the text color of a pressed button">#282828</ButtonPressedTextColor>
+    <ButtonBorderPressedColor description="Gets the border color of a pressed button">Transparent</ButtonBorderPressedColor>
+    <ButtonDropDownSplitLinePressedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DCDCDC</ButtonDropDownSplitLinePressedColor>
+    <ButtonDisabledBackColor description="Gets the background color of a disabled button">Transparent</ButtonDisabledBackColor>
+    <ButtonDisabledTextColor description="Gets the text color of a disabled button">#808080</ButtonDisabledTextColor>
+    <ButtonBorderDisabledColor description="Gets the border color of a disabled button">Transparent</ButtonBorderDisabledColor>
+    <ButtonInvertImage description="Indicates if an image should have inverted colors if the button is in normal state">False</ButtonInvertImage>
+    <ButtonCheckedInvertImage description="Indicates if an image should have inverted colors if the button is checked">False</ButtonCheckedInvertImage>
+    <ButtonPressedInvertImage description="Indicates if an image should have inverted colors if the button is pressed">False</ButtonPressedInvertImage>
+    <ButtonHoverInvertImage description="Indicates if an image should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertImage>
+    <ButtonInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is in normal state">False</ButtonInvertDropDownArrow>
+    <ButtonCheckedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is checked">False</ButtonCheckedInvertDropDownArrow>
+    <ButtonPressedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is pressed">False</ButtonPressedInvertDropDownArrow>
+    <ButtonHoverInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertDropDownArrow>
+  </FormCaptionButtonColors>
+  <FormCaptionButtonBackgroundPressed description="Background for buttons in the right-top area of a form caption when the button is pressed">#86C0FF</FormCaptionButtonBackgroundPressed>
+  <FormCaptionButtonBackgroundOver description="Background for buttons in the right-top area of a form caption when mouse is over the button">#EBEBEB</FormCaptionButtonBackgroundOver>
+  <FormCaptionButtonBackgroundChecked description="Background for checked buttons in the right-top area of a form caption">#EBEBEB</FormCaptionButtonBackgroundChecked>
+  <FormHeader description="Header color of all windows">Transparent</FormHeader>
+  <FormHeaderActive description="Header color of an active window">Transparent</FormHeaderActive>
+  <FormHeaderForeground description="Color of a text in window header">#555555</FormHeaderForeground>
+  <FormHeaderActiveForeground description="Color of a text in an active window header">#555555</FormHeaderActiveForeground>
+  <ReadMailFormBackground description="Background color of a form used for reading emails">#FFFFFF</ReadMailFormBackground>
+  <SendMailFormBackground description="Background color of a form used for composing emails">#FFFFFF</SendMailFormBackground>
+  <MainFormBackgroundStart description="Starting color of the gradient used as the background for the main window">#FFFFFF</MainFormBackgroundStart>
+  <MainFormBackgroundEnd description="Ending color of the gradient used as the background for the main window">#FFFFFF</MainFormBackgroundEnd>
+  <MainFormHeader description="Header background color for main window">Transparent</MainFormHeader>
+  <MainFormHeaderActive description="Header background color for active main window">Transparent</MainFormHeaderActive>
+  <PlaceholderText description="Color of a text placeholder (in a text box control, for example)">#CACACA</PlaceholderText>
+  <Link description="Color of links">#0076F7</Link>
+  <FocusedInputControlBorder description="Border color of a docused input control (e.g. textbox)">#0076F7</FocusedInputControlBorder>
+  <BorderLine description="Color of form border">#787878</BorderLine>
+  <BorderLineActive description="Color of an active form border">Transparent</BorderLineActive>
+  <DarkLine description="Color of darker lines used on forms">#DBDBDB</DarkLine>
+  <LightLine description="Color of lighter lines used on forms">#EBEBEB</LightLine>
+  <InformationBarBackground description="Background color of an information bar">#FFFFE1</InformationBarBackground>
+  <InformationBarForeground description="Text color in an information bar">#000000</InformationBarForeground>
+  <MainFormInformationBarBackground description="Background color of an information bar">#FFFFFF</MainFormInformationBarBackground>
+  <MainFormInformationBarForeground description="Text color in an information bar">#000000</MainFormInformationBarForeground>
+  <ShowMainFormVerticalSplitterLines description="Indicates if a vertical line should be displayed between the messages/contact/event/task list and left or right sidebar">True</ShowMainFormVerticalSplitterLines>
+  <ShowMainFormHorizontalTopLine description="Indicates if a horizontal line should be displayed above the message list">True</ShowMainFormHorizontalTopLine>
+  <GroupHeaderBackground description="Background color of group header">#F4F4F4</GroupHeaderBackground>
+  <GroupHeaderForeground description="Text color of group header">#8B8B8B</GroupHeaderForeground>
+  <WizardHeaderBackground description="Background color of Wizard header">#FFFFFF</WizardHeaderBackground>
+  <WizardHeaderForeground description="Text color of Wizard header">#000000</WizardHeaderForeground>
+  <!--Message list-->
+  <MainFormGridConversationCountBackground>#747F8C</MainFormGridConversationCountBackground>
+  <MainFormGridConversationCountForeground>#FFFFFF</MainFormGridConversationCountForeground>
+  <MainFormGridSnoozeFontColor>#FF9400</MainFormGridSnoozeFontColor>
+  <MessagesMultilineFirstLineColor description="Color of a text shown on the first line for a multiline message list">#282828</MessagesMultilineFirstLineColor>
+  <MessagesMultilineSecondLineColor description="Color of a text shown on the second line for a multiline message list">#8B8B8B</MessagesMultilineSecondLineColor>
+  <MessagesMultilineTimeColor description="Color of a date/time text shown on the first line for a multiline message list">#8B8B8B</MessagesMultilineTimeColor>
+  <MessagesUnreadMarkerColor description="Color of a marker indicating an unread message">#FF9400</MessagesUnreadMarkerColor>
+  <MessagesHoverFlagUnreadColor description="Color of a flag / unread marker when the mouse is over a message ">Transparent</MessagesHoverFlagUnreadColor>
+  <!--Message detail/preview-->
+  <MailSubject description="Color of mail subject text">#1E1E1E</MailSubject>
+  <MessagePanelBackground description="Background color of the message preview panel">#FFFFFF</MessagePanelBackground>
+  <MailBackground description="Preferred background color of an email">#FFFFFF</MailBackground>
+  <MailForeground description="Preferred text color of an email">#000000</MailForeground>
+  <MailLink description="Color of links in an email">#0000EE</MailLink>
+  <MailLinkVisited description="Color of visited links in an email">#551A8B</MailLinkVisited>
+  <AntiphishingBarBackground description="Background color of an antiphishing bar shown when the mouse is over a link">#FFFFFF</AntiphishingBarBackground>
+  <!--Search box-->
+  <SearchBoxActiveBorderColor description="Border of a search box on the main form when search is currently active">#FF9400</SearchBoxActiveBorderColor>
+  <!--Mail header-->
+  <MailHeaderBackground description="Background color of a bar with a basic information about the email">#F8F8F8</MailHeaderBackground>
+  <MailHeaderLink description="Color of an email address shown in the bar with a basic information about the email">#0076F7</MailHeaderLink>
+  <MailHeaderForeground description="Color of a text in the bar with a basic information about the email">#6D6D6D</MailHeaderForeground>
+  <MailHeaderConversationLine description="Color of horizontal lines between emails of a conversation">#F0F0F0</MailHeaderConversationLine>
+  <MailHeaderConversationCountForeground description="Color of a text showing the number of emails in a conversation">#6D6D6D</MailHeaderConversationCountForeground>
+  <MailHeaderConversationCountBackground description="Background color behind the number of emails in a conversation ">#FFFFFF</MailHeaderConversationCountBackground>
+  <MailHeaderConversationCountForegroundHover description="Color of a text showing the number of emails in a conversation when the mouse is over">#000000</MailHeaderConversationCountForegroundHover>
+  <MailHeaderConversationCountBackgroundHover description="Background color behind the number of emails in a conversation when the mouse is over">#EEEEEE</MailHeaderConversationCountBackgroundHover>
+  <!--Grid-->
+  <DataGridColors>
+    <GroupsBackgroundStart description="Starting color of the gradient used as the background for groups shown in datagrid">#FFFFFF</GroupsBackgroundStart>
+    <GroupsBackgroundEnd description="Ending color of the gradient used as the background for groups shown in datagrid">#FFFFFF</GroupsBackgroundEnd>
+    <GroupsForeground description="Color of the text for a group shown in datagrid">#8B8B8B</GroupsForeground>
+    <GroupsBorder description="Color of a border line for groups shown in datagrid">#E7E8E9</GroupsBorder>
+    <GroupsItemsCount description="Color of the items count text in a group shown in datagrid">#A0A0A0</GroupsItemsCount>
+    <GroupsSelectedBackgroundStart description="Starting color of the gradient used as the background for selected groups shown in datagrid">#ECF5FF</GroupsSelectedBackgroundStart>
+    <GroupsSelectedBackgroundEnd description="Ending color of the gradient used as the background for selected groups shown in datagrid">#ECF5FF</GroupsSelectedBackgroundEnd>
+    <GroupsSelectedForeground description="Color of the text for a selected group shown in datagrid">#282828</GroupsSelectedForeground>
+    <GroupsFocusedBackgroundStart description="Starting color of the gradient used as the background for a focused group shown in datagrid">#DCEBFC</GroupsFocusedBackgroundStart>
+    <GroupsFocusedBackgroundEnd description="Ending color of the gradient used as the background for a focused group shown in datagrid">#DCEBFC</GroupsFocusedBackgroundEnd>
+    <Background description="Background color of a datagrid">#FFFFFF</Background>
+    <FontColor description="Font color in a datagrid">#282828</FontColor>
+    <OddItemBackground description="Alternating background color for the odd items in a datagrid">#F8F8F8</OddItemBackground>
+    <SelectedItemBackgroundStart description="Starting color of the gradient used as a background for the selected items in datagrid">#ECF5FF</SelectedItemBackgroundStart>
+    <SelectedItemBackgroundEnd description="Ending color of the gradient used as a background for the selected items in datagrid">#ECF5FF</SelectedItemBackgroundEnd>
+    <SelectedItemBackgroundInactiveStart description="Starting color of the gradient used as a background for the selected items in datagrid when the datagrid is not active">#EBEBEB</SelectedItemBackgroundInactiveStart>
+    <SelectedItemBackgroundInactiveEnd description="Ending color of the gradient used as a background for the selected items in datagrid when the datagrid is not active">#EBEBEB</SelectedItemBackgroundInactiveEnd>
+    <FocusedItemBackgroundStart description="Starting color of the gradient used as a background for the focused item in datagrid">#DCEBFC</FocusedItemBackgroundStart>
+    <FocusedItemBackgroundEnd description="Starting color of the gradient used as a background for the focused item in datagrid">#DCEBFC</FocusedItemBackgroundEnd>
+    <SelectedItemBorder description="Color of the border line for the selected items in datagrid">#ECF5FF</SelectedItemBorder>
+    <DisabledItemBorder description="Color of the border line for the selected items in datagrid when the datagrid is not active">Transparent</DisabledItemBorder>
+    <SelectedItemFontColor description="Color of the text for the selected items in datagrid">#282828</SelectedItemFontColor>
+    <GridColor description="Color of the grid lines">#FFFFFF</GridColor>
+    <AddItemLineColor description="Color of the line in datagrids that allow adding new items directly (contacts, events and tasks)">#FF9400</AddItemLineColor>
+    <AddItemLineForeColor description="Color of text in the line in that allow adding new items directly (contacts, events and tasks)">#8B8B8B</AddItemLineForeColor>
+    <UseRoundedCornersForDatagridSelection description="Specifies if a background for selected items in a datagrid should be drawn with rounded corners">False</UseRoundedCornersForDatagridSelection>
+  </DataGridColors>
+  <DataGridHeaderColors>
+    <GridHeaderBorder description="Color of the bottom border in the datagrid column headers">#E7E8E9</GridHeaderBorder>
+    <GridHeaderStart description="Starting color of the gradient used for the column headers in datagrid">#FFFFFF</GridHeaderStart>
+    <GridHeaderMiddle description="Middle color of the gradient used for the column headers in datagrid">#FFFFFF</GridHeaderMiddle>
+    <GridHeaderEnd description="Ending color of the gradient used for the column headers in datagrid">#FFFFFF</GridHeaderEnd>
+    <GridHeaderHoveredStart description="Starting color of the gradient used for the column headers in datagrid when the mouse is over">#DCEBFC</GridHeaderHoveredStart>
+    <GridHeaderHoveredMiddle description="Middle color of the gradient used for the column headers in datagrid when the mouse is over">#DCEBFC</GridHeaderHoveredMiddle>
+    <GridHeaderHoveredEnd description="Ending color of the gradient used for the column headers in datagrid when the mouse is over">#DCEBFC</GridHeaderHoveredEnd>
+    <GridHeaderPressedStart description="Starting color of the gradient used for the column headers in datagrid when the left mouse button is pressed on the column header">#D0E6FE</GridHeaderPressedStart>
+    <GridHeaderPressedMiddle description="Middle color of the gradient used for the column headers in datagrid when the left mouse button is pressed on the column header">#D0E6FE</GridHeaderPressedMiddle>
+    <GridHeaderPressedEnd description="Ending color of the gradient used for the column headers in datagrid when the left mouse button is pressed on the column header">#D0E6FE</GridHeaderPressedEnd>
+    <GridHeaderFontColor description="Color of the text shown in the datagrid column headers">#8B8B8B</GridHeaderFontColor>
+    <GridMultilineHeaderSortFontColor description="Color of the sorted column name shown in the multiline mode datagrid header">#0076F7</GridMultilineHeaderSortFontColor>
+    <GridMultilineHeaderSortHoveredFontColor description="Color of the sorted column name shown in the multiline mode datagrid header when mouse is over">#0076F7</GridMultilineHeaderSortHoveredFontColor>
+    <GridMultilineHeaderSelectFontColor description="Color of the 'select' text shown in the multiline mode datagrid header">#0076F7</GridMultilineHeaderSelectFontColor>
+    <GridMultilineHeaderSelectHoveredFontColor description="Color of the 'select' text in the multiline mode datagrid header when mouse is over">#0076F7</GridMultilineHeaderSelectHoveredFontColor>
+  </DataGridHeaderColors>
+  <!--Grid in main window-->
+  <MainFormDataGridColors>
+    <GroupsBackgroundStart description="Starting color of the gradient used as the background for groups shown in datagrid">#FFFFFF</GroupsBackgroundStart>
+    <GroupsBackgroundEnd description="Ending color of the gradient used as the background for groups shown in datagrid">#FFFFFF</GroupsBackgroundEnd>
+    <GroupsForeground description="Color of the text for a group shown in datagrid">#8B8B8B</GroupsForeground>
+    <GroupsBorder description="Color of a border line for groups shown in datagrid">#E7E8E9</GroupsBorder>
+    <GroupsItemsCount description="Color of the items count text in a group shown in datagrid">#A0A0A0</GroupsItemsCount>
+    <GroupsSelectedBackgroundStart description="Starting color of the gradient used as the background for selected groups shown in datagrid">#ECF5FF</GroupsSelectedBackgroundStart>
+    <GroupsSelectedBackgroundEnd description="Ending color of the gradient used as the background for selected groups shown in datagrid">#ECF5FF</GroupsSelectedBackgroundEnd>
+    <GroupsSelectedForeground description="Color of the text for a selected group shown in datagrid">#282828</GroupsSelectedForeground>
+    <GroupsFocusedBackgroundStart description="Starting color of the gradient used as the background for a focused group shown in datagrid">#DCEBFC</GroupsFocusedBackgroundStart>
+    <GroupsFocusedBackgroundEnd description="Ending color of the gradient used as the background for a focused group shown in datagrid">#DCEBFC</GroupsFocusedBackgroundEnd>
+    <Background description="Background color of a datagrid">#FFFFFF</Background>
+    <FontColor description="Font color in a datagrid">#282828</FontColor>
+    <OddItemBackground description="Alternating background color for the odd items in a datagrid">#F8F8F8</OddItemBackground>
+    <SelectedItemBackgroundStart description="Starting color of the gradient used as a background for the selected items in datagrid">#ECF5FF</SelectedItemBackgroundStart>
+    <SelectedItemBackgroundEnd description="Ending color of the gradient used as a background for the selected items in datagrid">#ECF5FF</SelectedItemBackgroundEnd>
+    <SelectedItemBackgroundInactiveStart description="Starting color of the gradient used as a background for the selected items in datagrid when the datagrid is not active">#EBEBEB</SelectedItemBackgroundInactiveStart>
+    <SelectedItemBackgroundInactiveEnd description="Ending color of the gradient used as a background for the selected items in datagrid when the datagrid is not active">#EBEBEB</SelectedItemBackgroundInactiveEnd>
+    <FocusedItemBackgroundStart description="Starting color of the gradient used as a background for the focused item in datagrid">#DCEBFC</FocusedItemBackgroundStart>
+    <FocusedItemBackgroundEnd description="Starting color of the gradient used as a background for the focused item in datagrid">#DCEBFC</FocusedItemBackgroundEnd>
+    <SelectedItemBorder description="Color of the border line for the selected items in datagrid">#ECF5FF</SelectedItemBorder>
+    <DisabledItemBorder description="Color of the border line for the selected items in datagrid when the datagrid is not active">Transparent</DisabledItemBorder>
+    <SelectedItemFontColor description="Color of the text for the selected items in datagrid">#282828</SelectedItemFontColor>
+    <GridColor description="Color of the grid lines">#FFFFFF</GridColor>
+    <AddItemLineColor description="Color of the line in datagrids that allow adding new items directly (contacts, events and tasks)">#FF9400</AddItemLineColor>
+    <AddItemLineForeColor description="Color of text in the line in that allow adding new items directly (contacts, events and tasks)">#8B8B8B</AddItemLineForeColor>
+    <UseRoundedCornersForDatagridSelection description="Specifies if a background for selected items in a datagrid should be drawn with rounded corners">False</UseRoundedCornersForDatagridSelection>
+  </MainFormDataGridColors>
+  <MainFormDataGridHeaderColors>
+    <GridHeaderBorder description="Color of the bottom border in the datagrid column headers">#E7E8E9</GridHeaderBorder>
+    <GridHeaderStart description="Starting color of the gradient used for the column headers in datagrid">#FFFFFF</GridHeaderStart>
+    <GridHeaderMiddle description="Middle color of the gradient used for the column headers in datagrid">#FFFFFF</GridHeaderMiddle>
+    <GridHeaderEnd description="Ending color of the gradient used for the column headers in datagrid">#FFFFFF</GridHeaderEnd>
+    <GridHeaderHoveredStart description="Starting color of the gradient used for the column headers in datagrid when the mouse is over">#DCEBFC</GridHeaderHoveredStart>
+    <GridHeaderHoveredMiddle description="Middle color of the gradient used for the column headers in datagrid when the mouse is over">#DCEBFC</GridHeaderHoveredMiddle>
+    <GridHeaderHoveredEnd description="Ending color of the gradient used for the column headers in datagrid when the mouse is over">#DCEBFC</GridHeaderHoveredEnd>
+    <GridHeaderPressedStart description="Starting color of the gradient used for the column headers in datagrid when the left mouse button is pressed on the column header">#D0E6FE</GridHeaderPressedStart>
+    <GridHeaderPressedMiddle description="Middle color of the gradient used for the column headers in datagrid when the left mouse button is pressed on the column header">#D0E6FE</GridHeaderPressedMiddle>
+    <GridHeaderPressedEnd description="Ending color of the gradient used for the column headers in datagrid when the left mouse button is pressed on the column header">#D0E6FE</GridHeaderPressedEnd>
+    <GridHeaderFontColor description="Color of the text shown in the datagrid column headers">#8B8B8B</GridHeaderFontColor>
+    <GridMultilineHeaderSortFontColor description="Color of the sorted column name shown in the multiline mode datagrid header">#0076F7</GridMultilineHeaderSortFontColor>
+    <GridMultilineHeaderSortHoveredFontColor description="Color of the sorted column name shown in the multiline mode datagrid header when mouse is over">#0076F7</GridMultilineHeaderSortHoveredFontColor>
+    <GridMultilineHeaderSelectFontColor description="Color of the 'select' text shown in the multiline mode datagrid header">#0076F7</GridMultilineHeaderSelectFontColor>
+    <GridMultilineHeaderSelectHoveredFontColor description="Color of the 'select' text in the multiline mode datagrid header when mouse is over">#0076F7</GridMultilineHeaderSelectHoveredFontColor>
+  </MainFormDataGridHeaderColors>
+  <!--Grid in a sidebar box-->
+  <SidebarDataGridColors>
+    <GroupsBackgroundStart description="Starting color of the gradient used as the background for groups shown in datagrid">#FFFFFF</GroupsBackgroundStart>
+    <GroupsBackgroundEnd description="Ending color of the gradient used as the background for groups shown in datagrid">#FFFFFF</GroupsBackgroundEnd>
+    <GroupsForeground description="Color of the text for a group shown in datagrid">#8B8B8B</GroupsForeground>
+    <GroupsBorder description="Color of a border line for groups shown in datagrid">#E7E8E9</GroupsBorder>
+    <GroupsItemsCount description="Color of the items count text in a group shown in datagrid">#A0A0A0</GroupsItemsCount>
+    <GroupsSelectedBackgroundStart description="Starting color of the gradient used as the background for selected groups shown in datagrid">#ECF5FF</GroupsSelectedBackgroundStart>
+    <GroupsSelectedBackgroundEnd description="Ending color of the gradient used as the background for selected groups shown in datagrid">#ECF5FF</GroupsSelectedBackgroundEnd>
+    <GroupsSelectedForeground description="Color of the text for a selected group shown in datagrid">#282828</GroupsSelectedForeground>
+    <GroupsFocusedBackgroundStart description="Starting color of the gradient used as the background for a focused group shown in datagrid">#DCEBFC</GroupsFocusedBackgroundStart>
+    <GroupsFocusedBackgroundEnd description="Ending color of the gradient used as the background for a focused group shown in datagrid">#DCEBFC</GroupsFocusedBackgroundEnd>
+    <Background description="Background color of a datagrid">#FFFFFF</Background>
+    <FontColor description="Font color in a datagrid">#282828</FontColor>
+    <OddItemBackground description="Alternating background color for the odd items in a datagrid">#F8F8F8</OddItemBackground>
+    <SelectedItemBackgroundStart description="Starting color of the gradient used as a background for the selected items in datagrid">#ECF5FF</SelectedItemBackgroundStart>
+    <SelectedItemBackgroundEnd description="Ending color of the gradient used as a background for the selected items in datagrid">#ECF5FF</SelectedItemBackgroundEnd>
+    <SelectedItemBackgroundInactiveStart description="Starting color of the gradient used as a background for the selected items in datagrid when the datagrid is not active">#EBEBEB</SelectedItemBackgroundInactiveStart>
+    <SelectedItemBackgroundInactiveEnd description="Ending color of the gradient used as a background for the selected items in datagrid when the datagrid is not active">#EBEBEB</SelectedItemBackgroundInactiveEnd>
+    <FocusedItemBackgroundStart description="Starting color of the gradient used as a background for the focused item in datagrid">#DCEBFC</FocusedItemBackgroundStart>
+    <FocusedItemBackgroundEnd description="Starting color of the gradient used as a background for the focused item in datagrid">#DCEBFC</FocusedItemBackgroundEnd>
+    <SelectedItemBorder description="Color of the border line for the selected items in datagrid">#ECF5FF</SelectedItemBorder>
+    <DisabledItemBorder description="Color of the border line for the selected items in datagrid when the datagrid is not active">Transparent</DisabledItemBorder>
+    <SelectedItemFontColor description="Color of the text for the selected items in datagrid">#282828</SelectedItemFontColor>
+    <GridColor description="Color of the grid lines">#FFFFFF</GridColor>
+    <AddItemLineColor description="Color of the line in datagrids that allow adding new items directly (contacts, events and tasks)">#FF9400</AddItemLineColor>
+    <AddItemLineForeColor description="Color of text in the line in that allow adding new items directly (contacts, events and tasks)">#8B8B8B</AddItemLineForeColor>
+    <UseRoundedCornersForDatagridSelection description="Specifies if a background for selected items in a datagrid should be drawn with rounded corners">False</UseRoundedCornersForDatagridSelection>
+  </SidebarDataGridColors>
+  <SidebarGridFirstLineColor description="Color of a text shown on the first line for items in sidebar">#282828</SidebarGridFirstLineColor>
+  <SidebarGridSecondLineColor description="Color of a text shown on the second line  for items in sidebar">#8B8B8B</SidebarGridSecondLineColor>
+  <SidebarGridTimeColor description="Color of a date/time text shown on the first line for items in sidebar">#8B8B8B</SidebarGridTimeColor>
+  <!--Sidebar-->
+  <SidebarMinimizedBackgroundStart description="Starting color of the gradient used for the background of sidebar when the sidebar is minimized">#FAFAFA</SidebarMinimizedBackgroundStart>
+  <SidebarMinimizedBackgroundEnd description="Ending color of the gradient used for the background of sidebar when the sidebar is minimized">#FAFAFA</SidebarMinimizedBackgroundEnd>
+  <SidebarMaximizedBackgroundStart description="Starting color of the gradient used as the background of sidebar when the sidebar is expanded">Transparent</SidebarMaximizedBackgroundStart>
+  <SidebarMaximizedBackgroundEnd description="Ending color of the gradient used as the background of sidebar when the sidebar is expanded">Transparent</SidebarMaximizedBackgroundEnd>
+  <SidebarCalendarUpperPanelAddNewEventForeColor description="Color of add new event link">#1A73E8</SidebarCalendarUpperPanelAddNewEventForeColor>
+  <SidebarContactDetailsCaptionForeground description="Text color of the contact caption in right sidebar contact details">#282828</SidebarContactDetailsCaptionForeground>
+  <!--Sidebar box-->
+  <SidebarBoxHeaderFontColor description="Color of the text used in the sidebar box header">#2F2F2F</SidebarBoxHeaderFontColor>
+  <SidebarBoxExpandedHeaderStart description="Starting color of the gradient used as the background for header of expanded boxes in the sidebar">Transparent</SidebarBoxExpandedHeaderStart>
+  <SidebarBoxExpandedHeaderEnd description="Ending color of the gradient used as the background for header of expanded boxes in the sidebar">Transparent</SidebarBoxExpandedHeaderEnd>
+  <SidebarBoxSettingsIconOverColor description="Color of a settings icon shown in a sidebar box header when the mouse is over the icon">#7395C0</SidebarBoxSettingsIconOverColor>
+  <SidebarBoxSettingsIconColor description="Color of a settings icon shown in a sidebar box header when the mouse is over the header">#909090</SidebarBoxSettingsIconColor>
+  <SidebarBoxHeaderFontSize description="Font size of a text in sidebar box header when a modern theme is used">15</SidebarBoxHeaderFontSize>
+  <!--Popup windows-->
+  <PopupFormBackgroundStart description="Starting color of the gradient used as the background for popup windows">#FFFFFF</PopupFormBackgroundStart>
+  <PopupFormBackgroundEnd description="Ending color of the gradient used as the background for popup windows">#FFFFFF</PopupFormBackgroundEnd>
+  <PopupFormBorder description="Color of the border line for a popup window">#A0A0A0</PopupFormBorder>
+  <PopupFormForeground description="Color of the text in a popup window">#292929</PopupFormForeground>
+  <!--Tree structure-->
+  <TreeViewColors>
+    <FirstLevelForeground description="Text color for the first-level text in a tree structure">#8B8B8B</FirstLevelForeground>
+    <Foreground description="Text color of a tree structure">#282828</Foreground>
+    <Background description="Background color of a tree structure">#FFFFFF</Background>
+    <SelectedInactiveItemForeground description="Text color for the selected item in a tree structure when it is not active">#282828</SelectedInactiveItemForeground>
+    <SelectedItemForeground description="Text color for the selected item in a tree structure">#282828</SelectedItemForeground>
+    <SelectedItemBackgroundStart description="Starting color of the gradient used as a background for the selected item in a tree structure">#DCEBFC</SelectedItemBackgroundStart>
+    <SelectedItemBackgroundEnd description="Ending color of the gradient used as a background for the selected item in a tree structure">#DCEBFC</SelectedItemBackgroundEnd>
+    <SelectedItemBorder description="Color of the border line for the selected item in a tree structure">Transparent</SelectedItemBorder>
+    <SelectedInactiveItemBackgroundStart description="Starting color of the gradient used as a background for the selected item in a tree structure when it is not active">#EBEBEB</SelectedInactiveItemBackgroundStart>
+    <SelectedInactiveItemBackgroundEnd description="Ending color of the gradient used as a background for the selected item in a tree structure when it is not active">#EBEBEB</SelectedInactiveItemBackgroundEnd>
+    <SelectedInactiveItemBorder description="Color of the border line for the selected item in a tree structure when it is not active">Transparent</SelectedInactiveItemBorder>
+    <UseRoundedCornersForSelection description="Specifies if a background for selected items in a tree structure should be drawn with rounded corners">False</UseRoundedCornersForSelection>
+    <NodeShowMoreForeground description="Text color for the 'More...' node in a tree structure">#282828</NodeShowMoreForeground>
+    <ItemImageColor description="Color of images for items in a tree structure">#8B8B8B</ItemImageColor>
+    <SelectedItemImageColor description="Color of images for selected items in a tree structure">#8B8B8B</SelectedItemImageColor>
+    <SelectedInactiveItemImageColor description="Color of images for selected items in a tree structure when it is not active">#8B8B8B</SelectedInactiveItemImageColor>
+  </TreeViewColors>
+  <!--Textbox-->
+  <TextBoxBackground description="Background color of a text box control">#FFFFFF</TextBoxBackground>
+  <TextBoxForeground description="Color of a text in a text box control">#282828</TextBoxForeground>
+  <TextBoxDisabledBackground description="Background color of a disabled text box control">#E3E3E3</TextBoxDisabledBackground>
+  <TextBoxDisabledForeground description="Color of a text in a disabled text box control">#6D6D6D</TextBoxDisabledForeground>
+  <TextBoxReadOnlyBackground description="Background color of a read-only text box control">#F0F0F0</TextBoxReadOnlyBackground>
+  <TextBoxReadOnlyForeground description="Color of a text in a read-only text box control">#505050</TextBoxReadOnlyForeground>
+  <TextBoxContactForeground description="Color of a text for contacts in a box control">#000000</TextBoxContactForeground>
+  <TextBoxContactBackground description="Color of a background for contacts in a box control">#EBF5FF</TextBoxContactBackground>
+  <TextBoxContactBorder description="Color of contacts border in a text box control">#8EB6E7</TextBoxContactBorder>
+  <TextBoxSelectedContactForeground description="Color of a text for selected contacts in a box control">#000000</TextBoxSelectedContactForeground>
+  <TextBoxSelectedContactBackground description="Color of a background for selected contacts in a box control">#C4E3FF</TextBoxSelectedContactBackground>
+  <TextBoxSelectedContactBorder description="Color of selected contacts border in a text box control">#8EB6E7</TextBoxSelectedContactBorder>
+  <TextBoxHighlight description="Color of highlight background for selected text in a text box control">#0078D7</TextBoxHighlight>
+  <TextBoxHighlightText description="Color of selected text in a text box control">#FFFFFF</TextBoxHighlightText>
+  <!--Tree structure in main window-->
+  <MainFormTreeViewColors>
+    <FirstLevelForeground description="Text color for the first-level text in a tree structure">#8B8B8B</FirstLevelForeground>
+    <Foreground description="Text color of a tree structure">#282828</Foreground>
+    <Background description="Background color of a tree structure">#FFFFFF</Background>
+    <SelectedInactiveItemForeground description="Text color for the selected item in a tree structure when it is not active">#282828</SelectedInactiveItemForeground>
+    <SelectedItemForeground description="Text color for the selected item in a tree structure">#282828</SelectedItemForeground>
+    <SelectedItemBackgroundStart description="Starting color of the gradient used as a background for the selected item in a tree structure">#DCEBFC</SelectedItemBackgroundStart>
+    <SelectedItemBackgroundEnd description="Ending color of the gradient used as a background for the selected item in a tree structure">#DCEBFC</SelectedItemBackgroundEnd>
+    <SelectedItemBorder description="Color of the border line for the selected item in a tree structure">Transparent</SelectedItemBorder>
+    <SelectedInactiveItemBackgroundStart description="Starting color of the gradient used as a background for the selected item in a tree structure when it is not active">#EBEBEB</SelectedInactiveItemBackgroundStart>
+    <SelectedInactiveItemBackgroundEnd description="Ending color of the gradient used as a background for the selected item in a tree structure when it is not active">#EBEBEB</SelectedInactiveItemBackgroundEnd>
+    <SelectedInactiveItemBorder description="Color of the border line for the selected item in a tree structure when it is not active">Transparent</SelectedInactiveItemBorder>
+    <UseRoundedCornersForSelection description="Specifies if a background for selected items in a tree structure should be drawn with rounded corners">False</UseRoundedCornersForSelection>
+    <NodeShowMoreForeground description="Text color for the 'More...' node in a tree structure">#282828</NodeShowMoreForeground>
+    <ItemImageColor description="Color of images for items in a tree structure">#8B8B8B</ItemImageColor>
+    <SelectedItemImageColor description="Color of images for selected items in a tree structure">#8B8B8B</SelectedItemImageColor>
+    <SelectedInactiveItemImageColor description="Color of images for selected items in a tree structure when it is not active">#8B8B8B</SelectedInactiveItemImageColor>
+  </MainFormTreeViewColors>
+  <!--Unread counts-->
+  <UnreadCountBackground description="Background color for an information about unread messages count in a folder">Transparent</UnreadCountBackground>
+  <UnreadCountWarningBackground description="Background color for an information about unread messages count in a folder if there is a warning">Transparent</UnreadCountWarningBackground>
+  <UnreadCountForeground description="Text color for an information about unread messages count in a folder">#0076F7</UnreadCountForeground>
+  <UnreadCountWarningForeground description="Text color for an information about unread messages count in a folder if there is a warning">#DC143C</UnreadCountWarningForeground>
+  <AccountWarning description="Color of warning symbol for accounts that cannot connect">#DC143C</AccountWarning>
+  <AccountWarningHover description="Color of warning symbol for accounts that cannot connect when mouse is hovered over it">#808080</AccountWarningHover>
+  <!--Attachments-->
+  <AttachmentCornerRadius description="Specifies if a background for an attachment in a bar with attachments should be drawn with rounded corners. Use '0' for rectangular attachments">100</AttachmentCornerRadius>
+  <AttachmentBackground description="Background color of attachments in a bar with attachments">Transparent</AttachmentBackground>
+  <AttachmentBorder description="Border line color around an attachment in a bar with attachments">#DBDBDB</AttachmentBorder>
+  <AttachmentSelectedBorder description="Border line color around a selected attachment in a bar with attachments">#0076F7</AttachmentSelectedBorder>
+  <AttachmentSelectedBackground description="Background color of a selected attachment in a bar with attachments">#ECF5FF</AttachmentSelectedBackground>
+  <AttachmentsInactiveArrows description="Color of a the arrows shown in a bar with attachments if there are more attachment to show">#979797</AttachmentsInactiveArrows>
+  <AttachmentText description="Text color of an attachment">#555555</AttachmentText>
+  <AttachmentSelectedText description="Text color of a selected attachment">#282828</AttachmentSelectedText>
+  <!--Message detail attachments-->
+  <MessageDetailAttachmentCornerRadius description="Specifies if a background for attachment in a a message header should be drawn with rounded corners. Use '0' for rectangular attachments">100</MessageDetailAttachmentCornerRadius>
+  <MessageDetailAttachmentBorder description="Border line color around an attachment in a message header">#DBDBDB</MessageDetailAttachmentBorder>
+  <MessageDetailAttachmentBackground description="Background color of attachments in a message header">Transparent</MessageDetailAttachmentBackground>
+  <MessageDetailAttachmentSelectedBorder description="Border line color around a selected attachment in a message header">#0076F7</MessageDetailAttachmentSelectedBorder>
+  <MessageDetailAttachmentSelectedBackground description="Background color of a selected attachment in a message header">#ECF5FF</MessageDetailAttachmentSelectedBackground>
+  <MessageDetailAttachmentText description="Text color of an attachment in a message header">#555555</MessageDetailAttachmentText>
+  <MessageDetailAttachmentSelectedText description="Text color of a selected attachment in a message header">#282828</MessageDetailAttachmentSelectedText>
+  <!--Categories-->
+  <CategoryCornerRadius description="Specifies if a background for a category in a bar with categories should be drawn with rounded corners. Use '0' for rectangular categories">100</CategoryCornerRadius>
+  <CategoryAddBorder description="Border line of the 'add tag' in the category row">#DBDBDB</CategoryAddBorder>
+  <CategoryAddBorderActive description="Border line of the 'add tag' in the category row when the mouse is over">#282828</CategoryAddBorderActive>
+  <!--Notification windows-->
+  <NotificationWindowHeaderIconColor description="Color of icons shown in notification header when the mouse is over the notification">#6C97CC</NotificationWindowHeaderIconColor>
+  <NotificationWindowHeaderIconOverColor description="Color of icons shown in notification header when the mouse is over the icon">#5C80AE</NotificationWindowHeaderIconOverColor>
+  <NotificationWindowHeaderForeground description="Color of the header text in a notification window">#282828</NotificationWindowHeaderForeground>
+  <NotificationWindowForeground description="Color of the text in a notification window">#282828</NotificationWindowForeground>
+  <NotificationWindowGrayText description="Color of the grayed text in a notification window">#646464</NotificationWindowGrayText>
+  <NotificationWindowBackgroundStart description="Starting color of the gradient used as the background for notification windows">#FFFFFF</NotificationWindowBackgroundStart>
+  <NotificationWindowBackgroundEnd description="Ending color of the gradient used as the background for notification windows">#FFFFFF</NotificationWindowBackgroundEnd>
+  <NotificationWindowHeaderStart description="Starting color of the gradient used as the background for header of notification windows">#DCEBFC</NotificationWindowHeaderStart>
+  <NotificationWindowHeaderEnd description="Ending color of the gradient used as the background for header of notification windows">#DCEBFC</NotificationWindowHeaderEnd>
+  <NotificationWindowHeaderBorder description="Color of the border line around notification windows header">Transparent</NotificationWindowHeaderBorder>
+  <NotificationWindowBorder description="Border line color around a notification window">#999999</NotificationWindowBorder>
+  <NotificationWindowBackgroundGradientAngle description="An angle in which the gradient used as a background for a notification window will be shown">90</NotificationWindowBackgroundGradientAngle>
+  <NotificationWindowUseRoundedCorners description="Specifies if the notification windows should have rounded corners">False</NotificationWindowUseRoundedCorners>
+  <!--Calendar-->
+  <CalendarColors>
+    <AllDayBackground description="Color of the background for all-day text in a calendar on the left-side bar in a week or day view">#FFFFFF</AllDayBackground>
+    <HeaderBackgroundStart description="Starting color of the gradient used as the background for header with days in a calendar">#FFFFFF</HeaderBackgroundStart>
+    <HeaderBackgroundEnd description="Ending color of the gradient used as the background for header with days in a calendar">#FFFFFF</HeaderBackgroundEnd>
+    <TodayHeaderBackgroundStart description="Starting color of the gradient used as the background for header for a current day">#FFFFFF</TodayHeaderBackgroundStart>
+    <TodayHeaderBackgroundEnd description="Ending color of the gradient used as the background for header for a current day">#FFFFFF</TodayHeaderBackgroundEnd>
+    <HoursBackground description="Background color of a left-side bar with hours in a week or day view">#FFFFFF</HoursBackground>
+    <MainNavigationBackground description="Background color of the topmost space of the calendar where date and navigation arrows are present">#FFFFFF</MainNavigationBackground>
+    <MainNavigationForeground description="Font color of the topmost space of the calendar where date and navigation arrows are present">#5A5A5A</MainNavigationForeground>
+    <HeaderFontColor description="Color of the text in a header with days in a calendar">#282828</HeaderFontColor>
+    <TodayHeaderFontColor description="Color of the text for a current day in a header with days in a calendar">#282828</TodayHeaderFontColor>
+    <MonthViewHeaderWeekNumbersColor description="Color of week numbers in a month calendar view">#B5B5B5</MonthViewHeaderWeekNumbersColor>
+    <SubheaderBackground description="Background color of a space between the header with days and the main calendar view (week or day calendar view)">#FFFFFF</SubheaderBackground>
+    <Background description="Background color of a calendar">#FFFFFF</Background>
+    <WorkingHoursBackground description="Background color of a calendar for the time which is inside the working time (week or day view)">#FFFFFF</WorkingHoursBackground>
+    <NonWorkingHoursBackground description="Background color of a calendar for the time which is outside the working time (week or day view)">#FFFFFF</NonWorkingHoursBackground>
+    <AllDayFontColor description="Color of the all-day text in a calendar on the left-side bar in a week or day view">#949494</AllDayFontColor>
+    <HoursFontColor description="Color of the text a left-side bar with hours in a week or day view">#949494</HoursFontColor>
+    <SelectedDayBackground description="Background color of an currently selected day in a calendar">#DCEBFC</SelectedDayBackground>
+    <GridStrongLine description="Color of vertical lines in a month view">#DCDCDC</GridStrongLine>
+    <GridLightLine description="Color of horizontal lines in a week view">#EEEEEE</GridLightLine>
+    <GridVeryLightLine description="Color of a top line in a week view">#EEEEEE</GridVeryLightLine>
+    <GridDarkLine description="Color of vertical lines and several horizontal lines in a week view">#EEEEEE</GridDarkLine>
+    <MonthViewTodayBorder description="Color of a border arround current day in month calendar view">#FFFFFF</MonthViewTodayBorder>
+    <MonthViewDayHeaderFontColor description="Color of the text for each day (day number) in month calendar view">#282828</MonthViewDayHeaderFontColor>
+    <MonthViewDayHeaderEvenFontColor description="Color of the text for each day (day number, month name) in not current month calendar view">#B5B5B5</MonthViewDayHeaderEvenFontColor>
+    <MonthViewDayHeaderStart description="Starting color of the gradient used as the background for header for each day in a month calendar view">#FFFFFF</MonthViewDayHeaderStart>
+    <MonthViewDayHeaderEnd description="Ending color of the gradient used as the background for header for each day in a month calendar view">#FFFFFF</MonthViewDayHeaderEnd>
+    <EvenMonthBackground description="Alternating background color for even months in a calendar (month view)">#FFFFFF</EvenMonthBackground>
+    <HeaderBorder description="Border line color around calendar header">#EEEEEE</HeaderBorder>
+    <CurrentTimeLine description="Color of a line displaying current time in a week view">#FF4500</CurrentTimeLine>
+    <SelectedEventBorder description="Color of a border line for selected events">#000000</SelectedEventBorder>
+    <InvitationBorder description="Color of a border line for for invitations">#000000</InvitationBorder>
+    <RenderEventInvitationsBorders description="Specifies whether borders for event invitations are rendered or not">True</RenderEventInvitationsBorders>
+    <RenderEventBorders description="Specifies whether borders for events are rendered or not">False</RenderEventBorders>
+    <HeaderTodayCircleFontColor description="Color of the text inside ellipse around days">#FFFFFF</HeaderTodayCircleFontColor>
+    <HeaderTodayCircleColor description="Color of the ellipse around days">#1A73E8</HeaderTodayCircleColor>
+    <TodayLinkColor description="Color of the today link">#0076F7</TodayLinkColor>
+    <MoreEventsLinkColor description="Color of the more events link inside month calendar event">#0076F7</MoreEventsLinkColor>
+    <UseTransparencyForUnselectedEvents description="Specifies whether unselected events in calendar is drawn transparent">False</UseTransparencyForUnselectedEvents>
+    <UseLinearGradientsForEvents description="Specifies whether events' background is solid or a linear gradient is used">False</UseLinearGradientsForEvents>
+  </CalendarColors>
+  <SidebarCalendarColors>
+    <AllDayBackground description="Color of the background for all-day text in a calendar on the left-side bar in a week or day view">#FFFFFF</AllDayBackground>
+    <HeaderBackgroundStart description="Starting color of the gradient used as the background for header with days in a calendar">#FFFFFF</HeaderBackgroundStart>
+    <HeaderBackgroundEnd description="Ending color of the gradient used as the background for header with days in a calendar">#FFFFFF</HeaderBackgroundEnd>
+    <TodayHeaderBackgroundStart description="Starting color of the gradient used as the background for header for a current day">#FFFFFF</TodayHeaderBackgroundStart>
+    <TodayHeaderBackgroundEnd description="Ending color of the gradient used as the background for header for a current day">#FFFFFF</TodayHeaderBackgroundEnd>
+    <HoursBackground description="Background color of a left-side bar with hours in a week or day view">#FFFFFF</HoursBackground>
+    <MainNavigationBackground description="Background color of the topmost space of the calendar where date and navigation arrows are present">#FFFFFF</MainNavigationBackground>
+    <MainNavigationForeground description="Font color of the topmost space of the calendar where date and navigation arrows are present">#5A5A5A</MainNavigationForeground>
+    <HeaderFontColor description="Color of the text in a header with days in a calendar">#282828</HeaderFontColor>
+    <TodayHeaderFontColor description="Color of the text for a current day in a header with days in a calendar">#282828</TodayHeaderFontColor>
+    <MonthViewHeaderWeekNumbersColor description="Color of week numbers in a month calendar view">#B5B5B5</MonthViewHeaderWeekNumbersColor>
+    <SubheaderBackground description="Background color of a space between the header with days and the main calendar view (week or day calendar view)">#FFFFFF</SubheaderBackground>
+    <Background description="Background color of a calendar">#FFFFFF</Background>
+    <WorkingHoursBackground description="Background color of a calendar for the time which is inside the working time (week or day view)">#FFFFFF</WorkingHoursBackground>
+    <NonWorkingHoursBackground description="Background color of a calendar for the time which is outside the working time (week or day view)">#FFFFFF</NonWorkingHoursBackground>
+    <AllDayFontColor description="Color of the all-day text in a calendar on the left-side bar in a week or day view">#949494</AllDayFontColor>
+    <HoursFontColor description="Color of the text a left-side bar with hours in a week or day view">#949494</HoursFontColor>
+    <SelectedDayBackground description="Background color of an currently selected day in a calendar">#DCEBFC</SelectedDayBackground>
+    <GridStrongLine description="Color of vertical lines in a month view">#DCDCDC</GridStrongLine>
+    <GridLightLine description="Color of horizontal lines in a week view">#EEEEEE</GridLightLine>
+    <GridVeryLightLine description="Color of a top line in a week view">#EEEEEE</GridVeryLightLine>
+    <GridDarkLine description="Color of vertical lines and several horizontal lines in a week view">#EEEEEE</GridDarkLine>
+    <MonthViewTodayBorder description="Color of a border arround current day in month calendar view">#FFFFFF</MonthViewTodayBorder>
+    <MonthViewDayHeaderFontColor description="Color of the text for each day (day number) in month calendar view">#282828</MonthViewDayHeaderFontColor>
+    <MonthViewDayHeaderEvenFontColor description="Color of the text for each day (day number, month name) in not current month calendar view">#B5B5B5</MonthViewDayHeaderEvenFontColor>
+    <MonthViewDayHeaderStart description="Starting color of the gradient used as the background for header for each day in a month calendar view">#FFFFFF</MonthViewDayHeaderStart>
+    <MonthViewDayHeaderEnd description="Ending color of the gradient used as the background for header for each day in a month calendar view">#FFFFFF</MonthViewDayHeaderEnd>
+    <EvenMonthBackground description="Alternating background color for even months in a calendar (month view)">#FFFFFF</EvenMonthBackground>
+    <HeaderBorder description="Border line color around calendar header">#EEEEEE</HeaderBorder>
+    <CurrentTimeLine description="Color of a line displaying current time in a week view">#FF4500</CurrentTimeLine>
+    <SelectedEventBorder description="Color of a border line for selected events">#000000</SelectedEventBorder>
+    <InvitationBorder description="Color of a border line for for invitations">#000000</InvitationBorder>
+    <RenderEventInvitationsBorders description="Specifies whether borders for event invitations are rendered or not">True</RenderEventInvitationsBorders>
+    <RenderEventBorders description="Specifies whether borders for events are rendered or not">False</RenderEventBorders>
+    <HeaderTodayCircleFontColor description="Color of the text inside ellipse around days">#FFFFFF</HeaderTodayCircleFontColor>
+    <HeaderTodayCircleColor description="Color of the ellipse around days">#1A73E8</HeaderTodayCircleColor>
+    <TodayLinkColor description="Color of the today link">#0076F7</TodayLinkColor>
+    <MoreEventsLinkColor description="Color of the more events link inside month calendar event">#0076F7</MoreEventsLinkColor>
+    <UseTransparencyForUnselectedEvents description="Specifies whether unselected events in calendar is drawn transparent">False</UseTransparencyForUnselectedEvents>
+    <UseLinearGradientsForEvents description="Specifies whether events' background is solid or a linear gradient is used">False</UseLinearGradientsForEvents>
+  </SidebarCalendarColors>
+  <CalendarTasksHeaderBackground description="Background color of a header for tasks shown below the calendar in day or week view">#FFFFFF</CalendarTasksHeaderBackground>
+  <CalendarTasksDraggedTaskPointer description="Color of a pointer when dragging a task shown below the calendar in day or week view">#FF0000</CalendarTasksDraggedTaskPointer>
+  <!--Date selector-->
+  <DateSelectorForeground description="Text color of the small preview calendar">#282828</DateSelectorForeground>
+  <DateSelectorVerticalDelimeterLineBetweenWeekNumbers description="Color of delimeter between week numbers and day numbers in the samll preview calendar">#EDEDED</DateSelectorVerticalDelimeterLineBetweenWeekNumbers>
+  <DateSelectorWeekNumbers description="Text color of week numbers in the small preview calendar">#979797</DateSelectorWeekNumbers>
+  <DateSelectorInactiveForeground description="Text color of a non-active month in the small preview calendar">#69696B</DateSelectorInactiveForeground>
+  <DateSelectorSelectionBorder description="Color of the border line for the selected dates in the small preview calendar">#84ACDD</DateSelectorSelectionBorder>
+  <DateSelectorSelectionBackgroundStart description="Starting color of the gradient used as a background for the selected dates in the small preview calendar">#DCEBFC</DateSelectorSelectionBackgroundStart>
+  <DateSelectorSelectionBackgroundEnd description="Ending color of the gradient used as a background for the selected dates in the small preview calendar">#DCEBFC</DateSelectorSelectionBackgroundEnd>
+  <UseRoundedCornersForDateSelector description="Specifies if a background for selected dates in a small preview calendar should be drawn with rounded corners">False</UseRoundedCornersForDateSelector>
+  <!--Contact business cards-->
+  <BusinessCardsColors>
+    <CardsForeground description="Text color of a card">#323232</CardsForeground>
+    <CardsBorder description="Border line color of a card">#F0F0F0</CardsBorder>
+    <CardsSelectedBorder description="Border line color of a selected card">#A6CFFC</CardsSelectedBorder>
+    <CardsSelectedBackground description="Background color of a selected card">#ECF5FF</CardsSelectedBackground>
+    <Background description="Background color of the control">#FFFFFF</Background>
+    <CardsBackground description="Background color of a card">#FFFFFF</CardsBackground>
+    <CardsHorizontalLine description="Color of a horizontal line between cards">Transparent</CardsHorizontalLine>
+  </BusinessCardsColors>
+  <!--Contacts-->
+  <ContactsSelectorItemBackground description="Background color of active letter selector item">#EBEBEB</ContactsSelectorItemBackground>
+  <ContactsSelectorItemForeground description="Text color of active letter selector item">#A9A9A9</ContactsSelectorItemForeground>
+  <ContactsSelectorForeground description="Text color of letter selector items">#A9A9A9</ContactsSelectorForeground>
+  <ContactsSelectorBackground description="Background of letter selector items">Transparent</ContactsSelectorBackground>
+  <!--Attachment cards-->
+  <AttachmentCardsColors>
+    <CardsForeground description="Text color of a card">#323232</CardsForeground>
+    <CardsBorder description="Border line color of a card">#F0F0F0</CardsBorder>
+    <CardsSelectedBorder description="Border line color of a selected card">#A6CFFC</CardsSelectedBorder>
+    <CardsSelectedBackground description="Background color of a selected card">#ECF5FF</CardsSelectedBackground>
+    <Background description="Background color of the control">#FFFFFF</Background>
+    <CardsBackground description="Background color of a card">#FFFFFF</CardsBackground>
+    <CardsHorizontalLine description="Color of a horizontal line between cards">Transparent</CardsHorizontalLine>
+  </AttachmentCardsColors>
+  <!--Item cards-->
+  <CardsColors>
+    <CardsForeground description="Text color of a card">#323232</CardsForeground>
+    <CardsBorder description="Border line color of a card">Transparent</CardsBorder>
+    <CardsSelectedBorder description="Border line color of a selected card">#A6CFFC</CardsSelectedBorder>
+    <CardsSelectedBackground description="Background color of a selected card">#ECF5FF</CardsSelectedBackground>
+    <Background description="Background color of the control">#FFFFFF</Background>
+    <CardsBackground description="Background color of a card">#FFFFFF</CardsBackground>
+    <CardsHorizontalLine description="Color of a horizontal line between cards">Transparent</CardsHorizontalLine>
+  </CardsColors>
+  <WizardCardsColors>
+    <CardsForeground description="Text color of a card">#323232</CardsForeground>
+    <CardsBorder description="Border line color of a card">Transparent</CardsBorder>
+    <CardsSelectedBorder description="Border line color of a selected card">#A6CFFC</CardsSelectedBorder>
+    <CardsSelectedBackground description="Background color of a selected card">#ECF5FF</CardsSelectedBackground>
+    <Background description="Background color of the control">#FFFFFF</Background>
+    <CardsBackground description="Background color of a card">#FFFFFF</CardsBackground>
+    <CardsHorizontalLine description="Color of a horizontal line between cards">Transparent</CardsHorizontalLine>
+  </WizardCardsColors>
+  <!--Widgets-->
+  <WidgetHeaderStart description="Starting color of the gradient used as the background for header of widgets">#F8F8F8</WidgetHeaderStart>
+  <WidgetHeaderEnd description="Ending color of the gradient used as the background for header of widgets">#F8F8F8</WidgetHeaderEnd>
+  <WidgetHeaderFontColorDark description="Color of the text used in the widget header">#282828</WidgetHeaderFontColorDark>
+  <WidgetHeaderFontColorLight description="Color of the lighter text used as a shadow below the text in widget header">#EBEDEE</WidgetHeaderFontColorLight>
+  <WidgetBackgroundStart description="Starting color of the gradient used as the background for a widget">#FFFFFF</WidgetBackgroundStart>
+  <WidgetBackgroundEnd description="Ending color of the gradient used as the background for a widget">#FFFFFF</WidgetBackgroundEnd>
+  <WidgetBorder description="Color of the widget border line">#CCCFCF</WidgetBorder>
+  <!--Progress bar-->
+  <ProgressBarInfiniteProgress description="Color of the infinite progress line">#D3D3D3</ProgressBarInfiniteProgress>
+  <ProgressBarInfiniteProgressBackground description="Background color of the infinite progress line">#E7E8E9</ProgressBarInfiniteProgressBackground>
+  <ProgressBarProgress description="Color of the progress line">#0076F7</ProgressBarProgress>
+  <ProgressBarBackground description="Background of the progress line">#EBEBEB</ProgressBarBackground>
+  <SpinningWheelForeground description="Color of infinite progress spinning wheel">#FF9400</SpinningWheelForeground>
+  <!--Scrollbar-->
+  <UseSystemScrollbar description="Use system scrollbars with no automatic hiding">True</UseSystemScrollbar>
+  <ScrollbarThumb description="Color of a scrollbar thumb">#D3D3D3</ScrollbarThumb>
+  <ScrollbarThumbHover description="Color of a scrollbar thumb when the mouse is over">#808080</ScrollbarThumbHover>
+  <!--Tab control-->
+  <TabPageForeColor description="Text color of active tab page">#282828</TabPageForeColor>
+  <TabPageBackColor description="Background color of active tab page">#FFFFFF</TabPageBackColor>
+  <TabForeColor description="Text color of active tab">#0076F7</TabForeColor>
+  <TabBackColor description="Background color of active tab">#FFFFFF</TabBackColor>
+  <TabInactiveForeColor description="Text color of inactive tab">#282828</TabInactiveForeColor>
+  <TabInactiveBackColor description="Background color of inactive tab">#FFFFFF</TabInactiveBackColor>
+  <TabHoverForeColor description="Text color of inactive tab">#0076F7</TabHoverForeColor>
+  <TabHoverBackColor description="Background color of inactive tab">#FFFFFF</TabHoverBackColor>
+  <TabUnderlineColor description="Color of underline of the active tab">#0076F7</TabUnderlineColor>
+  <TabBorderColor description="Color of borders of tab">Transparent</TabBorderColor>
+  <TabSpace description="Inner space around text of a tab">6</TabSpace>
+  <!--Account wizard-->
+  <AccountWizardBoxHeaderCollapsed description="Background color of a collapsed header in the account wizard">#FFFFFF</AccountWizardBoxHeaderCollapsed>
+  <AccountWizardBoxHeaderExpanded description="Background color of an expanded header in the account wizard">#ECF5FF</AccountWizardBoxHeaderExpanded>
+  <AccountWizardBoxBorderCollapsed description="Border color of a collapsed box in the account wizard">#EBEBEB</AccountWizardBoxBorderCollapsed>
+  <AccountWizardBoxBorderExpanded description="Border color of an expanded box in the account wizard">Transparent</AccountWizardBoxBorderExpanded>
+  <AccountWizardBoxBackground description="Background of an expanded box in the account wizard">#FFFFFF</AccountWizardBoxBackground>
+  <AccountWizardBoxSpacing description="Space between boxes in the account wizard">8</AccountWizardBoxSpacing>
+  <ToolStripColors>
+    <ButtonColors>
+      <ButtonBackColor description="Gets the background color of a button">Transparent</ButtonBackColor>
+      <ButtonTextColor description="Gets the text color of a button">#282828</ButtonTextColor>
+      <ButtonBorderColor description="Gets the border color of a button">Transparent</ButtonBorderColor>
+      <ButtonDropDownSplitLineColor description="Gets the color of line between text and a drop-down arrow on a button">Transparent</ButtonDropDownSplitLineColor>
+      <ButtonHoverBackColor description="Gets the background color of a button if the mouse cursor is over the button">#EBEBEB</ButtonHoverBackColor>
+      <ButtonHoverTextColor description="Gets the text color of a button if the mouse cursor is over the button">#282828</ButtonHoverTextColor>
+      <ButtonBorderHoverColor description="Gets the border color of a button if the mouse cursor is over the button">Transparent</ButtonBorderHoverColor>
+      <ButtonDropDownSplitLineHoverColor description="Gets the color of line between text and a drop-down arrow on a button if the mouse cursor is over the button">#DCDCDC</ButtonDropDownSplitLineHoverColor>
+      <ButtonCheckedBackColor description="Gets the background color of a checked button">#EBEBEB</ButtonCheckedBackColor>
+      <ButtonCheckedTextColor description="Gets the text color of a checked button">#282828</ButtonCheckedTextColor>
+      <ButtonBorderCheckedColor description="Gets the border color of a checked button">Transparent</ButtonBorderCheckedColor>
+      <ButtonDropDownSplitLineCheckedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DCDCDC</ButtonDropDownSplitLineCheckedColor>
+      <ButtonPressedBackColor description="Gets the background color of a pressed button">#EBEBEB</ButtonPressedBackColor>
+      <ButtonPressedTextColor description="Gets the text color of a pressed button">#282828</ButtonPressedTextColor>
+      <ButtonBorderPressedColor description="Gets the border color of a pressed button">Transparent</ButtonBorderPressedColor>
+      <ButtonDropDownSplitLinePressedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DCDCDC</ButtonDropDownSplitLinePressedColor>
+      <ButtonDisabledBackColor description="Gets the background color of a disabled button">Transparent</ButtonDisabledBackColor>
+      <ButtonDisabledTextColor description="Gets the text color of a disabled button">#808080</ButtonDisabledTextColor>
+      <ButtonBorderDisabledColor description="Gets the border color of a disabled button">Transparent</ButtonBorderDisabledColor>
+      <ButtonInvertImage description="Indicates if an image should have inverted colors if the button is in normal state">False</ButtonInvertImage>
+      <ButtonCheckedInvertImage description="Indicates if an image should have inverted colors if the button is checked">False</ButtonCheckedInvertImage>
+      <ButtonPressedInvertImage description="Indicates if an image should have inverted colors if the button is pressed">False</ButtonPressedInvertImage>
+      <ButtonHoverInvertImage description="Indicates if an image should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertImage>
+      <ButtonInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is in normal state">False</ButtonInvertDropDownArrow>
+      <ButtonCheckedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is checked">False</ButtonCheckedInvertDropDownArrow>
+      <ButtonPressedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is pressed">False</ButtonPressedInvertDropDownArrow>
+      <ButtonHoverInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertDropDownArrow>
+    </ButtonColors>
+    <HighlightedButtonColors>
+      <ButtonBackColor description="Gets the background color of a button">#FF9400</ButtonBackColor>
+      <ButtonTextColor description="Gets the text color of a button">#FFFFFF</ButtonTextColor>
+      <ButtonBorderColor description="Gets the border color of a button">Transparent</ButtonBorderColor>
+      <ButtonDropDownSplitLineColor description="Gets the color of line between text and a drop-down arrow on a button">#DF8200</ButtonDropDownSplitLineColor>
+      <ButtonHoverBackColor description="Gets the background color of a button if the mouse cursor is over the button">#FF7A02</ButtonHoverBackColor>
+      <ButtonHoverTextColor description="Gets the text color of a button if the mouse cursor is over the button">#FFFFFF</ButtonHoverTextColor>
+      <ButtonBorderHoverColor description="Gets the border color of a button if the mouse cursor is over the button">Transparent</ButtonBorderHoverColor>
+      <ButtonDropDownSplitLineHoverColor description="Gets the color of line between text and a drop-down arrow on a button if the mouse cursor is over the button">#DF8200</ButtonDropDownSplitLineHoverColor>
+      <ButtonCheckedBackColor description="Gets the background color of a checked button">#EBEBEB</ButtonCheckedBackColor>
+      <ButtonCheckedTextColor description="Gets the text color of a checked button">#282828</ButtonCheckedTextColor>
+      <ButtonBorderCheckedColor description="Gets the border color of a checked button">Transparent</ButtonBorderCheckedColor>
+      <ButtonDropDownSplitLineCheckedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DF8200</ButtonDropDownSplitLineCheckedColor>
+      <ButtonPressedBackColor description="Gets the background color of a pressed button">#E66D00</ButtonPressedBackColor>
+      <ButtonPressedTextColor description="Gets the text color of a pressed button">#FFFFFF</ButtonPressedTextColor>
+      <ButtonBorderPressedColor description="Gets the border color of a pressed button">Transparent</ButtonBorderPressedColor>
+      <ButtonDropDownSplitLinePressedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DF8200</ButtonDropDownSplitLinePressedColor>
+      <ButtonDisabledBackColor description="Gets the background color of a disabled button">#EBEBEB</ButtonDisabledBackColor>
+      <ButtonDisabledTextColor description="Gets the text color of a disabled button">#808080</ButtonDisabledTextColor>
+      <ButtonBorderDisabledColor description="Gets the border color of a disabled button">Transparent</ButtonBorderDisabledColor>
+      <ButtonInvertImage description="Indicates if an image should have inverted colors if the button is in normal state">True</ButtonInvertImage>
+      <ButtonCheckedInvertImage description="Indicates if an image should have inverted colors if the button is checked">False</ButtonCheckedInvertImage>
+      <ButtonPressedInvertImage description="Indicates if an image should have inverted colors if the button is pressed">True</ButtonPressedInvertImage>
+      <ButtonHoverInvertImage description="Indicates if an image should have inverted colors if the mouse cursor is over the button">True</ButtonHoverInvertImage>
+      <ButtonInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is in normal state">True</ButtonInvertDropDownArrow>
+      <ButtonCheckedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is checked">False</ButtonCheckedInvertDropDownArrow>
+      <ButtonPressedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is pressed">True</ButtonPressedInvertDropDownArrow>
+      <ButtonHoverInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the mouse cursor is over the button">True</ButtonHoverInvertDropDownArrow>
+    </HighlightedButtonColors>
+    <UnderlinedButtonColors>
+      <ButtonUnderline>Transparent</ButtonUnderline>
+      <ButtonHoverUnderline>#0076F7</ButtonHoverUnderline>
+      <ButtonCheckedUnderline>#0076F7</ButtonCheckedUnderline>
+      <ButtonPressedUnderline>#0076F7</ButtonPressedUnderline>
+      <ButtonBackColor description="Gets the background color of a button">Transparent</ButtonBackColor>
+      <ButtonTextColor description="Gets the text color of a button">#282828</ButtonTextColor>
+      <ButtonBorderColor description="Gets the border color of a button">Transparent</ButtonBorderColor>
+      <ButtonDropDownSplitLineColor description="Gets the color of line between text and a drop-down arrow on a button">Transparent</ButtonDropDownSplitLineColor>
+      <ButtonHoverBackColor description="Gets the background color of a button if the mouse cursor is over the button">Transparent</ButtonHoverBackColor>
+      <ButtonHoverTextColor description="Gets the text color of a button if the mouse cursor is over the button">#0076F7</ButtonHoverTextColor>
+      <ButtonBorderHoverColor description="Gets the border color of a button if the mouse cursor is over the button">Transparent</ButtonBorderHoverColor>
+      <ButtonDropDownSplitLineHoverColor description="Gets the color of line between text and a drop-down arrow on a button if the mouse cursor is over the button">Transparent</ButtonDropDownSplitLineHoverColor>
+      <ButtonCheckedBackColor description="Gets the background color of a checked button">Transparent</ButtonCheckedBackColor>
+      <ButtonCheckedTextColor description="Gets the text color of a checked button">#0076F7</ButtonCheckedTextColor>
+      <ButtonBorderCheckedColor description="Gets the border color of a checked button">Transparent</ButtonBorderCheckedColor>
+      <ButtonDropDownSplitLineCheckedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">Transparent</ButtonDropDownSplitLineCheckedColor>
+      <ButtonPressedBackColor description="Gets the background color of a pressed button">Transparent</ButtonPressedBackColor>
+      <ButtonPressedTextColor description="Gets the text color of a pressed button">#0076F7</ButtonPressedTextColor>
+      <ButtonBorderPressedColor description="Gets the border color of a pressed button">Transparent</ButtonBorderPressedColor>
+      <ButtonDropDownSplitLinePressedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">Transparent</ButtonDropDownSplitLinePressedColor>
+      <ButtonDisabledBackColor description="Gets the background color of a disabled button">Transparent</ButtonDisabledBackColor>
+      <ButtonDisabledTextColor description="Gets the text color of a disabled button">#808080</ButtonDisabledTextColor>
+      <ButtonBorderDisabledColor description="Gets the border color of a disabled button">Transparent</ButtonBorderDisabledColor>
+      <ButtonInvertImage description="Indicates if an image should have inverted colors if the button is in normal state">False</ButtonInvertImage>
+      <ButtonCheckedInvertImage description="Indicates if an image should have inverted colors if the button is checked">True</ButtonCheckedInvertImage>
+      <ButtonPressedInvertImage description="Indicates if an image should have inverted colors if the button is pressed">True</ButtonPressedInvertImage>
+      <ButtonHoverInvertImage description="Indicates if an image should have inverted colors if the mouse cursor is over the button">True</ButtonHoverInvertImage>
+      <ButtonInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is in normal state">False</ButtonInvertDropDownArrow>
+      <ButtonCheckedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is checked">False</ButtonCheckedInvertDropDownArrow>
+      <ButtonPressedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is pressed">False</ButtonPressedInvertDropDownArrow>
+      <ButtonHoverInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertDropDownArrow>
+    </UnderlinedButtonColors>
+    <SeparatorColor>#E7E8E9</SeparatorColor>
+  </ToolStripColors>
+  <ButtonColors>
+    <ButtonBackColor description="Gets the background color of a button">#EBEBEB</ButtonBackColor>
+    <ButtonTextColor description="Gets the text color of a button">#282828</ButtonTextColor>
+    <ButtonBorderColor description="Gets the border color of a button">Transparent</ButtonBorderColor>
+    <ButtonDropDownSplitLineColor description="Gets the color of line between text and a drop-down arrow on a button">Transparent</ButtonDropDownSplitLineColor>
+    <ButtonHoverBackColor description="Gets the background color of a button if the mouse cursor is over the button">#DFDFDF</ButtonHoverBackColor>
+    <ButtonHoverTextColor description="Gets the text color of a button if the mouse cursor is over the button">#282828</ButtonHoverTextColor>
+    <ButtonBorderHoverColor description="Gets the border color of a button if the mouse cursor is over the button">Transparent</ButtonBorderHoverColor>
+    <ButtonDropDownSplitLineHoverColor description="Gets the color of line between text and a drop-down arrow on a button if the mouse cursor is over the button">#DCDCDC</ButtonDropDownSplitLineHoverColor>
+    <ButtonCheckedBackColor description="Gets the background color of a checked button">#EBEBEB</ButtonCheckedBackColor>
+    <ButtonCheckedTextColor description="Gets the text color of a checked button">#282828</ButtonCheckedTextColor>
+    <ButtonBorderCheckedColor description="Gets the border color of a checked button">Transparent</ButtonBorderCheckedColor>
+    <ButtonDropDownSplitLineCheckedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DCDCDC</ButtonDropDownSplitLineCheckedColor>
+    <ButtonPressedBackColor description="Gets the background color of a pressed button">#C5C5C5</ButtonPressedBackColor>
+    <ButtonPressedTextColor description="Gets the text color of a pressed button">#282828</ButtonPressedTextColor>
+    <ButtonBorderPressedColor description="Gets the border color of a pressed button">Transparent</ButtonBorderPressedColor>
+    <ButtonDropDownSplitLinePressedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DCDCDC</ButtonDropDownSplitLinePressedColor>
+    <ButtonDisabledBackColor description="Gets the background color of a disabled button">#EBEBEB</ButtonDisabledBackColor>
+    <ButtonDisabledTextColor description="Gets the text color of a disabled button">#808080</ButtonDisabledTextColor>
+    <ButtonBorderDisabledColor description="Gets the border color of a disabled button">Transparent</ButtonBorderDisabledColor>
+    <ButtonInvertImage description="Indicates if an image should have inverted colors if the button is in normal state">True</ButtonInvertImage>
+    <ButtonCheckedInvertImage description="Indicates if an image should have inverted colors if the button is checked">False</ButtonCheckedInvertImage>
+    <ButtonPressedInvertImage description="Indicates if an image should have inverted colors if the button is pressed">False</ButtonPressedInvertImage>
+    <ButtonHoverInvertImage description="Indicates if an image should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertImage>
+    <ButtonInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is in normal state">True</ButtonInvertDropDownArrow>
+    <ButtonCheckedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is checked">False</ButtonCheckedInvertDropDownArrow>
+    <ButtonPressedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is pressed">False</ButtonPressedInvertDropDownArrow>
+    <ButtonHoverInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertDropDownArrow>
+  </ButtonColors>
+  <SidebarSelectorButtonColors>
+    <ButtonBackColor description="Gets the background color of a button">Transparent</ButtonBackColor>
+    <ButtonTextColor description="Gets the text color of a button">#69696B</ButtonTextColor>
+    <ButtonBorderColor description="Gets the border color of a button">Transparent</ButtonBorderColor>
+    <ButtonDropDownSplitLineColor description="Gets the color of line between text and a drop-down arrow on a button">Transparent</ButtonDropDownSplitLineColor>
+    <ButtonHoverBackColor description="Gets the background color of a button if the mouse cursor is over the button">#ECF5FF</ButtonHoverBackColor>
+    <ButtonHoverTextColor description="Gets the text color of a button if the mouse cursor is over the button">#0076F7</ButtonHoverTextColor>
+    <ButtonBorderHoverColor description="Gets the border color of a button if the mouse cursor is over the button">Transparent</ButtonBorderHoverColor>
+    <ButtonDropDownSplitLineHoverColor description="Gets the color of line between text and a drop-down arrow on a button if the mouse cursor is over the button">Transparent</ButtonDropDownSplitLineHoverColor>
+    <ButtonCheckedBackColor description="Gets the background color of a checked button">#ECF5FF</ButtonCheckedBackColor>
+    <ButtonCheckedTextColor description="Gets the text color of a checked button">#0076F7</ButtonCheckedTextColor>
+    <ButtonBorderCheckedColor description="Gets the border color of a checked button">Transparent</ButtonBorderCheckedColor>
+    <ButtonDropDownSplitLineCheckedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">Transparent</ButtonDropDownSplitLineCheckedColor>
+    <ButtonPressedBackColor description="Gets the background color of a pressed button">#EBEBEB</ButtonPressedBackColor>
+    <ButtonPressedTextColor description="Gets the text color of a pressed button">#69696B</ButtonPressedTextColor>
+    <ButtonBorderPressedColor description="Gets the border color of a pressed button">Transparent</ButtonBorderPressedColor>
+    <ButtonDropDownSplitLinePressedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">Transparent</ButtonDropDownSplitLinePressedColor>
+    <ButtonDisabledBackColor description="Gets the background color of a disabled button">Transparent</ButtonDisabledBackColor>
+    <ButtonDisabledTextColor description="Gets the text color of a disabled button">#808080</ButtonDisabledTextColor>
+    <ButtonBorderDisabledColor description="Gets the border color of a disabled button">Transparent</ButtonBorderDisabledColor>
+    <ButtonInvertImage description="Indicates if an image should have inverted colors if the button is in normal state">True</ButtonInvertImage>
+    <ButtonCheckedInvertImage description="Indicates if an image should have inverted colors if the button is checked">True</ButtonCheckedInvertImage>
+    <ButtonPressedInvertImage description="Indicates if an image should have inverted colors if the button is pressed">True</ButtonPressedInvertImage>
+    <ButtonHoverInvertImage description="Indicates if an image should have inverted colors if the mouse cursor is over the button">True</ButtonHoverInvertImage>
+    <ButtonInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is in normal state">True</ButtonInvertDropDownArrow>
+    <ButtonCheckedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is checked">True</ButtonCheckedInvertDropDownArrow>
+    <ButtonPressedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is pressed">True</ButtonPressedInvertDropDownArrow>
+    <ButtonHoverInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the mouse cursor is over the button">False</ButtonHoverInvertDropDownArrow>
+  </SidebarSelectorButtonColors>
+  <HighlightedButtonColors>
+    <ButtonBackColor description="Gets the background color of a button">#FF9400</ButtonBackColor>
+    <ButtonTextColor description="Gets the text color of a button">#FFFFFF</ButtonTextColor>
+    <ButtonBorderColor description="Gets the border color of a button">Transparent</ButtonBorderColor>
+    <ButtonDropDownSplitLineColor description="Gets the color of line between text and a drop-down arrow on a button">#DF8200</ButtonDropDownSplitLineColor>
+    <ButtonHoverBackColor description="Gets the background color of a button if the mouse cursor is over the button">#FF7A02</ButtonHoverBackColor>
+    <ButtonHoverTextColor description="Gets the text color of a button if the mouse cursor is over the button">#FFFFFF</ButtonHoverTextColor>
+    <ButtonBorderHoverColor description="Gets the border color of a button if the mouse cursor is over the button">Transparent</ButtonBorderHoverColor>
+    <ButtonDropDownSplitLineHoverColor description="Gets the color of line between text and a drop-down arrow on a button if the mouse cursor is over the button">#DF8200</ButtonDropDownSplitLineHoverColor>
+    <ButtonCheckedBackColor description="Gets the background color of a checked button">#EBEBEB</ButtonCheckedBackColor>
+    <ButtonCheckedTextColor description="Gets the text color of a checked button">#282828</ButtonCheckedTextColor>
+    <ButtonBorderCheckedColor description="Gets the border color of a checked button">Transparent</ButtonBorderCheckedColor>
+    <ButtonDropDownSplitLineCheckedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DF8200</ButtonDropDownSplitLineCheckedColor>
+    <ButtonPressedBackColor description="Gets the background color of a pressed button">#E66D00</ButtonPressedBackColor>
+    <ButtonPressedTextColor description="Gets the text color of a pressed button">#FFFFFF</ButtonPressedTextColor>
+    <ButtonBorderPressedColor description="Gets the border color of a pressed button">Transparent</ButtonBorderPressedColor>
+    <ButtonDropDownSplitLinePressedColor description="Gets the color of line between text and a drop-down arrow on a pressed button">#DF8200</ButtonDropDownSplitLinePressedColor>
+    <ButtonDisabledBackColor description="Gets the background color of a disabled button">#EBEBEB</ButtonDisabledBackColor>
+    <ButtonDisabledTextColor description="Gets the text color of a disabled button">#808080</ButtonDisabledTextColor>
+    <ButtonBorderDisabledColor description="Gets the border color of a disabled button">Transparent</ButtonBorderDisabledColor>
+    <ButtonInvertImage description="Indicates if an image should have inverted colors if the button is in normal state">True</ButtonInvertImage>
+    <ButtonCheckedInvertImage description="Indicates if an image should have inverted colors if the button is checked">False</ButtonCheckedInvertImage>
+    <ButtonPressedInvertImage description="Indicates if an image should have inverted colors if the button is pressed">True</ButtonPressedInvertImage>
+    <ButtonHoverInvertImage description="Indicates if an image should have inverted colors if the mouse cursor is over the button">True</ButtonHoverInvertImage>
+    <ButtonInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is in normal state">True</ButtonInvertDropDownArrow>
+    <ButtonCheckedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is checked">False</ButtonCheckedInvertDropDownArrow>
+    <ButtonPressedInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the button is pressed">True</ButtonPressedInvertDropDownArrow>
+    <ButtonHoverInvertDropDownArrow description="Indicates if the drop-down arrow should have inverted colors if the mouse cursor is over the button">True</ButtonHoverInvertDropDownArrow>
+  </HighlightedButtonColors>
+  <MenuColors>
+    <MenuBackColor description="Gets the background color of a context menu">#FFFFFF</MenuBackColor>
+    <MenuBorder description="Gets the color that is used for the border of a context menu">#DDDDDD</MenuBorder>
+    <MenuItemBorder description="Gets the border color to use with a ToolStrip menu item">Transparent</MenuItemBorder>
+    <MenuItemPressedBackColor description="Gets the background color for the pressed menu item">#FF9400</MenuItemPressedBackColor>
+    <MenuItemSelectedBackColor description="Gets the background color for the selected menu item">#FF9400</MenuItemSelectedBackColor>
+    <MenuItemTextColor description="Gets the color of items text">#282828</MenuItemTextColor>
+    <MenuItemDisabledTextColor description="Gets the color of disabled items text">#6D6D6D</MenuItemDisabledTextColor>
+    <MenuItemPressedTextColor description="Gets the color of pressed items text">#FFFFFF</MenuItemPressedTextColor>
+    <MenuItemSelectedTextColor description="Gets the color of selected items text">#FFFFFF</MenuItemSelectedTextColor>
+    <MenuItemInvertImage description="Indicates if an image should have inverted colors if the menu item is in normal state">False</MenuItemInvertImage>
+    <MenuItemPressedInvertImage description="Indicates if an image should have inverted colors if the menu item is pressed">True</MenuItemPressedInvertImage>
+    <MenuItemSelectedInvertImage description="Indicates if an image should have inverted colors if the menu item is selected">True</MenuItemSelectedInvertImage>
+    <MenuItemInvertExpandArrow description="Indicates if the expand arrow should have inverted colors if the menu item is in normal state">False</MenuItemInvertExpandArrow>
+    <MenuItemPressedInvertExpandArrow description="Indicates if the expand arrow should have inverted colors if the menu item is pressed">True</MenuItemPressedInvertExpandArrow>
+    <MenuItemSelectedInvertExpandArrow description="Indicates if the expand arrow should have inverted colors if the menu item is selected">True</MenuItemSelectedInvertExpandArrow>
+    <SeparatorColor description="Gets the color for separators">#EBEBEB</SeparatorColor>
+  </MenuColors>
+  <IsDarkTheme description="Specifies if the theme is derived from a dark theme">False</IsDarkTheme>
+  <Screenshot description="Specifies a base64 encoded screenshot image">iVBORw0KGgoAAAANSUhEUgAAASQAAAEkCAYAAACG+UzsAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAACQqSURBVHhe7Z1vjBzlfcdpaCVoRITUElKJNkhVVbdpGkNfgFJeOImC0lZCrk4KrvoifpUS+qKnvCg5VVZRVQkJR5wR2DiY8/InwUBoDnqNiStydyHQS+PDByZAYlPOhvjfmbM5Y8D2sfv0933mmd3Z2WdnZ3ZnZmee+X6krz37zOzs3d48n32eZ56duYgQn4WFhbV79+5dh7z44ou3BzIpmQlnfn5+Qf5X4Zjyju0lNYnep2wz6r+WvO7V5kcghFQFVHwIADIwYvBF0SGVYUR+rtPyP34eCBDS2miEdbn5FQghZSQgHrRKCiOdfhOQ1ThEhdac+VUJIUUClROVVCprTf63dqMcTlBS7PoRkjdGQGj9TMr/aDnYKmolI+/HovwPMVNQhGSBVKzLUcFMRaOAEsQICi2o9XgfzVtKCEkCPt2lEo1KqtYFyzpoVY6y9URID6SSrJUKg09zfKrbKhOTYiB7yomQAGwJFSNGThh3YreOVAsc9Dj4pSKU/nS8o0G3br35cxHiJqZLxoHpkkT+Tug6384uHXEKtoacyCQmm5o/KSHlAt0yOYjx9QcOUDsU/D3xAWP+zIQUGzTv5cBlt8zxmL8vunMcBCfFwxdR8KBl3A/FRAoFRcQgRkzjFBMZChQRYwtbTCRXcKDJAUcRMZGhmEimGBHhrBkONOtByDDhyPHCs3IkXeSAWo8Dy3bAMUycyPGzwHlMZCCkVYSZ1ZzQyKSZGrtxJBGmezYeOpAYJpVIa+m0ZNQcboR0h90zJq+gG4dWuDn0CGlhWkW424X14GGYDMOzcaSFaRXx7BkztKBVzkHvisNWEVPA3G4OT1IlzH3L2CpiCheOLVUM+aPzDBpT+IiYeCbOZfCpg08f2x+fYQqaSQ54O4iIaCO7aEwZI8ftIrtwDiF/VHbRmNKHXbiSg6Yuu2iMY+FXT8qIGS9iF41xLviQFXgnlLIgfzDc5cP6x2QYF4IPW3zomkOeFBX5Y3G8iKlM8OFrDn1SJNCvlj8Qr+TIVDHjphqQIgAZoV9t+UMxTFVSM9WBDBMM7lFGDKMzgw9nUzVI3mBQD4N7lj8Mw1Qy+HCmlIYAZcQw9lBKOUMZMUx0UD9QT0yVIVlBGTFMvFBKGSNvMCc8MkyCUEoZgQuq2d5whmGiQymlDLtpDDNYKKWUoIwYJp0YKfHsW79QRgyTbqQ+SbWilBJDGTFMNqGUEoI3C2+a7c1kGCaVzJjqRqKgjBgmt/ALub2QN4k3bmSY/MJLl3RD3hxez4hhco70SHiRtzB4U2xvFsMw2QcnkUxVJJyFzTDDjTQIMEeJNw7Am4A3w/YmMQyTX3AyCSeVTNWsHvjl8SbY3hyGYYaS6p55wy8fejMKlW9961sMU7ls27Zt0lTR6lCGQWz8cQipIseOHbvZVFX3ka5aKb4WQiGRqnLu3LnVo0ePftpUWXcp07gRhUSqzJkzZ46aausuUtFLM/mRQiJVZ3l52d3xJGkZrbdV/KKGQiLE0fEk01Ur1XwjCokQpT4QTDV2B6ngM+EKX/RQSIR4SNdt1lTl8iMto1FbhS96KCRCWhw/fnzUVOnyIl210n41pG8hvX9UNZ7/pqo/8oeqce9Fqr71Y6q+67NK7f13pS6cMRsRUi6cmAogFbt0XTU/fQnp0H+p+o7LVf2+31aNZzcq9dK4UvvuVI3df6vq235T1R/6A6Xe2W82JqRclLrrJi2jUl9SJLGQjj4vraHfUo2nv6LUhydNYYB3D0pLaa2qP/A7Sp05ZAr7YVqNrVmj1oxNm8ftLE6MqDVrRtTEoikgJEVKedatjGfVwkkkpPqqqn/3j1X98b9Q6qPzptDCh++o+s4rVWPqb0xBP0BII2pkxCYdIysKiWREKc+6SYUu/dUfEwnpzae98SLplqmXtpjCEPULqvHTUb0dok7/0qxIiieksTGRUtg602PSchrT6ykkkhWlmjDpygXXkgipMXuLqj/6Z6rxk3/0hLPnZqUuvGfWCu8fVfUnb1D1ey9W6sU7VH37pUrtv8esTIonpIlF/D8mj3wW1YRuNfnr/eIJNaJbTYi/vdlmQgRm1rXkFnp+x2NSdVZXVxulGeCWrpoT1zhKJKSnvyIS+jvvwS8f0YPa9Uf/1GsFHfmJ7qYh6tczepP649fo1lJ/tAQxPbZGNYeSIJ6RCdFSUCAhmUgLyhMPygPjUGhZhWXVFFD4MSFKraysHDRVvriUdc6RLYmE9J9/7bWKfJZfUfXv/pGqf+fjulWE1pE6e8SsFCHt+qxq/M9t5lFSAoJoSghO8eUUWt9sHZnojaKkE7WOkBaFnpvkwkB2MImE9NN/0oPabZxf0af7dUuofsEUCqvvq/q2S5R69X5TkJSgIEw3bbolprb1WkjBbp1PlHSi1hHSotAD3FKJx8OVusxJJKSZf1D1iU/JQt2URCAiqt/zG0q995YpSEpIELq71W0MCMvBdT5R0oHkAl1BvX8Kidg5efLkA0YBxQEzsm2VusyJLaQPlrwWz4t3eI+jpHTmsIjrCtX47783Bf0QlgkEEmwFhdaHu209u2x42Brs5lk7EkUhZ3BLBXbuJo9xhdT42SbvlD9maGM29hPXKXX6gFkb4Picqj/4aW+29ofvmEJCyk+hZnC7el+12EKavcXLz/5Ff02kXvt9PZCNyY8ow+A1BrW1tHatHXCWtmq1XGKEkDwo1DQAqbyl/b5aVJKMIbWB+Uf7Nqv6f/yld7r/watU4+kblXptp57RTYiLFKKV5PJdZ/sWEiEVpBCtJKm4TraOEAqJkGScOnVqn1FD/rh+T34KiZBkDLWVJJXW2dYRQiERkpyhjCW53jpCKCRCkjOUVpJU2MlwBXYtFBIh/ZFrK8nFWdm2UEiE9AdaSUYX2SOV1blZ2bZQSIT0Ty7fcXPtG/1RoZAI6R98x81oIzukot4erriuhkIiZDAyv16StI4WbZXXxVBIhAzGmTNnjhp1pI/IaL2t4roaComQwTly5MgNRiHpIpXU+VP9wVBIhAxOJlMAqnKqPxgKiZDByWRwWypoZQaz/QwkpI8+VOp//1WpyXVK4R5sFc7iv9nLuwbv2Zy89+dOmzeTlJ2lpaU7jErSoUqD2X76FhJk9Nhae2WrYBILyc/OTyn1/jHzppIyk+rgdhW+t2ZL30LCXUZsFayi6VtIyJ4N5k0lZSe177dJ5azEzOxw+hYSW0dtGUhIOy43byopO6nN3K7KzOxw+haSrWJVOAMJCSFOkMo93Ko29ygYCimdUEjEZ+A5SVIxK9ldQyikdEIhEZ/l5eVJo5b+qGp3DaGQ0gmFRHwG6rZVubuGUEjphEIiQfrutkmlrGx3DaGQ0gmFRIL03W2r4mTIYIYiJB/bupKmKEJqNBqqVqupL33pS+qTn/ykuvLKK9WNN96odu7cqdeRfOhrkuTCwsJaWyWtUiikdFIUId12221KDm11zTXXqG984xvqlltu0csou/76681WJA8ST5KUClm5766FU04hfd17/hvyf0f5QaV2BcvySZG6bE8//bRZavHEE0+oSy+9VH3hC1/AtaBNaS+m1diaNWpNIGPTZlUU02Pe9iMTatEU9Qdef0RNDLaToZH4u23SXVuwVdIqpbxCEvGckv/2WMorLqRuQEpy2KuHHnrIlPQiJAQtmjEpjcKTWCxx9aTcQkp0h1tcN9tWQauWUgtpzxb5q0vC5cMW0gO/qxpvS43c9edt2+hImV4n27SVD0C9Xldf+9rX1NTUlCnpzmc+8xk9phSPsBDiCCJNiQy+r5MnT6p169apl19+2ZS0QBnWYZssSHRJkqqf7veTuZCSYttHRwLieUMW936+sxyPd4msmuz2yrB9s1Vl2b6jGxgvbUL63p+oxpm3VOP8ilJTf9Uql2WUYR22aZYjA4BxIjmk1SWXXKJmZ2dNaTtyvKtPfOITejs/vf/2ISGghRTshi1OqJFmdw4tJ2zf6t6N6Cd6+xgbG2m1rjqepwvVxEjruV4Ly7z+dGt7b5/xee2119RVV12lLrvsMrV7txwDBiyjDOuwTVbEPv0vlXE8XDmrmNILKdayZI8cjBAX/velg+VTso0vtL2B5YTp6LLt/D3VODGvGvVVpWZv1cEyyrCubVukT/D3k8O5GUgH8rExMzOjpYXtILHetAtmTVs/rFNWQQG1vOHtoyWSLs+D7Dr6eeb1fQnG6jJ2cvToUXXttdeqiy++WG3dulUHyyjDuiyJ/WVbjh95KXWXLSgbLZlAeVvryIBtUO53896QbZvdPhER5OTvM2GsY0jf+bhq/N9T5sWVtyxlHdshA/LlL39Zd8d6gW4dunfo5vUmIA/dqgnIoK2VExSWTUiBx92eZ8rbW0A99pWAs2fPqptuuqkpbiyjLGtWVlYOauFEwfGjVpwQkpaJFO0JC0lE1fFcXzyybVNEsl1QVH2k66D21o+pxsJdOli2boMMCAaq5dBW3//+901JGrQLYHFipCWMsKCaxBFS91YOXgOSauuyddtXQiDh0dFRnXhCHpxY40gcP2rFDSFJmi0ivxzbCLYuGLpm4a7aGyKlPrtrSFchxU0KYIAWp/affPJJU9IizoB3J1FCwLJtTKeXRLo9r0VLfL32VQ56jiNJReT4kYkzQkIglmB5uNvmjx3p8vB2lv0lSBGEBK677jrdUsL4yK233qqDZZRh0mQyOgWgWzD+mE64+xWnywZsz9PjQ36Z34JyQ0g9x5GkIs6EK2ZVU04hFS9FERK+HjIxMaHHlPDVkSuuuEJ98Ytf1F8dyaubQtrpOR/JVjGrmqEIadDEwfa8DFMUIeVFqzXTHtLJ2bNnTxv1dMLvr7WnlEIqYKomJJIMo59O5ufnN9oqZlVDIaUTColEcezYsZuNgtqRSsgB7UAopHRCIZEoug5sSyXkgHYgFFI6oZBIFF0HtqXLVtnrZ9tCIaUTColEYR3YXlhYuNpWKaucvoX08NX2ilXRDCSk+y4xbypxldXV1YbRUIuq3i47Kn0LCbd/tlWuimYgIU2uM28qcZmOK0hKd23UVimrnL6FdGbR+2S3VbAKZiAh/XrGvKnEZY4fPz5qVOQhFZBn2ELpW0jg1Ovep7utklUsfQnpyeuVOvyMeTOJ63ScaZMKyDNsoQwkJEJIbJaXl2eNijx4DaTOUEiE5EPHrZFsFbLqoZAIyYe2U/+8KJs9FBIh+dB26p+n/O2hkAjJD6MjCqlbKCRC8qN59UipfJW/S60tFBIh+dGciySVj0KyBELCjfIYhsk+i4uLTSFxUqQlbCER4t3hNg+Wl5cnfSFxUqQlFBIhuQrJmxwplY9CsoRCIoRCKkwoJELyE1LzTrbz8/OLtgpZ9VBIhOQnpOZsbVtlZCgkQgCFVJBQSIRQSIUJhUQIhVSYUEiEUEiFCYVESH5C+kCgkCJCIRESU0gHptTmzZtNptQBU5wUCikiFBIhMYS0PKdqQQnJ47nERjqgpjbXKKSoUEiExBASWke1ObVsHvYHhdQzFBIhcbpskMlmVZuzKEm3nvyu3GY11Ww5eQKamqoFunqbKaSolEpIh2ZVbVNNzR4yj4VDtQ3qc5/7nFq7adaUEJKceIPay2quZpNO4LGWU0153gpLjC2knhlISLObtAy0ENZuULWAKDqZVZvWrm1un9wfh1Rtg/f8tRtq8siUUkgkBeIJyWBaRFpC4bEl4cCULyhPQK1G1QH1zNbv8SxbVNISUk8phLbtxx++fDYEzEchkTRIJCRheU66YbBOUiHdt4vzkKKShpDWbtigNkjrZ+3aTdIOsjO7qdU6QtLyB4VE0qD3oPZcQCxe183ritm6bL6gKKTESUdIm9Qm052yeuFQzRNWr+36gEIiaRB3ULs5ON00kGC6cN66dgG1C0mp15+5j0KKSipCkpZRLUIMra7WbHMcqH2zQ2q2tkltMOu8fW5Qm0KDUjb5UEgkDZJ22fql+dWR+fn507YKWfWkJaRZM2jdObjtDUZ75a2B6TZ/NPcjXb9NIqbA4Hev8SIKiaRB7kKSyscrRlqSnpDw0BNJUCJiDK+7poXRTUg1VQueyxf8ffU6o0YhkTTIS0jN+/tL5aOQLElTSM3HAYn4YvF80UVINiz7opBIVuQlJF5Tu0dSFVKHcPxuXLf1LQ7pSY8Y9JZum9lG75tCIjkwDCHxvmyWpCukkCDM+lYXzi6k4JSADSKkTUZMej8UEsmBYQiJd661JG0hBVtFm0Q07YPcFiH5Y0yyfdtgOLtsJEfyEhJvpd0j6QupvcUTFIpVSNZ9tLajkEge5C6k+fn59bYKWfVkISS/HGn3RPcWkrcfjB95gvH/p5BIHkBIx46fyDwHDx68WQtp796962wVsurJREhGPN3K8Zw2f4iU/BnckJKeEOnvm0IiOZBXC0nLCCwsLFxtq5BVz0BCIsQRchcSsFXIqodCIiQfITVnafvwdtqdoZAIGZKQpAJycmQoFBIh+QipOQfJRyogJ0eGQiERkpuQJo2KPKQCci5SKBQSIfkIqTkHyYen/jtDIRGSj5COHDlyg1GRB0/9d4ZCIiQfIRkNtWOrlFUOhURI9kLqOMPmI5WQZ9oCoZAIyV5IKysrB42C2pFKWAtXyiqHQiIkeyF1nGHzmZ+fH7VVzKqGQiIkeyF1nGHz4Zm29lBIhGQvJKMfO7aKWdVQSIRkK6QPBKMeO9JtW7BVziqGQiIkWyF1HdD2kYrIr5CYUEiEZCsk2fcDRj12pIW00VY5qxgKiZBshXTs2DHvKpHd4IztVigkQrIT0urqasNoJxpeG8kLhURc4N133x0oWQmpeafaXkhl5ARJCYVEXMAmmSTJSkhdJ0SG4TiSFwqJuIBNMkmSlZB6jh/5cBzJC4VEXMAmmSQZREj1el2Njo7qYNkn9viRD+cjUUjEDWySSZJ+hXT27Fl10003YSa2DpZRBnrOPwojFbLy85EoJOICNskkST9COnr0qLr22mvVxRdfrLZu3aqDZZRhnewzev5RGH6vjUIibmCTjJ+NGzday4NJKqTXXntNXXXVVeqyyy5Tu3fvNqVKL6MM66R+fdqoJj7SbTsdrqRVCoVEXMAmGQQy8mNb7yepkLD9unXr1Msvv2xKWqDsq1/9avT317ohlXIyXEmrFAqJuIBNMkEZ9ZJSP122KGKf7g9T9dP/FBJxgbBgwhIKPw4nbSF1XNA/LgsLC5fbKmpVQiERFwgLxiafvIR07ty5VaOX/pCKWdluG4VEXCAsmG7iyUNIp06d2mfU0h9V7rYVWUg/+tGPdAjphU0ySZKmkGLPzu5GlbttRRXSiRMn1Pbt23WWlpZMKSF2bJJJkrSE1PPqkHGRylnJbltRhfTDH/5Q/fznP9fBMiFR2CSTJGkJqe+za2Gk27beVmFdTxGF9M4776h7771XnT9/HgOEehll/XFATW3erDYHM3XArMuKZXVgbk7+JXlhk0ySpCWkvs+u2ajiJMlBhSQtVLVr1y5rtwplWIdtonj99dfVs88+q5566in1yCOPqHvuuUft37/frFV6GWVYh22wLZ4TD09ItbkD+PTyYtZkxvKcqslret4TOU3V5PWppyyxSSZJ0hBS17vT9otU0Mp9t21QIaHlgnGeu+++W7355pumVOlllGFdr9YNtnn88cfVr371K/0dILSKwqAM67ANtsVz4uELaVhCWFZztWG+fjWwHdtx00tIx46fiJU33ngz2XfXerGwsLDW9gO7nDS6bPh288MPP6y7Q/Ie6mAZZf43n6PAwXDfffepffv2mZLuYBtsG/8TrZuQIIpasxtXm0IXy5NHsEt3YEoe17zu1/KBKd3y8Z5TU1P+PqVcP5aW0ObNU+qAbiHV1Jy0xvT+/OfY9lOT7fVOZFv9fK+cAkuG7diOmzRaSLjUiHxgJv/uWi+k21apS5KkNYZ04cIF9YMf/KBZobCMsrisrKyoHTt26EHsbmAdtsG28ekcQ/K7UuILj2AXS8vFl4T3XF3ub2NEAak092WWmxJpCkk/aG8h6XWQln4gEpKfSXayPCcyasqJJMV2bMdNGkJKfKmRuFRtTlKag9qNRkNNT0/rYDkp7733nhofH8enjSlpgTKswzbJ6BxD8sDAs7RUAq0kT1QBCQXk5AkjOFAdEI3ezhcQVnUXkt6Peb1msF9fapBS82ckcbEd23GThpAGnnsURZUGt9MU0qB89NFHasuWLfr/MFHrorF32ZotEl0ckBAeBVstpjBVIbXtJ4CISA+AW35eEo3t2I6bQYWU+mB2GPkhKzO4XSQhyaeMeuihh/QyTvljvAjBMsA6bJMMu5C8sSHT+jGtE19IvmBqIpJmmd9l8wxmnmOkE0dILduZ1/L3M6ek8RZAtjdCJPGxHdtxM6iQ5LnpDmaHWajQ9baLJCQMhj/zzDPqpZdeUtu2bdMTIhEsowzrsE0y7EKCNKZEFLqbNCfLQSGZ54RbMm2D0SIcXyrRQsJD000z+1tGV9Hfj0gR2zW3MWX+rkk8bMd23AwipIG/SBsX+UErcZukIglpZmZG3XXXXfq0Pr464oNllGEdtiEkjO3YjptBhLS8vDxrlJEtVbm8bZGEhCkChw8fNo86wbo40whI9bAd23HTr5AyO9XfDflhZ8I/vGspkpAI6RfbsR03/Qops1P93ajC99soJOICtmM7bvoVUqrfW4uLSGnR9ku4EgqJuIDt2I6bfoSUe+vIx/WJkhQScQHbsR03/QhpKK0jH5dbSRQScQHbsR03SYU0tNaRj8utJAqJuIDt2I6bpEIaauvIx9VWEoVEXMB2bMdNEiENvXXkI0Jy8owbhURcwHZsx00SIRWideQjP7xz85IoJOICtmM7buIKqTCtIx8XZ29TSMQFbMd23MQRUu6zsuMiv4BTdyehkIgL2I7tuIkjpNy+s5YU164EQCERF7Ad23HTS0j4Rn8hW0c+8kvcHv6lyhoKibiA7diOm15CWlpausNU/WIiraTLXZkGQCERF7Ad23ETJaTMrwaZFq5MlnRBSLheUvPiZj0SvM4ScQfbsR03UULK9FrZaSO/TOmnAbggpBdeeKF56dsosA22Je5hO7bjppuQTp06tc9U9XLgwgC3C0LC3XFxp5NeYBts2w/TY2vUmrHwa0yrsTUjamIxvBwE5WPyby+6PZ/EwXZsx41NSIUfyO6G/EKlHuB2QUjoih08eNA86g62wbaJWZxQIyNjamwkLAwKKTNOrKrP//OH6uu/MI97YDu248YmpMIPZEcxX+KbS5ZdSG+99ZaWjO3222GwDbbFc5KwODGiRsQU/v8tKKRMMDK6aEhCOnPmzFFTtcuJdN1Kewvusgsp7viRT/JxpEU14beMdEtpQkp8kgrJbDMxptaskS6gpCU4s25aXqNjnYDXNuWI13vEzxbYblr2G/z52p7j/wzec9r3UyQ+Ul+HiB49PxQhFXZGdlLkFytl163sQoo7fuSTeBypTUIBOWn6EZKIwLcABBJe57+Wlklw3wF5dKzDPoKvA/A48PPIa2lx4TWLZ6FOfjEcIZW6qxamjF23sgsJXbB+EpdwNw2PWxU6WOlDAmgSFEV4m+jnYyBdv5QWUFA2gXXeg87WTlvryAQbmPK21lcRGYKQSt9VC1PGrpsLQvKZnJxU999/v+6SYZwIwfLdd9+t1/nEFxIkEarUOjbBdArFA+X9CMnrWg0mpPbnBNFiDT+nSOQspOPHj7vRVQsjv2Cpum4uCQmD1r6A/JYQllEWHPSOLSRU9LYxIxAQRaRQfFAeV0iBlkubULx1TXl0rMOy/79PaH8WOgfpC0TOQlpcXBw1Vdg95JcszYRJl4QUl7jPQSvEVmFb3TZU+jSFNKLGxryWi73F47fQ/Oe0D2rrn6vroLYEOzStKS9BgRWMHIV05MiRck2ATIr5rttp2y9ftJRdSMHWUNzgOcQtbMd2zHxgqq3biJBKccnbsguJEGA7tntF6mhD/i/Pd9UGRX7Z8eAbUMRQSMQFbMd2r4iQHjBVtTrIL17o8SQKibiA7djuEbfHjbpR9PEkCom4gO3Yjkg1xo26UeT5SRQScQHbsW2LGTdyb75RUuSNKOQF3Sgk4gK2Y7tLqjOI3Qt5M2qhN2fooZCIC9iO7XAqOYjdC3ljCnUbJQqJuIDt2A6lmoPYvTCD3IX5Ei6FRFzAdmz7kfpWrDvOFo0inXmjkIgL2I5tkw8kHMTuBc68FUFKFBJxAduxLaGMklCE6QAUEnGB8HEtH/YNyQ2mqpG4yJs21OkAFBJxgeAxDRnJ/zy93y/DlBKFRFzAP54po5QYlpRcEtL58+fV888/ry/kv2XLFh0sowzriLvgWKaMUmYYUnJFSIcPH1bbt2/X1zt6+OGH1Z49e3SwjDKswzbETczxTBmlTd5SckFIEM2dd96pdu7ciWsjm9IWKMM6bEMpuYnUG87Czoo8pVR2IaErhtYPhLO6umpKlXrsscd0fLAO22Db+N0322VpbWV5MKzXLTa4j5p84Lh7PeyikJeUyi4kjA+hSxZuGYWFBLANtsVz4kEhZcnBH5/T183WGV9V/s3Q28of/ciUdgIZHTt2jN20vMhDSmUX0oMPPqjHicLYhASwbfw73VJImWFul/35H9ebF/TXy8F7+kdc6J8yGhJZS6nsQsKZNAxeh8HdaWu1mrpw4YIp8cC2eE48egnJLEfcGtu7i4i5u0fbXUBad/zA3U2adwIJ3moksP3IxIRbQrJICMte6+ic2nICG3m31Q63kiijIZPl10xcFdL+/fv1IPaOHTvU22+/bUqzEFJAIvoWQ8FbHnUKqvXQ3Nq6jc59+7v2buzokJCE3Y+abllAOl7ZebVbP+oU0gcCZVQAspJS2YWE7petywYgIggJYlpaWtJl6XbZwusj1oXvkYa0icwvN8/B9m03qbT9LCXGtIqaQpKgaxYlJMjIybvLlhVzlYBUL13i6qC2D7psr7zyil5OPqiNGzGGJKDFEv/Gj811bc8L0FYeeD3HhdRNPLZydOVw333KqIBASiKS1C7yVnYhdTvtHwbrkp/2Fw1gfCcgBv24Oc6TQEj6seVOuMHbdWs5BZ/vbpetbazIby2hJRQcyNbL51Tt0AqvZ1R0RCapXA637EIC2U6M9G5X3exSRbZaooQkaOEE9qVtE9j/yJgaC7bIAl055wa1hbYxpMBp/2D5N587wQmPZSGNM3AuCAlANGj9oEuGcSIMXiNYRhnWcZZ2ecCZNPkg4YTHsjHoYLcrQgLoimF8CHOTcCYN4ZdrywcGr48cOcJrGZUVM67U1x1yXRISKT8rKysHOXjtCCKY8bBweoVCIkUAXbSTJ09yvMg1pPu2PkkXjkIiwwZdNE52dJgkXTgKiQwTdtEqhAjn9rCAwqGQyDBAF21paekOc6iSqmDOwnWd3U0hkbw5e/bsabaKKo7Ix9paopBIXqBVtLy8PGkOSVJ1bK0lConkAVpFnFtErIiImq0lColkCU/nk1hIa+lqEdIMhUSygmfQSGK2b9/+wLlz57p/TZ6QhGBeEb+HRvoGn2LLy8uz5ngipC84aE1SBYOOuBCWOb4Iic2pU6f2sXtGMgHNbZwVMcda4cHlRV544QXziOQJxol49ozkAmbSlmF8CUKKG9yJhAwOPrA4TkSGAk7bFllMEA3uwYZWki3PPfecGh8fV9/+9rfV4qJDl1wcAhQRKQxFFROEBPF0Y2pqSl++9tVXXzUlcfGua9285Ky+lCyEZrk8be7k+zNQRKSwoCtXpDGmKCE9++yzev3evXtNSRK6VfrqCAknOSgiUgpwoGJQ0xy7Q4NCShecvudgNSktOHBx2hcHsjmmcyVKSI1GY8AuW28h9XUr7JjrgrfcjnxOCqA7jvloPH1PnAHjTJipa47xXICQshnUhnh8MXjxfBNHVN5z7fdV67UusO/mLbejnjMY6Jbx2kTEaXBJ0rxaTRBS3CQ77R+SQ5NOabSkZcrRmul2D7de65r7MoGFop7TB35riN0yUjnw6ZvlDHCIBi2h9IkhJC2QhLfC7imkLrfcHlBI/tgQB6kJETA2gS5d2nIaqpD6uhV273Udt9yOfE53fAmxS0ZIBEE5DdqtG6qQdKvIdK2S3Ao7ap0Wm9kn4lso6jkB0B2jhAgZAHQjMObUz4B4dkJKkW5dMRC1LiZ43zAmxNsJEZIyGGhF6wmf8nFmhpdBSHpqQNsYUIuodd2AgCBwtIJ4mp6QHPEF1W8LajgEunI6wRZQ1Do7mBlPARFSUNDFw8XA0Ioq0tdYBgXjab58IGF2wQgpKWhJGVHNokKjYhfxy8AALT1fPBArfm7OCSKkIviyQpcHwgpKy8+gZ/sgv+D+jGz0a+G1EXa3CCGEFISLLvp/MOVu8r+uGq0AAAAASUVORK5CYII=</Screenshot>
+  <Label description="Color of labels preceding an edit control">#979797</Label>
+  <LabelDisabled description="Color of disabled labels preceding an edit control">#6D6D6D</LabelDisabled>
+  <PopupBackground description="Color for background of popups">#0076F7</PopupBackground>
+  <PopupText description="Font color for popups">#FFFFFF</PopupText>
+  <RoundedCornersRadius description="Radius of control corners. Use '0' for rectangular controls">4</RoundedCornersRadius>
+</SerializableColorTheme>

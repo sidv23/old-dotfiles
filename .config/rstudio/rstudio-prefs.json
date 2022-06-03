@@ -4,7 +4,7 @@
     "show_indent_guides": true,
     "syntax_color_console": true,
     "highlight_r_function_calls": true,
-    "editor_theme": "Nord",
+    "editor_theme": "Nord Polar Night Aurora {rsthemes}",
     "default_project_location": "~",
     "source_with_echo": true,
     "document_author": "Siddharth Vishwanath",

@@ -6,7 +6,9 @@
     "insertPipeOperator": "Cmd+.",
     "moveTabLeft": "",
     "moveTabRight": "",
-    "nextTab": "Cmd+Right",
-    "previousTab": "Cmd+Left",
-    "compileNotebook": "Alt+Cmd+Enter"
+    "nextTab": "Shift+Cmd+]",
+    "previousTab": "Shift+Cmd+[",
+    "compileNotebook": "Alt+Cmd+Enter",
+    "compilePDF": "Shift+Cmd+K",
+    "insertChunk": "Shift+Cmd+I"
 }

@@ -1,0 +1,26 @@
+prefer_small_ascii = true
+# theme = "Beryllium"
+theme = "Carbon"
+
+spacing         = 2
+padding         = 0
+# separator       = ">"
+# key_color       = "#ebcb8b"
+# key_color       = "#bf616a"
+# key_color       = "#69F0AE"
+key_color       = "#FF9100"
+separator_color = "White"
+
+[bar]
+# glyph = "o"
+visible = true
+
+[custom_ascii]
+# path = "/Users/vishwanathgl/Downloads/git-repos/ascii/enso.ascii"
+path = "/Users/vishwanathgl/Downloads/git-repos/ascii/skydog.ascii"
+# path = "/Users/vishwanathgl/Downloads/git-repos/ascii/sdv23.ascii"
+separator_color = "#00FF00"
+key_color = "Red"
+
+[keys]
+hide = ["OperatingSystem", "Battery", "Memory", "Packages", "LocalIP", "ProcessorLoad"]
