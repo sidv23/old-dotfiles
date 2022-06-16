@@ -1,127 +1,176 @@
+/* To right-align the sidebar, replace all occurrences of "left" with "right", and "margin-right" with "margin-left" */
 
-/* hides the native tabs */
-
-/* #TabsToolbar {
-  visibility: collapse;
-} */
-
-/* leaves space for the window buttons */
-#nav-bar {
-    margin-top: -2px;
-    margin-left: 0px;
-    margin-bottom: -2px;
-    min-height: 10pt;
-}
-
-/* #nav-bar {
-   max-height:0px !important;
-   min-height:0px !important;
-   z-index: -1 !important;
-} */
-
-#urlbar {
-  height: 10pt;
-}
-
-/* #tabbrowser-tabs {
+/*
+  Hide Extension Name in the identity area unless
+  hovered for half a second (updated for Fx80)
+*/
+#identity-box.extensionPage #identity-icon-labels,
+#identity-box.extensionPage #identity-icon-label {
   visibility: collapse !important;
-  margin-top: 100px;
-} */
-
-/* #main-window[tabsintitlebar="true"]:not([extradragspace="true"]) #TabsToolbar > .toolbar-items {
-  opacity: 0;
-  pointer-events: none;
+  /* visibility: visible !important; */
+  transition: visibility 250ms ease-in-out;
 }
-#main-window:not([tabsintitlebar="true"]) #TabsToolbar {
-    visibility: collapse !important;
-} */
-
-/* #nav-bar { */
-    /* margin-top: -5px; */
-    /* margin-left: 75px; */
-    /* margin-bottom: -4px; */
-/* } */
-
-
-@-moz-document url(chrome://browser/content/browser.xul)
-{
-
-  #main-window,
-  browser[type="content-primary"],
-  browser[type="content"],
-  tabbrowser#content,
-  #content,
-  browser[type="content"] > html
-  {
-    background: #2e3440 !important;
-  }
-
+#identity-box.extensionPage:hover #identity-icon-labels,
+#identity-box.extensionPage:hover #identity-icon-label {
+  visibility: visible !important;
+  transition: visibility 250ms ease-in-out 500ms;
 }
 
 
-
-/* MINIMAL FOX */
 
 :root {
-
-  /* Minimal Functional Fox variables*/
-  --mff-bg: #292f36;
-  --mff-icon-color: #e0fbfc;
-  --mff-nav-toolbar-padding: 8px;
-  --mff-sidebar-bg: var(--mff-bg);
-  --mff-sidebar-color: #e0fbfc;
-  --mff-tab-border-radius: 0px;
-  --mff-tab-color: #fefefa;
-  --mff-tab-font-family: "Cantarell", sans;
-  --mff-tab-font-size: 11pt;
-  --mff-tab-font-weight: 400;
-  --mff-tab-height: 22px;
-  --mff-tab-pinned-bg: #70c1b3;
-  --mff-tab-selected-bg: #ee6c4d;
+  --sidebar-hover-width: 10px;
+  --sidebar-visible-width: 250px;
   --mff-tab-soundplaying-bg: #ee6c4d;
-  /* --mff-tab-soundplaying-bg: #9c89b8; */
   --mff-urlbar-color: #dbdddf;
   --mff-urlbar-focused-color: #e0fbfc;
-  /* --mff-urlbar-font-family: "Fira Sans", sans-serif; */
-  /* --mff-urlbar-font-family: "Share Tech Mono", monospace; */
-  /* --mff-urlbar-font-family: "Letter Gothic Std", monospace; */
-  /* --mff-urlbar-font-family: "Ubuntu Mono", monospace; */
-  /* --mff-urlbar-font-family: "Monoid", monospace; */
-  /* --mff-urlbar-font-family: "Ubuntu", sans-serif; */
-  /* --mff-urlbar-font-family: "Avenir", sans-serif; */
-  /* --mff-urlbar-font-family: "SF Pro Rounded", sans-serif; */
-  --mff-urlbar-font-family: "Andika New Basic", sans-serif;
-  --mff-urlbar-font-size: 11pt;
-  --mff-urlbar-font-weight: 500;
   --mff-urlbar-results-color: #fff;
-  /* --mff-urlbar-results-font-family: "Fira Sans", monospace; */
-  /* --mff-urlbar-results-font-family: "Avenir", sans-serif; */
-  /* --mff-urlbar-results-font-family: "SF Pro Rounded", sans-serif; */
-  --mff-urlbar-results-font-family: "Andika New Basic", sans-serif;
   --mff-urlbar-results-font-size: 11pt;
   --mff-urlbar-results-font-weight: 400;
   --mff-urlbar-results-url-color: #fdfdfd;
-  /*   --mff-tab-selected-bg: linear-gradient(90deg, rgba(232,74,95,1) 0%, rgba(255,132,124,1) 50%, rgba(254,206,168,1) 100%); */
-  /*   --mff-urlbar-font-weight: 600; */
-
-  /* Overriden Firefox variables*/
-  /* UNCOMMENT BELOW */
-  /* --autocomplete-popup-background: var(--mff-bg) !important;
-  --default-arrowpanel-background: var(--mff-bg) !important;
-  --default-arrowpanel-color: #fefefa !important;
-  --lwt-toolbarbutton-icon-fill: var(--mff-icon-color) !important;
-  --panel-disabled-color: #f9f9fa80;
-  --toolbar-bgcolor: var(--mff-bg) !important;
-  --urlbar-separator-color: transparent !important; */
+  --mff-urlbar-font-size: 12pt;
+  --mff-tab-font-size: 10pt;
+  /* --mff-tab-font-family: "SF Pro Display", sans-serif; */
+  /* --mff-tab-font-family: "Apple SD Gothic Neo", sans-serif; */
+  /* --mff-urlbar-font-family: "Apple SD Gothic Neo", sans-serif; */
+  /* --mff-urlbar-results-font-family: "Apple SD Gothic Neo", sans-serif; */
+  --mff-tab-font-family: "Saira SemiCondensed", sans-serif;
+  --mff-urlbar-font-family: "Saira SemiCondensed", sans-serif;
+  --mff-urlbar-results-font-family: "Saira SemiCondensed", sans-serif;
+  --mff-tab-font-weight: 400;
+  --mff-urlbar-font-weight: 400;
 }
 
-.tab-label-container:not([textoverflow]) {
-  display: flex;
-  overflow: hidden;
-  justify-content: center;
-  width: 50% !important;
-  max-width: 50% !important;
-  min-width: 50% !important;
+#sidebar-box {
+  position: relative !important;
+  overflow-x: hidden !important;
+  margin-right: calc(var(--sidebar-hover-width) * -1) !important;
+  left: var(--sidebar-hover-width) !important;
+  min-width: var(--sidebar-hover-width) !important;
+  max-width: var(--sidebar-hover-width) !important;
+  border-right: 1px solid var(--sidebar-border-color);
+  z-index: 1;
+  transition: all 100ms linear 0s !important;
+}
+
+#sidebar-box:hover {
+  margin-right: calc(var(--sidebar-visible-width) * -0.5) !important;
+  left: var(--sidebar-visible-width) !important;
+  min-width: var(--sidebar-visible-width) !important;
+  max-width: var(--sidebar-visible-width) !important;
+  transition: all 100ms linear 0s !important;
+}
+
+#sidebar {
+  opacity: 0 !important;
+}
+
+#sidebar-box:hover #sidebar {
+  opacity: 1 !important;
+}
+
+/* #sidebar-header is hidden by default, change "none" to "inherit" to restore it. */
+#sidebar-header {
+  display: none !important;
+}
+
+/* #sidebar-splitter styles the divider between the sidebar and the rest of the browser. */
+#sidebar-splitter {
+  display: none;
+}
+/* GPL-3.9 Copyright (C) 2007 Timvde/UserChrome-Tweaks; Code pulled from https://github.com/Timvde/UserChrome-Tweaks */
+/*
+ * Only show close buttons on background tabs when hovering with the mouse
+ *
+ * Contributor(s): Timvde
+ */
+
+.tabbrowser-tab:not([selected]):not([pinned]) .tab-close-button {
+  display: none !important;
+}
+
+.tabbrowser-tab:not([selected]):not([pinned]):hover .tab-close-button {
+  display: -moz-box !important;
+}
+
+#tabbrowser-tabs {
+    --user-tab-rounding: 0px;
+    --tab-min-height: 25px !important;
+}
+
+
+/*Tabs On Bottom*/
+#TabsToolbar {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+#nav-bar{
+  border-top-width: 0px !important;
+}
+
+/*Remove extra tab bar space*/
+#TabsToolbar {
+  padding-inline-start: 0px !important;
+  margin-bottom: none !important;
+}
+
+#titlebar-placeholder-on-TabsToolbar-for-captions-buttons {
+  display: none;
+}
+
+.box-inherit .scrollbox-innerbox {
+  margin-right: 0 !important;
+}
+
+#TabsToolbar .tabbrowser-arrowscrollbox > .arrowscrollbox-scrollbox {
+  padding-inline-start: 0px !important;
+  padding-inline-end: 0px !important;
+}
+
+/* Position window controls */
+#titlebar-buttonbox-container {
+  margin-left: 5px !important;
+  margin-top: 5px !important;
+}
+
+/*
+ * Make room for window controls.
+ * Only apply this style when not in fullscreen mode.
+ */
+#main-window:not([inFullscreen]) #nav-bar{
+  padding: 0px 5px 0px 75px !important;
+}
+
+/* #nav-bar:not([customizing="true"]):not([inFullscreen]) {
+	min-height: 1px !important;
+	max-height: 0px !important;
+	margin-top: 1px !important;
+	margin-bottom: -1px !important;
+	transition: all 50ms linear 0s !important;
+	z-index: -5 !important;
+} */
+
+/* #navigator-toolbox:hover:not([inFullscreen]) :-moz-any(#nav-bar),
+#navigator-toolbox:focus-within :-moz-any(#nav-bar) {
+	min-height: 32px !important;
+	max-height: 32px !important;
+	margin-top: 0px !important;
+	margin-bottom: -32px !important;
+	transition: all 100ms linear 0s !important;
+	z-index: 5 !important;
+} */
+
+#nav-bar:not([customizing="true"]):not([inFullscreen]) {
+	min-height: 32px !important;
+	max-height: 32px !important;
+	margin-top: 0px !important;
+	margin-bottom: 0px !important;
+  /* z-index: 0 !important; */
+}
+
+/* Needed for for FF 75 megabar */
+#urlbar {
+	--urlbar-toolbar-height: 32px !important;
 }
 
 #urlbar-input {
@@ -147,26 +196,11 @@
   color: var(--mff-urlbar-results-color) !important;
 }
 
-
-/*** Proton Tabs Tweaks ***/
-
-/* Adjust tab corner shape, optionally remove space below tabs */
-
-#tabbrowser-tabs {
-    --user-tab-rounding: 2px;
-}
-
-.tab-background {
-    border-radius: var(--user-tab-rounding) !important;
-}
-
-#tabbrowser-tabs {
-    --tab-min-height: 15px !important;
-}
-#scrollbutton-up,
-#scrollbutton-down {
-    border-top-width: 0 !important;
-    border-bottom-width: 0 !important;
+.tab-text {
+  font-family: var(--mff-tab-font-family);
+  font-weight: var(--mff-tab-font-weight);
+  font-size: var(--mff-tab-font-size) !important;
+  color: var(--mff-tab-color);
 }
 
 .tabbrowser-tab[soundplaying="true"] {
@@ -175,12 +209,3 @@
   border-radius: var(--user-tab-rounding) !important;
   color: white !important;
 }
-
-/* 
-THIS IS THE end
-
-
-
-
-
- */

@@ -27,6 +27,7 @@ $battery\
 $time\
 $status\
 $shell\
+$conda\
 $character"""
 
 
