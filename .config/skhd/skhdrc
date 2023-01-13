@@ -16,11 +16,15 @@ rcmd + rshift + ralt + rctrl - c: open -b com.microsoft.VSCodeInsiders
 # rcmd + rshift + ralt + rctrl - b: open -a waterfox
 # rcmd + rshift + ralt + rctrl - b: open -a firefox
 rcmd + rshift + ralt + rctrl - b: export MOZ_DISABLE_SAFE_MODE_KEY=1; open -b org.mozilla.firefox
+# rcmd + rshift + ralt + rctrl - b: open -a Brave\ Browser\ Nightly.app 
 # rcmd + rshift + ralt + rctrl - b: open -b com.brave.Browser 
+# rcmd + rshift + ralt + rctrl - b: open -a Vivaldi.app 
+# rcmd + rshift + ralt + rctrl - b: open -a Arc.app
 # rcmd + rshift + ralt + rctrl - s: open -a Safari
 rcmd + rshift + ralt + rctrl - s: open -a Slack
 rcmd + rshift + ralt + rctrl - q: open -a qutebrowser
-rcmd + rshift + ralt + rctrl - m: open -b com.readdle.smartemail-Mac
+# rcmd + rshift + ralt + rctrl - m: open -b com.readdle.smartemail-Mac
+rcmd + rshift + ralt + rctrl - m: open -a Mail
 rcmd + rshift + ralt + rctrl - w: open -b Whatsapp
 rcmd + rshift + ralt + rctrl - v: open -b com.apple.iCal
 rcmd + rshift + ralt + rctrl - z: open -a zoom.us.app

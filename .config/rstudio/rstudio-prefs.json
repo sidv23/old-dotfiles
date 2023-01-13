@@ -1,7 +1,6 @@
 {
     "highlight_selected_line": true,
     "show_margin": false,
-    "show_indent_guides": true,
     "syntax_color_console": true,
     "highlight_r_function_calls": true,
     "editor_theme": "Nord Polar Night Aurora {rsthemes}",
@@ -31,7 +30,8 @@
             "Plots",
             "Packages",
             "Help",
-            "Viewer"
+            "Viewer",
+            "Presentations"
         ],
         "console_left_on_top": false,
         "console_right_on_top": true

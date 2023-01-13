@@ -215,7 +215,10 @@ sketchybar -m --add item mailIndicator right \
     --set mailIndicator background.height=21 \
     --set mailIndicator background.padding_right=7 \
     --set mailIndicator update_freq=30 \
-    --set mailIndicator click_script="open -b com.readdle.smartemail-Mac" \
+    --set mailIndicator label.font="UbuntuCondensed Nerd Font:Regular:18.0" \
+    --set mailIndicator script="~/.config/sketchybar/plugins/mailIndicator.sh" \
+    --set mailIndicator click_script="open -b com.apple.mail" \
+            #   --set mailIndicator click_script="open -b com.readdle.smartemail-Mac" \
 
             #   --add item clock right                                                                  \
             #   --set clock         update_freq=10                                                      \
