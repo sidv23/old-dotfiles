@@ -1,0 +1,428 @@
+{
+    "editor.minimap.enabled": false,
+    "workbench.editorAssociations": {
+        "*.ipynb": "jupyter-notebook",
+        "*.html": "default"
+    },
+    "atomKeymap.promptV3Features": true,
+    "editor.multiCursorModifier": "ctrlCmd",
+    "editor.formatOnPaste": true,
+    "terminal.integrated.commandsToSkipShell": [
+        "language-julia.interrupt"
+    ],
+    "julia.enableTelemetry": true,
+    "terminal.integrated.fontSize": 16,
+    "editor.suggestSelection": "first",
+    "vsintellicode.modify.editor.suggestSelection": "automaticallyOverrodeDefaultValue",
+    "python.pythonPath": "/usr/bin/python3",
+    "files.associations": {
+        "*.rmd": "markdown",
+        "*.pbs": "shellscript"
+    },
+    "r.sessionWatcher": true,
+    "vsicons.dontShowNewVersionMessage": true,
+    "terminal.integrated.profiles.osx": {
+        "bash": {
+            "path": "bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux"
+        },
+        "pwsh": {
+            "path": "pwsh"
+        }
+    },
+    "julia.enableCrashReporter": true,
+    "diffEditor.renderSideBySide": false,
+    "git.autofetch": true,
+    "editor.renderControlCharacters": true,
+    "kite.showWelcomeNotificationOnStartup": false,
+    "git.confirmSync": false,
+    "projectManager.git.baseFolders": [
+        "Overleaf",
+        "Github",
+        "$HOME/git",
+        "$HOME/Box",
+        "/Users/vishwanathgl/Documents/Github"
+    ],
+    "projectManager.any.baseFolders": [
+        "Overleaf",
+        "Github"
+    ],
+    "bracket-pair-colorizer-2.colors": [
+        "Gold",
+        "LightSkyBlue",
+        "Orchid",
+        "Gold"
+    ],
+    "tabnine.experimentalAutoImports": true,
+    "julia.usePlotNavigator": false,
+    "debug.console.fontSize": 18,
+    // 
+    // FONT SETTINGS
+    // 
+    // 1. EDITOR FONT
+    "editor.fontSize": 17,
+    "editor.fontFamily": "JetBrains Mono ExtraLight, JetBrains Mono Light, JetBrains Mono, JuliaMono-Light, iosevka term, iosevka term light, Letter Gothic Std, Saira SemiCondensed, Barlow Semi Condensed, iosevka, juliamono, JuliaMono Light, iosevka-extralight, JuliaMono, JuliaMono-Light, Cascadia Code, Cascadia Code Light, Ubuntu Mono, Inconsolata, Mensch, Share Tech Mono, Monoid, NanumGothicCoding, Overpass Mono, Oxygen Mono, Interstate Mono, Fira Sans, SF Mono, Fira Code, Menlo, Monaco",
+    // "editor.fontLigatures": "'calt' off, 'zero', 'ss01', 'ss05', 'ss08', 'ss10'",
+    "editor.fontLigatures": "'calt' on, 'ss01', 'ss02', 'ss03', 'ss04', 'ss05', 'ss06',  'ss07', 'ss08', 'ss09', 'ss10', 'ss11', 'ss12', 'ss13', 'ss14'",
+    // 
+    // 2. TERMINAL FONT
+    // 
+    "terminal.integrated.fontFamily": "JetBrains Mono Light, JetBrains Mono ExtraLight, JetBrains Mono, iosevka term, Fira Code, iosevka term light, iosevka term extralight, JuliaMono Light, iosevka nerd font mono, iosevka term thin, iosevka, monospace",
+    "terminal.integrated.fontWeight": 1,
+    "terminal.fontLigatures": "'calt' on, 'zero', 'ss01', 'ss05', 'ss10'",
+    // "terminal.external.osxExec": "/Applications/kitty.app/Contents/MacOS/kitty",
+    "terminal.integrated.defaultProfile.osx": "zsh",
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "ltex.checkFrequency": "manual",
+    "workbench.settings.openDefaultKeybindings": true,
+    "launch": {
+        "configurations": [],
+        "compounds": []
+    },
+    "julia.format.kwarg": "single",
+    "remote.SSH.showLoginTerminal": true,
+    "markdown-preview-enhanced.liveUpdate": true,
+    "markdown.extension.preview.autoShowPreviewToSide": false,
+    "ltex.diagnosticSeverity": {
+        "PASSIVE_VOICE": "hint",
+        "default": "hint"
+    },
+    "workbench.editor.wrapTabs": true,
+    "editor.wordWrap": "on",
+    // "errorLens.messageEnabled": false,
+    "errorLens.messageEnabled": true,
+    // "latex-workshop.latexindent.path": "/Library/TeX/texbin/latexindent",
+    "todohighlight.isEnable": true,
+    "security.workspace.trust.untrustedFiles": "open",
+    "notebook.cellToolbarLocation": {
+        "default": "right",
+        "jupyter-notebook": "right"
+    },
+    "editor.tokenColorCustomizations": {
+        "[Nord Dark Pro (Full)]": {
+            "comments": "#d4d7db34"
+        },
+        "[Dainty – Material Theme Palenight (chroma 2, lightness 2)]": {
+            "comments": "#a5bbf992"
+        },
+        "[Dainty – Material Theme Palenight (chroma 3, lightness 2)]": {
+            "comments": "#a5bbf992"
+        },
+        "textMateRules": [
+            {
+                "name": "One Dark italic",
+                "scope": [
+                    "comment",
+                    "entity.other.attribute-name",
+                    "keyword",
+                    "markup.underline.link",
+                    "storage.modifier",
+                    "storage.type",
+                    "string.url",
+                    "variable.language.super",
+                    "variable.language.this"
+                ],
+                "settings": {
+                    "fontStyle": "italic"
+                }
+            },
+            {
+                "name": "One Dark italic reset",
+                "scope": [
+                    "keyword.operator",
+                    "keyword.other.type",
+                    "storage.modifier.import",
+                    "storage.modifier.package",
+                    "storage.type.built-in",
+                    "storage.type.function.arrow",
+                    "storage.type.generic",
+                    "storage.type.java",
+                    "storage.type.primitive"
+                ],
+                "settings": {
+                    "fontStyle": ""
+                }
+            }
+        ]
+    },
+    "workbench.editor.decorations.colors": true,
+    "workbench.colorCustomizations": {
+        "statusBar.background": "#5E5CB2",
+        "statusBar.foreground": "#ffffff",
+        "statusBar.hoverBackground": "#ebcb8b",
+        "statusBar.activeBackground": "#ebcb8b",
+        "statusBar.noFolderBackground": "#89a6c29f",
+        "statusBar.noFolderForeground": "#ffffff",
+        "[Dainty – Material Theme Palenight (chroma 2, lightness 2)]": {
+            "tab.activeBackground": "#ffffff25",
+            "editor.selectionBackground": "#a5bbf928",
+            "editor.selectionHighlightBackground": "#a5bbf928",
+            "editor.findMatchBackground": "#f7ca6fb5",
+            "editor.findMatchHighlightBackground": "#f76fd26c"
+        },
+        "[One Dark]": {
+            "editor.background": "#1f2227",
+            "editorCursor.foreground": "#fa08e6",
+            "tab.activeBackground": "#64719c56",
+            "tab.activeBorder": "#fab908",
+            "tab.inactiveBackground": "#21252b"
+        },
+        "[Dainty – Material Theme Palenight (chroma 3, lightness 2)]": {
+            "tab.activeBackground": "#ffffff25",
+            "editor.selectionBackground": "#a5bbf928",
+            "editor.selectionHighlightBackground": "#a5bbf928",
+            "editor.findMatchBackground": "#f7ca6fb5",
+            "editor.findMatchHighlightBackground": "#f76fd26c"
+        }
+    },
+    "julia.symbolCacheDownload": true,
+    //  
+    // SSH CONFIGURATIONS
+    // 
+    // "remote.SSH.configFile": "/Users/vishwanathgl/.ssh/config",
+    // "remote.SSH.configFile": "/tmp/gitpod_ssh_config"
+    // 
+    // 
+    // LaTeX WORKSHOP CONFIGURATIONS
+    // 
+    "latex-workshop.view.pdf.viewer": "tab",
+    "[latex]": {
+        "editor.wordWrap": "on",
+        "editor.defaultFormatter": "James-Yu.latex-workshop",
+        // "editor.formatOnPaste": false,
+        "editor.suggestSelection": "recentlyUsedByPrefix",
+    },
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-utilities.countWord.format": "${math} Equations",
+    "latex-workshop.latex.autoClean.run": "onBuilt",
+    "latex-workshop.latex.clean.fileTypes": [
+        // "*.aux",
+        "*.bbl",
+        "*.blg",
+        "*.idx",
+        "*.ind",
+        "*.lof",
+        "*.lot",
+        "*.out",
+        "*.toc",
+        "*.acn",
+        "*.acr",
+        "*.alg",
+        "*.glg",
+        "*.glo",
+        "*.gls",
+        "*.ist",
+        "*.fls",
+        "*.log",
+        "*.fdb_latexmk",
+    ],
+    "macros.list": {
+        "pythonExecSelectionAndCursorDown": [
+            "python.execSelectionInTerminal",
+            "cursorDown"
+        ],
+        "RExecSelectionAndCursorDown": [
+            "python.execSelectionInTerminal",
+            "cursorDown"
+        ]
+    },
+    // 
+    // R Config
+    // 
+    "r.interpreterPath": "/Library/Frameworks/R.framework/Versions/4.0/Resources/",
+    "r.terminalPath": "/Library/Frameworks/Python.framework/Versions/3.8/bin/radian",
+    "r.bracketedPaste": true,
+    "r.lsp.enabled": true,
+    "r.lsp.debug": true,
+    "r.lsp.diagnostics": true,
+    "autopairs-code.enable": true,
+    "autopairs-code.jumping.enable": true,
+    "julia.execution.codeInREPL": true,
+    "julia.persistentSession.shell": "/bin/zsh",
+    "git.ignoreLegacyWarning": true,
+    "gitlens.advanced.messages": {
+        "suppressGitVersionWarning": true
+    },
+    "terminal.integrated.inheritEnv": true,
+    "r.alwaysUseActiveTerminal": true,
+    "r.rmarkdown.codeLensCommands": [
+        "r.runCurrentChunk",
+        "r.runAboveChunks",
+        "r.goToPreviousChunk",
+        "r.goToNextChunk"
+    ],
+    "r.dependencyChecks": true,
+    "r.linting.assignmentType": false,
+    "r.linting.enable": true,
+    "r.session.levelOfObjectDetail": "Normal",
+    "ltex.completionEnabled": true,
+    "ltex.ltex-ls.logLevel": "warning",
+    "r.editor.bracesOnNewLine": true,
+    "julia.persistentSession.enabled": true,
+    "[julia]": {
+        "editor.defaultFormatter": "julialang.language-julia"
+    },
+    // "r.rterm.mac": "/Library/Frameworks/Python.framework/Versions/3.8/bin/radian",
+    // "r.rterm.option": [
+    //     "--r-binary=/usr/local/bin/R",
+    //     "--no-site-file"
+    // ],
+    "terminal.integrated.macOptionClickForcesSelection": true,
+    "remote.SSH.remotePlatform": {
+        "aci007": "linux",
+        "aci009": "linux",
+        "aci": "linux",
+        "aci010": "linux",
+        "ibm006": "linux",
+        "ibm007": "linux",
+        "aci003": "linux",
+        "ibm009": "linux",
+        "ibm010": "linux",
+        "ibm005": "linux",
+        "ibm008": "linux",
+        "ibm015": "linux",
+        "ibm011": "linux",
+        "ibm013": "linux",
+        "aci004": "linux"
+    },
+    "julia.lint.run": true,
+    "python.autoComplete.addBrackets": true,
+    "python.terminal.activateEnvInCurrentTerminal": true,
+    "python.analysis.completeFunctionParens": true,
+    "jupyter.askForKernelRestart": false,
+    "r.rterm.mac": "/Library/Frameworks/Python.framework/Versions/3.8/bin/radian",
+    "r.rmarkdown.knit.openOutputFile": true,
+    "r.rpath.mac": "/usr/local/bin/R",
+    "editor.guides.bracketPairs": true,
+    "spellright.addToSystemDictionary": true,
+    "jupyter.sendSelectionToInteractiveWindow": true,
+    "notebook.experimental.useMarkdownRenderer": true,
+    "jupyter.interactiveWindowMode": "perFile",
+    "prettier.useTabs": true,
+    "terminal.explorerKind": "external",
+    "zenMode.hideStatusBar": false,
+    "zenMode.hideTabs": false,
+    "sync.gist": "675e91869061b224d99b8d1cef4141e9",
+    "material-icon-theme.folders.theme": "specific",
+    "terminal.integrated.env.osx": {
+        "FIG_NEW_SESSION": "1"
+    },
+    "editor.accessibilitySupport": "off",
+    "remote.SSH.configFile": "~/.ssh/config",
+    "editor.bracketPairColorization.enabled": true,
+    "juliaFormatter.alignStructField": true,
+    "texlab.server.autoDownload": true,
+    "texlab.build.onSave": true,
+    // "remote.SSH.remotePlatform": {
+    //     "aci007": "linux"
+    // },
+    "editor.cursorStyle": "line",
+    "editor.cursorBlinking": "phase",
+    "editor.cursorWidth": 4,
+    "resmon.show.cputemp": true,
+    "notebook.lineNumbers": "on",
+    "mdmath.macros": {
+        "\\R" : "\\mathbb{R}",
+        "\\xv": "\\mathbf{x}"
+    },
+    "autopairs-code.spacing.enableForEq": false,
+    "remote.SSH.connectTimeout": 30,
+    "remote.SSH.enableRemoteCommand": true,
+    "editor.suggest.shareSuggestSelections": true,
+    "markdown.marp.exportType": "html",
+    "markdown.marp.enableHtml": true,
+    "markdown.marp.themes": [
+        "/Users/vishwanathgl/Documents/Github/slides/apr-2022/psu-theme/psu.css"
+    ],
+    "latex-workshop.bibtex-fields.sort.enabled": true,
+    "latex-workshop.bibtex-format.sort.enabled": true,
+    "explorer.fileNesting.enabled": true,
+    "editor.bracketPairColorization.independentColorPoolPerBracketType": true,
+    "git.enableSmartCommit": true,
+    "tabnine.receiveBetaChannelUpdates": true,
+    "jupyter.exportWithOutputEnabled": true,
+    "python.languageServer": "Pylance",
+    "jupyter.disableJupyterAutoStart": true,
+    "julia.lint.call": false,
+    "remote.SSH.defaultExtensions": [
+        "gitpod.gitpod-remote-ssh"
+    ],
+    "editor.inlineSuggest.enabled": true,
+    "github.copilot.enable": {
+        "*": false,
+        "yaml": false,
+        "plaintext": false,
+        "markdown": false,
+        "latex": false,
+        "julia": false,
+        "shellscript": true,
+        "javascript": false
+    },
+    "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+    "editor.autoClosingDelete": "always",
+    "latex-utilities.zotero.citeMethod": "vscode",
+    "editor.formatOnType": true,
+    "latex-workshop.intellisense.unimathsymbols.enabled": true,
+    "julia.persistentSession.alwaysCopy": true,
+    "[python]": {
+        "editor.formatOnType": true
+    },
+    "quarto.render.renderOnSave": true,
+    "quarto.mathjax.theme": "dark",
+    "terminal.integrated.enableMultiLinePasteWarning": false,
+    "VSCodeNotion.accessToken": "ef137f7310ef632f7b50eb53928636abf3c65d21fd60c47c6c592ebfe9e484212e4be02128643778ccb0c31b79a0a6e4bd0178f3404332854d0ad3c9f1d63f0f574e21635ff95258f73461f63f17",
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "tectonic",
+            "tools": [
+                "tectonic"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "tectonic",
+            "command": "tectonic",
+            "args": [
+                "%DOC%.tex",
+                "--outdir",
+                "%OUTDIR%",
+                "--synctex",
+                "--keep-logs",
+            ],
+            "env": {}
+        }
+    ],
+    "latex-workshop.latex.outDir": "%WORKSPACE_FOLDER%/build/%RELATIVE_DIR%",
+    "texlab.build.executable": "tectonic",
+    "texlab.build.args": [
+        "%DOC%.tex",
+        "--outdir",
+        "%OUTDIR%",
+        "--synctex",
+        "--keep-logs"
+    ],
+    "texlab.forwardSearch.executable": "/Applications/Firefox.app",
+    "ltex.additionalRules.motherTongue": "en-GB",
+    "latex-workshop.texcount.interval": -1,
+    "aws.telemetry": false,
+    "julia.usePlotPane": true,
+    "workbench.editor.enablePreview": false,
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.colorTheme": "One Dark",
+    "Lua.workspace.supportScheme": [
+        "file",
+        "default"
+    ],
+    "Lua.telemetry.enable": false,
+    "svg.preview.mode": "svg",
+}

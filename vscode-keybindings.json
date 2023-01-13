@@ -1,0 +1,643 @@
+// Place your key bindings in this file to override the defaultsauto[]
+[
+    {
+        "key": "ctrl+alt+right",
+        "command": "workbench.action.focusNextGroup"
+    },
+    {
+        "key": "ctrl+alt+left",
+        "command": "workbench.action.focusPreviousGroup"
+    },
+    {
+        "key": "cmd+up",
+        "command": "cursorMove",
+        "args": {
+            "to": "up",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "cursorMove",
+        "args": {
+            "to": "down",
+            "by": "line",
+            "value": 10
+        },
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+.",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'julia'",
+        "args": {
+            "langId": "julia",
+            "snippet": " |> $0"
+        }
+    },
+    {
+        "key": "cmd+.",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": " |> "
+        },
+        "when": "terminalFocus"
+        // "when": "terminalFocus && isJuliaREPL == true"
+    },
+        {
+            "key": "alt+.",
+            "command": "editor.action.insertSnippet",
+            "when": "editorTextFocus && editorLangId == 'julia'",
+            "args": {
+                "langId": "julia",
+                "snippet": " .|> $0"
+            }
+        },
+        {
+            "key": "alt+.",
+            "command": "workbench.action.terminal.sendSequence",
+            "args": {
+                "text": " .|> "
+            },
+            "when": "terminalFocus"
+            // "when": "terminalFocus && isJuliaREPL == true"
+        },
+    {
+        "key": "cmd+;",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'julia'",
+        "args": {
+            "langId": "julia",
+            "snippet": " <: $0"
+        }
+    },
+    {
+        "key": "cmd+;",
+        "command": "workbench.action.terminal.sendSequence",
+        "args": {
+            "text": " <: "
+        },
+        "when": "terminalFocus"
+        // "when": "terminalFocus && isJuliaREPL == true"
+    },
+    {
+        "key": "cmd+.",
+        "command": "terminal.action.insertSnippet",
+        "when": "terminalTextFocus && editorLangId == 'julia'",
+        "args": {
+            "langId": "julia",
+            "snippet": " |> $0"
+        }
+    },
+    {
+        "key": "alt+.",
+        "command": "terminal.action.insertSnippet",
+        "when": "terminalTextFocus && editorLangId == 'julia'",
+        "args": {
+            "langId": "julia",
+            "snippet": " .|> $0"
+        }
+    },
+    {
+        "key": "cmd+.",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'R'",
+        "args": {
+            "langId": "R",
+            "snippet": " %>% $0"
+        }
+    },
+    {
+        "key": "cmd+shift+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'R'",
+        "args": {
+            "snippet": "```{r}\n$0\n```"
+        }
+    },
+    {
+        "key": "cmd+shift+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'python'",
+        "args": {
+            "snippet": "\n# %% \n\n$0\n"
+        }
+    },
+    // {
+    //     "key": "cmd+shift+i",
+    //     "command": "editor.action.insertSnippet",
+    //     "when": "editorTextFocus",
+    //     "args": {
+    //         "snippet": "```{r}\n$0\n```"
+    //     }
+    // },
+    {
+        "key": "shift+enter",
+        "command": "language-julia.executeCellAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-language-julia.executeCellAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "ipython.sendSelectedToIPython",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "-python.execSelectionInTerminal",
+        "when": "editorTextFocus && !findInputFocussed && !python.datascience.ownsSelection && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "language-julia.executeCodeBlockOrSelectionAndMove",
+        // "language-julia.executeJuliaCodeInREPL",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-language-julia.executeJuliaCodeInREPL",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "language-julia.executeCodeBlockOrSelectionAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-language-julia.executeCodeBlockOrSelectionAndMove",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.quickOpen"
+    },
+    {
+        "key": "cmd+d",
+        "command": "workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "-workbench.action.showAllSymbols"
+    },
+    {
+        "key": "cmd+t",
+        "command": "workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "ctrl+alt+t",
+        "command": "-workbench.action.terminal.toggleTerminal",
+        "when": "terminal.active"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "latex-workshop.view",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+    },
+    {
+        "key": "alt+cmd+v",
+        "command": "-latex-workshop.view",
+        "when": "!config.latex-workshop.bind.altKeymap.enabled && editorLangId =~ /latex|rsweave|jlweave/"
+    },
+    {
+        "key": "alt+cmd+enter",
+        "command": "language-julia.executeJuliaCodeInREPL",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-language-julia.executeJuliaCodeInREPL",
+        "when": "editorTextFocus && editorLangId == 'juliamarkdown'"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+k",
+        "command": "-workbench.action.terminal.clear",
+        "when": "terminalFocus && terminalProcessSupported"
+    },
+    {
+        "key": "cmd+l",
+        "command": "expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "expandLineSelection",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+l",
+        "command": "-expandLineSelection",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k",
+        "command": "notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+l",
+        "command": "-notebook.centerActiveCell",
+        "when": "notebookEditorFocused"
+    },
+    {
+        "key": "cmd+i",
+        "command": "editor.action.reindentlines"
+    },
+    {
+        "key": "cmd+]",
+        "command": "editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "cmd+]",
+        "command": "-editor.action.indentLines",
+        "when": "editorTextFocus && !editorReadonly"
+    },
+    {
+        "key": "ctrl+cmd+[",
+        "command": "language-julia.set-compiled-for-name"
+    },
+    {
+        "key": "cmd+B",
+        "command": "editor.action.insertSnippet",
+        "when": "editorHasSelection && resourceExtname == .tex",
+        "args": {
+            "snippet": "\\textbf{${TM_SELECTED_TEXT}}$0"
+        }
+    },
+    {
+        "key": "cmd+I",
+        "command": "editor.action.insertSnippet",
+        "when": "editorHasSelection && resourceExtname == .tex",
+        "args": {
+            "snippet": "\\textit{${TM_SELECTED_TEXT}}$0"
+        }
+    },
+    {
+        "key": "cmd+B",
+        "command": "editor.action.insertSnippet",
+        "when": "!editorHasSelection && resourceExtname == .tex",
+        "args": {
+            "snippet": "\\textbf{$0}"
+        }
+    },
+    {
+        "key": "cmd+I",
+        "command": "editor.action.insertSnippet",
+        "when": "!editorHasSelection && resourceExtname == .tex",
+        "args": {
+            "snippet": "\\textit{$0}"
+        }
+    },
+    {
+        "key": "cmd+enter",
+        "command": "r.runSelection",
+        "when": "editorTextFocus && editorLangId == 'rsweave'"
+    },
+    {
+        "key": "cmd+shift+i",
+        "command": "editor.action.insertSnippet",
+        "when": "editorTextFocus && editorLangId == 'rsweave'",
+        "args": {
+            "snippet": "<<echo=F, cache=T>>=\n#\noptions(warn = -1)\n#\n\t$0\n#\n@"
+        }
+    },
+    {
+        "key": "cmd+.",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'rsweave' || editorLangId == 'rmd' || editorTextFocus && editorLangId == 'r'",
+        "args": {
+            "langId": "julia",
+            "snippet": " %>% $0"
+        }
+    },
+    {
+        "key": "cmd+-",
+        "command": "editor.action.insertSnippet",
+        "when": "editorLangId == 'rsweave' || editorLangId == 'rmd' ||  editorLangId == 'r' && editorTextFocus",
+        "args": {
+            "langId": "julia",
+            "snippet": " <- $0"
+        }
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "r.execute",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "-r.execute",
+        "when": "editorFocus"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-r.executeInTerminal",
+        "when": "editorFocus"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "r.runSourcewithEcho",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "-r.runSourcewithEcho",
+        "when": "editorTextFocus && editorLangId == 'r'"
+    },
+    {
+        "key": "cmd+k",
+        "command": "workbench.action.togglePanel"
+    },
+    {
+        "key": "cmd+j",
+        "command": "-workbench.action.togglePanel"
+    },
+    {
+        "key": "alt+s",
+        "command": "latex-workshop.saveWithoutBuilding"
+    },
+    {
+        "key": "alt+g",
+        "command": "editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "alt+f8",
+        "command": "-editor.action.marker.next",
+        "when": "editorFocus"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.runcurrentcelladvance",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+shift+enter",
+        "command": "jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.execSelectionInteractive",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.ownsSelection && !findInputFocussed && !notebookEditorFocused && !replaceInputFocussed && editorLangId == 'python'"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "jupyter.notebookeditor.keybind.renderMarkdownAndSelectBelow",
+        "when": "config.jupyter.enableKeyboardShortcuts && inputFocus && notebookEditorFocused && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible && notebookCellType == 'markup'"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-jupyter.notebookeditor.keybind.renderMarkdownAndSelectBelow",
+        "when": "config.jupyter.enableKeyboardShortcuts && inputFocus && notebookEditorFocused && !editorHasMultipleSelections && !editorHasSelection && !editorHoverVisible && notebookCellType == 'markup'"
+    },
+    {
+        "key": "shift+cmd+enter",
+        "command": "notebook.cell.executeAndSelectBelow",
+        "when": "config.jupyter.enableKeyboardShortcuts && notebookCellListFocused && notebookCellType == 'code' && notebookType == 'jupyter-notebook' || config.jupyter.enableKeyboardShortcuts && editorTextFocus && inputFocus && notebookEditorFocused && notebookType == 'jupyter-notebook'"
+    },
+    {
+        "key": "alt+enter",
+        "command": "notebook.cell.executeAndInsertBelow",
+        "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "alt+enter",
+        "command": "-notebook.cell.executeAndInsertBelow",
+        "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-notebook.cell.execute",
+        "when": "notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "r.runCommand"
+    },
+    {
+        "key": "shift+cmd+backspace",
+        "command": "language-julia.clearAllInlineResultsInEditor",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "ctrl+i ctrl+c",
+        "command": "-language-julia.clearAllInlineResultsInEditor",
+        "when": "editorTextFocus && editorLangId == 'julia'"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "interactive.execute",
+        "when": "resourceScheme == 'vscode-interactive'"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-interactive.execute",
+        "when": "resourceScheme == 'vscode-interactive'"
+    },
+    {
+        "key": "alt+enter",
+        "command": "editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "shift+cmd+space",
+        "command": "-editor.action.triggerParameterHints",
+        "when": "editorHasSignatureHelpProvider && editorTextFocus"
+    },
+    {
+        "key": "alt+space",
+        "command": "editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-editor.action.showHover",
+        "when": "editorTextFocus"
+    },
+    {
+        "key": "alt+space",
+        "command": "editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "cmd+k cmd+i",
+        "command": "-editor.debug.action.showDebugHover",
+        "when": "editorTextFocus && inDebugMode"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "notebook.focusNextEditor",
+        "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "ctrl+cmd+down",
+        "command": "-notebook.focusNextEditor",
+        "when": "notebookEditorFocused && notebookOutputFocused"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "notebook.focusTop",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-notebook.focusTop",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "shift+cmd+down",
+        "command": "notebook.focusBottom",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-notebook.focusBottom",
+        "when": "notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "shift+cmd+up",
+        "command": "cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+up",
+        "command": "-cursorTop",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "shift+cmd+down \\",
+        "command": "cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "cmd+down",
+        "command": "-cursorBottom",
+        "when": "textInputFocus"
+    },
+    {
+        "key": "alt+t",
+        "command": "workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "ctrl+shift+`",
+        "command": "-workbench.action.terminal.new",
+        "when": "terminalProcessSupported || terminalWebExtensionContributedProfile"
+    },
+    {
+        "key": "cmd+enter",
+        "command": "notebook.cell.execute",
+        "when": "notebookCellListFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "notebook.cell.executeAndSelectBelow"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-notebook.cell.executeAndSelectBelow",
+        "when": "notebookCellListFocused && notebookCellType == 'code' || editorTextFocus && inputFocus && notebookEditorFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "notebook.cell.executeAndSelectBelow",
+        "when": "notebookCellListFocused"
+    },
+    {
+        "key": "shift+enter",
+        "command": "-notebook.cell.executeAndSelectBelow",
+        "when": "notebookCellListFocused && notebookCellType == 'markup' || notebookCellListFocused && notebookMissingKernelExtension && !notebookCellExecuting && notebookCellType == 'code' || notebookCellListFocused && !notebookCellExecuting && notebookCellType == 'code' && notebookKernelCount > 0"
+    },
+    {
+        "key": "shift+cmd+backspace",
+        "command": "notebook.cell.delete",
+        "when": "inputFocus && notebookEditable && notebookEditorFocused"
+    },
+    {
+        "key": "cmd+backspace",
+        "command": "-notebook.cell.delete",
+        "when": "notebookEditable && notebookEditorFocused && !inputFocus"
+    },
+    {
+        "key": "cmd+shift+m",
+        "command": "notebook.cell.changeToMarkdown",
+        "when": "notebookEditorFocused && inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'code'"
+    },
+    {
+        "key": "cmd+shift+j",
+        "command": "notebook.cell.changeToCode",
+        "when": "notebookEditorFocused && inputFocus && activeEditor == 'workbench.editor.notebook' && notebookCellType == 'markup'"
+    },
+    {
+        "key": "alt+enter",
+        "command": "notebook.cell.insertCodeCellBelow",
+        "when": "notebookCellListFocused && inputFocus"
+    },
+    {
+        "key": "alt+down",
+        "command": "selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "down",
+        "command": "-selectNextSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "alt+up",
+        "command": "selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "up",
+        "command": "-selectPrevSuggestion",
+        "when": "suggestWidgetMultipleSuggestions && suggestWidgetVisible && textInputFocus"
+    },
+    {
+        "key": "alt+enter",
+        "command": "jupyter.runcurrentcell",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !jupyter.havenativecells && !notebookEditorFocused"
+    },
+    {
+        "key": "ctrl+enter",
+        "command": "-jupyter.runcurrentcell",
+        "when": "editorTextFocus && isWorkspaceTrusted && jupyter.hascodecells && !editorHasSelection && !jupyter.havenativecells && !notebookEditorFocused"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "quarto.renderShortcut",
+        "when": "editorTextFocus && editorLangId == 'quarto'"
+    },
+    {
+        "key": "shift+cmd+k",
+        "command": "-quarto.renderShortcut"
+    }
+]
