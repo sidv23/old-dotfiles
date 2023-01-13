@@ -1,0 +1,41 @@
+#!/bin/zsh
+
+##########################################
+# ALIASES
+
+alias organize="python /Users/vishwanathgl/Downloads/code/organize.py"
+alias code="code-insiders"
+
+alias git-push="git add . && git commit -m "fasttrack" && git push"
+
+alias logout="sudo launchctl bootout user/$(id -u vishwanathgl)"
+alias cwd='printf "%s\n" "$(pwd)" | tee >(pbcopy)'
+alias ls=' exa --icons --group-directories-first'
+alias chcwd='cd "$(pbpaste)"'
+alias resource='exec zsh'
+# alias resource='source ${HOME}/.zshrc'
+alias julia_vscode='tmux a -t julia_vscode'
+alias r="radian"
+alias ovim="vim"
+alias vim="nvim"
+
+##########################################
+# Configs
+
+alias zshconfig="nvim ~/.zshrc"
+alias vimconfig="nvim ~/.config/nvim/init.vim"
+alias vim-pkgconfig="nvim ~/.config/nvim/vim-plug/plugins.vim"
+alias python-config="vim $HOME/.pythonrc"
+alias starship-config="vim ~/.config/starship.toml"
+alias ohmyzsh="nvim ~/.oh-my-zsh"
+# alias kitty-config="nvim ~/.config/kitty/kitty.conf"
+
+# # SKHD and YABAI Configurations
+alias skhd-config='nvim ~/.config/skhd/skhdrc'
+alias skhd-resource='brew services restart skhd'
+# # alias limelight-config='nvim ~/.config/limelight/limelightrc'
+# # alias limelight-resource='brew services restart skhd'
+alias yabai-config='nvim ~/.config/yabai/yabairc'
+alias yabai-resource='launchctl kickstart -k "gui/${UID}/homebrew.mxcl.yabai"'
+alias spacebar-config='nvim ~/.config/spacebar/spacebarrc'
+alias spacebar-resource='launchctl kickstart -k "gui/${UID}/homebrew.mxcl.spacebar"'
