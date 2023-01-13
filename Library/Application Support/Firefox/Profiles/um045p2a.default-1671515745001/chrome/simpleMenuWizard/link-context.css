@@ -1,0 +1,37 @@
+/*AGENT_SHEET*/
+
+/*********************************************************************************************
+  simpleMenuWizard: userChrome.css tweaks to remove context menu items in Firefox.
+  https://github.com/stonecrusher/simpleMenuWizard
+**********************************************************************************************
+
+/*** link-context.css ***/
+/*** When right-clicking on a link ***/
+
+/* #context-openlinkintab,                 /* Open Link in New Tab             */
+/* #context-openlinkinusercontext-menu,    /* Open Link in New Container Tab   */
+/* #context-openlink,                      /* Open Link in New Window          */
+/* #context-openlinkprivate,               /* Open Link in New Private Window  */
+/* #context-sep-open,                      /************ Separator *************/
+#context-bookmarklink,                  /* Bookmark Link                    */
+/* #context-savelink,                      /* Save Link As…                    */
+/* #context-savelinktopocket,              /* Save Link to Pocket              */
+/* #context-copyemail,                     /* Copy Email Address               */
+/* #context-copylink,                      /* Copy Link                        */
+/* #context-sendlinktodevice,              /* Send Link to Device              */
+/* #context-sep-sendlinktodevice,          /************ Separator *************/
+/* #context-sep-copylink,                  /************ Separator *************/
+/* #context-searchselect,                  /* Search [Google] for "[selected]" */
+/* #frame-sep,                             /************ Separator *************/
+#context-inspect,                       /* Inspect (Q)                      */
+
+#_a14a4727-1409-41c4-8ec3-19c6a781cb93_-menuitem-_newtab,
+#support_todoist_com-menuitem-1,
+#jid0-adyhmvsp91nuo8prv0mn2vkeb84_jetpack-menuitem-_save_page,
+#tab-stash_condordes_net-menuitem-5,
+#jid0-adyhmvsp91nuo8prv0mn2vkeb84_jetpack-menuitem-_save_link,
+#_c2c003ee-bd69-42a2-b0e9-6f34222cb046_-menuitem-_open-tab-then-discard,
+#_446900e4-71c2-419f-a6a7-df9c091e268b_-menuitem-_root,
+menu[label=""],
+#leave_this_dummy_here
+    { display:none !important; }

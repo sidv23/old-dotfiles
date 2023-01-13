@@ -1,0 +1,161 @@
+
+
+/*
+  Hide Extension Name in the identity area unless
+  hovered for half a second (updated for Fx80)
+*/
+#identity-box.extensionPage #identity-icon-labels,
+#identity-box.extensionPage #identity-icon-label {
+  visibility: collapse !important;
+  transition: visibility 250ms ease-in-out;
+}
+#identity-box.extensionPage:hover #identity-icon-labels,
+#identity-box.extensionPage:hover #identity-icon-label {
+  visibility: visible !important;
+  transition: visibility 250ms ease-in-out 500ms;
+}
+
+
+@-moz-document url(chrome://browser/content/browser.xul)
+{
+
+  #main-window,
+  browser[type="content-primary"],
+  browser[type="content"],
+  tabbrowser#content,
+  #content,
+  browser[type="content"] > html
+  {
+    background: #2e3440 !important;
+  }
+
+}
+
+
+
+/* MINIMAL FOX */
+
+:root {
+  /* Minimal Functional Fox variables*/
+  --mff-bg: #292f36;
+  --mff-icon-color: #e0fbfc;
+  --mff-nav-toolbar-padding: 8px;
+  --mff-sidebar-bg: var(--mff-bg);
+  --mff-sidebar-color: #e0fbfc;
+  --mff-tab-border-radius: 0px;
+  --mff-tab-color: #fefefa;
+  --mff-tab-font-family: "Cantarell", sans;
+  --mff-tab-font-size: 11pt;
+  --mff-tab-font-weight: 400;
+  --mff-tab-height: 22px;
+  --mff-tab-pinned-bg: #70c1b3;
+  --mff-tab-selected-bg: #ee6c4d;
+  --mff-tab-soundplaying-bg: #ee6c4d;
+  /* --mff-tab-soundplaying-bg: #9c89b8; */
+  --mff-urlbar-color: #dbdddf;
+  --mff-urlbar-focused-color: #e0fbfc;
+  --mff-tab-font-family: "Saira SemiCondensed", sans-serif;
+  --mff-urlbar-font-family: "Saira SemiCondensed", sans-serif;
+  --mff-urlbar-results-font-family: "Saira SemiCondensed", sans-serif;
+  --mff-urlbar-font-size: 11pt;
+  --mff-urlbar-font-weight: 500;
+  --mff-urlbar-results-color: #fff;
+  --mff-urlbar-results-font-size: 11pt;
+  --mff-urlbar-results-font-weight: 400;
+  --mff-urlbar-results-url-color: #fdfdfd;
+}
+
+.tab-label-container:not([textoverflow]) {
+  display: flex;
+  overflow: hidden;
+  justify-content: center;
+  width: 50% !important;
+  max-width: 50% !important;
+  min-width: 50% !important;
+}
+
+#urlbar-input {
+  font-size: var(--mff-urlbar-font-size) !important;
+  color: var(--mff-urlbar-color) !important;
+  font-family: var(--mff-urlbar-font-family) !important;
+  font-weight: var(--mff-urlbar-font-weight)!important;
+}
+
+#urlbar:not([focused]) .urlbar-input-box{
+  font-size: var(--mff-urlbar-font-size) !important;
+  color: var(--mff-urlbar-color) !important;
+  font-family: var(--mff-urlbar-font-family) !important;
+  font-weight: var(--mff-urlbar-font-weight)!important;
+  text-align: center !important;
+}
+
+
+#urlbar-results {
+  font-family: var(--mff-urlbar-results-font-family);
+  font-weight: var(--mff-urlbar-results-font-weight);
+  font-size: var(--mff-urlbar-results-font-size) !important;
+  color: var(--mff-urlbar-results-color) !important;
+}
+
+
+/*** Proton Tabs Tweaks ***/
+
+/* Adjust tab corner shape, optionally remove space below tabs */
+
+.tab-background {
+    border-radius: var(--user-tab-rounding) !important;
+    border-bottom-width: 0 !important;
+    margin-bottom: 2px;
+}
+
+#tabbrowser-tabs {
+    --user-tab-rounding: 1px;
+    --tab-min-height: 25px !important;
+}
+#scrollbutton-up,
+#scrollbutton-down {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
+}
+
+.tabbrowser-tab[soundplaying="true"] {
+  background: var(--mff-tab-soundplaying-bg) !important;
+  border-bottom-width: 0 !important;
+  border-radius: var(--user-tab-rounding) !important;
+  color: white !important;
+}
+
+
+
+/* leaves space for the window buttons */
+#nav-bar {
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 2px;
+    min-height: 15pt;
+}
+
+/* This positions the tabs under the navaigator container */
+#titlebar {
+  -moz-box-ordinal-group: 1 !important;
+}
+
+/* hides the menu/URL bar */
+/* #main-window:not([customizing]) #navigator-toolbox:not(:focus-within) {
+  margin-top: -30px;
+} */
+/* #main-window:not([customizing]) #navigator-toolbox:not(:focus-within):not(:hover) {
+  margin-top: -30px;
+} */
+#main-window:not([customizing]) #navigator-toolbox:not(:focus-within):not(:hover) {
+  margin-bottom: -40px;
+}
+
+#sidebar-box{
+  margin-top: 40px;
+}
+
+
+/* 
+THIS IS THE end
+ */
