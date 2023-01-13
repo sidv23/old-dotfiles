@@ -2474,3 +2474,480 @@
 /System/Library/Fonts/Supplemental/NewPeninimMT.ttc: New Peninim MT:style=Bold,Gras
 /System/Library/Fonts/SFNS.ttf: Γραμματοσειρά συστήματος,.SF NS:style=Ultra Compressed Black
 /System/Library/Fonts/SFNS.ttf: Γραμματοσειρά συστήματος,.SF NS:style=Semi Condensed Bold
+STIXIntegralsUp
+Seravek
+Chalkboard
+Bodoni Ornaments
+Clean
+Noto Sans Lepcha
+Noto Sans Kannada,Noto Sans Kannada Medium
+Arial Rounded MT Bold
+Noto Sans Myanmar,Noto Sans Myanmar Blk
+PT Sans
+SF Mono
+New York Small
+ヒラギノ丸ゴ ProN,ヒラギノ丸ゴ ProN W4
+Noto Sans Buginese
+Noto Sans Tai Le
+Savoye LET
+Wingdings 3
+Wingdings 2
+Serto Jerusalem Outline
+فرح,Farah
+Helvetica
+Estrangelo Edessa
+.Geeza Pro Interface
+Hoefler Text
+.SF Compact
+Noto Sans Kayah Li
+Noto Sans Tai Tham
+بيروت,Beirut
+Noto Sans Tifinagh
+Noto Sans Psalter Pahlavi,Noto Sans PsaPahlavi
+ヒラギノ角ゴ ProN,ヒラギノ角ゴ ProN W6
+Noto Sans Thaana
+ヒラギノ角ゴ ProN,ヒラギノ角ゴ ProN W3
+التاريخ,Al Tarikh
+Charter,Charter Black
+Gujarati Sangam MN
+Apple Braille
+Avenir Next,Avenir Next Heavy
+Andale Mono
+Mukta Mahee,MuktaMahee Light
+Party LET
+Noto Sans Mongolian
+Trebuchet MS
+Papyrus
+Noto Sans Myanmar,Noto Sans Myanmar ExtBd
+Avenir,Avenir Medium
+Noto Sans Old South Arabian,Noto Sans OldSouArab
+Noto Sans Brahmi
+Thonburi
+Noto Sans Adlam
+PT Mono
+LucidaBright
+.Lucida Grande UI
+Noto Sans Chakma
+ヒラギノ角ゴ StdN,ヒラギノ角ゴ StdN W8
+Noto Sans Myanmar,Noto Sans Myanmar ExtLt
+Estrangelo Quenneshrin
+Noto Sans Tirhuta
+Luxi Sans
+STIXNonUnicode
+New York Medium
+Apple Symbols
+Webdings
+Noto Sans Canadian Aboriginal,Noto Sans CanAborig
+PT Sans Narrow
+.Arial Hebrew Desk Interface
+STSong
+STIXSizeFiveSym
+Apple Color Emoji
+Seravek,Seravek ExtraLight
+Damascus,دمشق
+.Aqua Kana
+.Hiragino Kaku Gothic Interface
+Cochin
+Noto Sans Javanese
+STIX Two Math
+.Sana PUA
+Noto Sans Multani
+Serto Mardin
+مِصحفي ذهبي,Mishafi Gold
+Noto Serif Yezidi
+منى,Muna
+Arial Black
+Lucida
+Luxi Mono
+SF Pro
+STIXSizeTwoSym
+Estrangelo Talada
+Ayuthaya
+Estrangelo TurAbdin
+Noto Sans Gunjala Gondi
+.Apple Color Emoji UI
+Hiragino Mincho Pro W6,ヒラギノ明朝 Pro
+Hiragino Mincho Pro W3,ヒラギノ明朝 Pro
+.SF NS Mono
+Kohinoor Devanagari
+Bangla MN
+Noto Sans Mandaic
+Noto Sans Kannada,Noto Sans Kannada ExtraLight
+.Baghdad PUA
+Oriya MN
+Bradley Hand
+Noto Sans Armenian,Noto Sans Armenian SemBd
+Mukta Mahee,MuktaMahee SemiBold
+Verdana
+Wingdings
+Noto Sans Kharoshthi
+Trattatello
+ديوان كوفي,Diwan Kufi
+Noto Sans Masaram Gondi
+Plantagenet Cherokee
+Noto Sans Zawgyi,Noto Sans Zawgyi ExtBd
+Avenir Next
+Marker Felt
+Helvetica Neue
+Noto Sans Zawgyi,Noto Sans Zawgyi ExtLt
+STIX Two Text
+Noto Sans Myanmar,Noto Sans Myanmar Med
+Noto Sans Old Persian
+نسخ,DecoType Naskh
+Noto Sans Old Hungarian,Noto Sans OldHung
+ヒラギノ丸ゴ Pro,ヒラギノ丸ゴ Pro W4
+Noto Sans Zawgyi
+Noto Sans Cham
+.Noto Nastaliq Urdu UI
+SF Pro Rounded
+Kailasa
+Noto Sans Bhaiksuki
+Estrangelo Nisibin Outline
+Zapf Dingbats
+Mshtakan
+.SF NS Rounded
+Noto Sans Khojki
+Noto Sans Buhid
+Noto Sans Armenian,Noto Sans Armenian Thin
+Bitstream Vera Sans
+SF Pro Display
+Charter
+Telugu MN
+micro.pcf
+Seravek,Seravek Medium
+Noto Sans Tai Viet
+Myanmar MN
+STIXIntegralsD
+Bodoni 72 Smallcaps
+Noto Sans Kannada,Noto Sans Kannada Black
+Noto Sans Hanifi Rohingya,Noto Sans HanifiRohg
+Mukta Mahee,MuktaMahee Medium
+Noto Sans Inscriptional Parthian,Noto Sans InsParthi
+Terminal
+Bitstream Vera Sans Mono
+STIXGeneral
+Apple Chancery
+Bodoni 72
+Copperplate
+.Times LT MM
+وسيم,Waseem
+New York Large
+Times New Roman
+Sukhumvit Set
+Apple SD Gothic Neo
+.Farah PUA
+苹方\-港,蘋方\-港,PingFang HK
+苹方\-简,蘋方\-簡,PingFang SC
+Estrangelo Nisibin
+Tamil Sangam MN
+STIXSizeThreeSym
+Noto Sans Hatran
+LucidaTypewriter
+Bitstream Vera Serif
+InaiMathi
+Noto Sans Tagalog
+Bodoni 72 Oldstyle
+Noto Serif Myanmar,Noto Serif Myanmar Blk
+Superclarendon
+Noto Sans Osage
+.Apple SD Gothic NeoI
+Raanana
+Grantha Sangam MN
+East Syriac Ctesiphon
+.LastResort
+Noto Sans Batak
+Noto Sans Glagolitic
+.蘋方\-港,.PingFang HK
+Shree Devanagari 714
+Luminari
+PT Sans Caption
+.Al Nile PUA
+ClearlyU PUA
+Noto Serif Myanmar,Noto Serif Myanmar Med
+Noto Sans Old North Arabian,Noto Sans OldNorArab
+Noto Sans Oriya
+.蘋方\-簡,.PingFang SC
+Chalkboard SE
+苹方\-繁,蘋方\-繁,PingFang TC
+Avenir
+GB18030 Bitmap
+STIXIntegralsUpSm
+Noto Sans Mahajani
+.蘋方\-繁,.PingFang TC
+Marion
+PT Serif
+Herculanum
+Nadeem
+Noto Sans Linear A
+Noto Sans Linear B
+Noto Sans Gothic
+Times
+Noto Serif Myanmar,Noto Serif Myanmar SemBd
+Avenir Next,Avenir Next Ultra Light
+Noto Sans Lydian
+Noteworthy
+Avenir,Avenir Heavy
+Noto Sans Siddham
+Lucida Grande
+Noto Sans Ol Chiki
+.DecoType Naskh PUA
+Utopia
+فارسي,Farisi
+ヒラギノ角ゴ Pro,ヒラギノ角ゴ Pro W3
+Kannada Sangam MN
+ヒラギノ角ゴ Pro,ヒラギノ角ゴ Pro W6
+Noto Sans Zawgyi,Noto Sans Zawgyi Med
+Kokonor
+.Al Bayan PUA
+Avenir Next,Avenir Next Demi Bold
+Symbol
+Γραμματοσειρά συστήματος,.SF NS
+Mukta Mahee,MuktaMahee Bold
+KufiStandardGK
+Noto Sans Wancho
+Noto Sans Modi
+Gill Sans
+Noto Sans Sora Sompeng,Noto Sans SoraSomp
+Corsiva Hebrew
+Avenir Next Condensed,Avenir Next Condensed Ultra Light
+Noto Sans Myanmar,Noto Sans Myanmar Light
+ITF Devanagari Marathi
+ClearlyU
+Bitstream Charter
+Noto Sans Meetei Mayek
+Noto Sans Cypriot
+Avenir Next Condensed,Avenir Next Condensed Demi Bold
+Kannada MN
+Seravek,Seravek Light
+Noto Sans Miao
+النيل,Al Nile
+Silom
+.SF Compact Rounded
+Comic Sans MS
+DIN Condensed
+.Aqua Kana,.Aqua Kana Bold
+Noto Sans Pahawh Hmong
+deccurs.pcf
+Noto Sans Ugaritic
+Devanagari MT
+Khmer MN
+Courier 10 Pitch
+Noto Sans Kannada,Noto Sans Kannada SemiBold
+Noto Sans Marchen
+Arial Narrow
+Noto Sans NKo
+Noto Sans Mro
+Noto Sans PhagsPa
+Noto Sans Imperial Aramaic,Noto Sans ImpAramaic
+Myanmar Sangam MN
+Mukta Mahee,MuktaMahee ExtraLight
+Noto Sans Zawgyi,Noto Sans Zawgyi Blk
+.Geeza Pro PUA
+Microsoft Sans Serif
+New York
+Gujarati MT
+.Nadeem PUA
+Didot
+Noto Sans Meroitic
+Hiragino Sans GB,冬青黑体简体中文,冬青黑體簡體中文 W6
+Hiragino Sans GB,冬青黑体简体中文,冬青黑體簡體中文 W3
+Avenir,Avenir Black
+.Al Tarikh PUA
+System Font,.SF NS
+Sinhala MN
+.SF Arabic
+Hoefler Text,Hoefler Text Ornaments
+Serto Urhoy
+Noto Sans Egyptian Hieroglyphs,Noto Sans EgyptHiero
+Noto Sans Bassa Vah
+SignPainter,SignPainter\-HouseScript
+Academy Engraved LET
+Noto Sans Kannada,Noto Sans Kannada ExtraBold
+Noto Sans Manichaean
+Noto Sans Zawgyi,Noto Sans Zawgyi Light
+American Typewriter
+Noto Serif Myanmar,Noto Serif Myanmar ExtLt
+Palatino
+Noto Sans Armenian,Noto Sans Armenian Blk
+STIXIntegralsUpD
+Noto Sans Armenian
+Noto Serif Balinese
+Noto Sans Duployan
+.Damascus PUA
+Avenir Next Condensed,Avenir Next Condensed Medium
+STIXVariants
+Mukta Mahee,MuktaMahee ExtraBold
+Noto Serif Myanmar,Noto Serif Myanmar ExtBd
+Avenir,Avenir Black Oblique
+Noto Serif Myanmar
+Arial Hebrew
+.Hiragino Sans GB Interface
+Optima
+Noto Sans Old Italic
+ITF Devanagari
+.ThonburiUI
+Rockwell
+Noto Sans Lisu
+Galvji
+decsess.pcf
+Noto Sans Kaithi
+Avenir Next Condensed
+Courier
+DIN Alternate
+Noto Sans Tagbanwa
+Noto Sans Myanmar
+Devanagari Sangam MN
+Noto Sans Vai
+Baskerville
+Iowan Old Style
+Al Bayan
+ClearlyU Alternate Glyphs
+Krungthep
+Arial Unicode MS
+Noto Sans New Tai Lue
+Phosphate
+Gurmukhi Sangam MN
+Luxi Serif
+Noto Sans Syloti Nagri
+Geneva
+SF Pro Text
+Chalkduster
+Avenir Next,Avenir Next Medium
+Malayalam Sangam MN
+بغداد,Baghdad
+Avenir Next Condensed,Avenir Next Condensed Heavy
+.ThonburiUIWatch
+Estrangelo Antioch
+Noto Sans Samaritan
+Futura
+Snell Roundhand
+Telugu Sangam MN
+.Savoye LET CC.
+Geeza Pro
+Noto Sans Newa
+PT Serif Caption
+.Diwan Kufi PUA
+.Muna PUA
+Noto Sans Carian
+STIXSizeOneSym
+Monaco
+Noto Sans Bamum
+Noto Sans Takri
+Khmer Sangam MN
+Noto Sans Nabataean
+Noto Sans Avestan
+ヒラギノ角ゴ Std,ヒラギノ角ゴ Std W8
+Noto Serif Myanmar,Noto Serif Myanmar Light
+Noto Sans Cuneiform
+Noto Sans Zawgyi,Noto Sans Zawgyi Thin
+Lao Sangam MN
+Skia
+Kohinoor Telugu
+Songti TC,宋体\-繁,宋體\-繁
+Noto Sans Kannada
+Fixed
+Noto Sans Armenian,Noto Sans Armenian Med
+Noto Sans Elbasan
+Songti SC,宋体\-简,宋體\-簡
+Noto Sans Armenian,Noto Sans Armenian Light
+Noto Sans Old Turkic
+Georgia
+Noto Sans Myanmar,Noto Sans Myanmar SemBd
+STIXSizeFourSym
+Noto Sans Limbu
+صنعاء,Sana
+cursor.pcf
+AppleMyungjo
+Kohinoor Bangla
+Noto Sans Sharada
+Noto Serif Myanmar,Noto Serif Myanmar Thin
+Noto Sans Osmanya
+Brush Script MT
+.SF Arabic Rounded
+Noto Sans Palmyrene
+Noto Serif Ahom
+East Syriac Adiabene
+Noto Sans Lycian
+Serto Malankara
+Noto Sans Yi
+Bangla Sangam MN
+ヒラギノ明朝 ProN,ヒラギノ明朝 ProN W6
+ヒラギノ明朝 ProN,ヒラギノ明朝 ProN W3
+Noto Sans Caucasian Albanian,Noto Sans CaucAlban
+Arial
+Noto Sans Pau Cin Hau
+Noto Sans Saurashtra
+.Keyboard
+Noto Sans Old Permic
+Serto Jerusalem
+Sinhala Sangam MN
+Courier New
+Zapfino
+Gurmukhi MT
+Noto Sans Warang Citi
+Cursor
+AppleGothic
+.New York
+Noto Sans Syriac
+Gurmukhi MN
+Malayalam MN
+Serto Batnan
+Arial Hebrew Scholar
+Big Caslon
+New Peninim MT
+Noto Sans Coptic
+Sathu
+Lao MN
+.Beirut PUA
+Noto Sans Rejang
+Newspaper
+Mukta Mahee,MuktaMahee Regular
+Noto Sans Armenian,Noto Sans Armenian ExtBd
+Athelas
+Heiti SC,黑體\-簡
+Avenir,Avenir Book
+.Helvetica LT MM
+Iowan Old Style,Iowan Old Style Black
+Heiti TC,黑體\-繁
+Noto Sans Armenian,Noto Sans Armenian ExtLt
+.KufiStandardGK PUA
+New Century Schoolbook
+Noto Nastaliq Urdu
+Oriya Sangam MN
+ديوان ثلث,Diwan Thuluth
+Goha\-Tibeb Zemen
+Tahoma
+Estrangelo Midyat
+Impact
+Noto Sans Zawgyi,Noto Sans Zawgyi SemBd
+Noto Serif Hmong Nyiakeng
+Noto Sans Kannada,Noto Sans Kannada Thin
+Avenir,Avenir Light
+Kefa
+Serto Kharput
+Hiragino Sans W0,ヒラギノ角ゴシック
+Hiragino Sans W1,ヒラギノ角ゴシック
+Hiragino Sans W2,ヒラギノ角ゴシック
+Hiragino Sans W3,ヒラギノ角ゴシック
+New York Extra Large
+Hiragino Sans W4,ヒラギノ角ゴシック
+Hiragino Sans W5,ヒラギノ角ゴシック
+Hiragino Sans W6,ヒラギノ角ゴシック
+Hiragino Sans W7,ヒラギノ角ゴシック
+Hiragino Sans W8,ヒラギノ角ゴシック
+Hiragino Sans W9,ヒラギノ角ゴシック
+Tamil MN
+Noto Sans Kannada,Noto Sans Kannada Light
+Noto Sans Hanunoo
+Noto Sans Inscriptional Pahlavi,Noto Sans InsPahlavi
+Songti SC
+Noto Sans Phoenician
+Euphemia UCAS
+Noto Sans Sundanese
+Menlo
+Noto Sans Myanmar,Noto Sans Myanmar Thin
+Noto Sans Khudawadi
+مِصحفي,Mishafi
+STIXIntegralsSm
+Noto Sans Mende Kikakui
+Kohinoor Gujarati
